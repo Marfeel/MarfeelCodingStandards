@@ -1,4 +1,4 @@
-# SCSS Lint
+## Dependencies
 
 ```sh
 gem install scss_lint

@@ -1,5 +1,3 @@
-# ESLINT
-
 ## Base dependencies
 
 Using npm
