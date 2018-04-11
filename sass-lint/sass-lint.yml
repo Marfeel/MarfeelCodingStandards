@@ -245,7 +245,7 @@ linters:
     enabled: true
     identifier_list: base
     additional_identifiers: ['line-clamp']
-    excluded_identifiers: ['transform', 'keyframes', 'animation']
+    excluded_identifiers: ['transform', 'transition', 'keyframes', 'animation']
 
   ZeroUnit:
     enabled: false
