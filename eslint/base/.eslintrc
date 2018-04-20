@@ -31,6 +31,7 @@
 		"no-unsafe-finally": "error",
 		"use-isnan": "error",
 		"valid-typeof": "error",
+		"prefer-promise-reject-errors": "error",
 
 		//Best practises
 		"no-with": "error",
