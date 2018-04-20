@@ -121,7 +121,8 @@
 		"space-in-parens": ["error", "never"],
 
 		//es6
-		"no-var": "error",
+    "no-var": "error",
+    "prefer-const": "error",
 		"constructor-super": "error",
 		"no-class-assign": "error",
 		"no-const-assign": "error",
