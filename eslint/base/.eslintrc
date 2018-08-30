@@ -150,7 +150,7 @@
 		}]
 	},
 	"overrides": [{
-		"files": ["*.test.js", "*.spec.js"],
+		"files": ["*test.js", "*.spec.js"],
 		"rules": {
 			"max-nested-callbacks": "off"
 		}
