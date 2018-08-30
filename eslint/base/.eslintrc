@@ -10,7 +10,6 @@
 		"es6": true
 	},
 	"rules": {
-		//Possible errors
 		"no-cond-assign": "error",
 		"no-console": "error",
 		"no-constant-condition": "error",
@@ -35,7 +34,6 @@
 		"valid-typeof": "error",
 		"prefer-promise-reject-errors": "error",
 
-		//Best practises
 		"no-with": "error",
 		"radix": "error",
 		"array-callback-return": "error",
@@ -87,7 +85,6 @@
 		"no-undef": "error",
 		"no-duplicate-imports": "error",
 
-		//Styling
 		"array-bracket-spacing": "error",
 		"block-spacing": "error",
 		"brace-style": ["error", "1tbs", {
@@ -136,7 +133,6 @@
 		"space-before-function-paren": ["error", "never"],
 		"space-in-parens": ["error", "never"],
 
-		//es6
 		"no-var": "error",
 		"prefer-const": "error",
 		"constructor-super": "error",
