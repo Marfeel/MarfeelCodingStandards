@@ -1,11 +1,5 @@
 {
-    "env": {
-        "node": true,
-        "es6": true
-    },
-    "parserOptions": {
-        "ecmaVersion": 2017
-    },
+    "extends": ["plugin:node/recommended"],
     "rules": {
         "callback-return": ["error", ["callback", "cb", "done"]],
         "global-require": "error",
