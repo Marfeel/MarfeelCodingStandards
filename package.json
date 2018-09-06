@@ -14,5 +14,9 @@
 	"bugs": {
 		"url": "https://github.com/Marfeel/MarfeelCodingStandards/issues"
 	},
-	"homepage": "https://github.com/Marfeel/MarfeelCodingStandards#readme"
+	"homepage": "https://github.com/Marfeel/MarfeelCodingStandards#readme",
+	"dependencies": {
+		"eslint": "^5.5.0",
+		"eslint-plugin-node": "^7.0.1"
+	}
 }
