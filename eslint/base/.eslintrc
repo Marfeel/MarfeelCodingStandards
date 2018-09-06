@@ -110,7 +110,7 @@
 		"linebreak-style": ["error", "unix"],
 		"max-depth": ["error", 3],
 		"max-len": ["error", 120],
-		"max-nested-callbacks": ["error", 2],
+		"max-nested-callbacks": ["error", 3],
 		"max-statements-per-line": ["error", {
 			"max": 4
 		}],
