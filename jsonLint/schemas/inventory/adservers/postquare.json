@@ -1,0 +1,66 @@
+{
+  "$id": "#postquare",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Postquare adserver",
+  "description": "https://github.com/ampproject/amphtml/blob/master/ads/postquare.md",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "widgetIds",
+    "websiteId",
+    "publisherId"
+  ],
+
+  "defaultSnippets": [
+    {
+      "label": "Postquare template",
+      "description": "contains required keys",
+      "body": {
+        "type": "postquare",
+        "widgetIds": "$1",
+        "websiteId": "$2",
+        "publisherId": "$3"
+      }
+    }
+  ],
+
+  "properties": {
+    "type": {
+      "enum": [
+        "postquare"
+      ]
+    },
+    "layout": {
+      "enum": [
+        "responsive"
+      ]
+    },
+    "widgetIds": {
+      "type": "string"
+    },
+    "websiteId": {
+      "type": "string"
+    },
+    "publisherId": {
+      "type": "string"
+    },
+    "styleCSS": {
+      "type": "string",
+      "title": "Option to pass CSS file",
+      "description": "Example: https://bc.marfeelcache.com/statics/www.thesocialpost.it/index/resources/outbrain.css"
+    },
+    "width": {
+      "type": "string",
+      "title": "String of digits",
+      "description": "example: 300 (not required, default in outbrain.tag (100))",
+      "pattern": "^(\\d|\\$\\{.+\\})+$"
+    },
+    "height": {
+      "type": "string",
+      "title": "String of digits",
+      "description": "example: 250 (not required, default in outbrain.tag(100))",
+      "pattern": "^(\\d|\\$\\{.+\\})+$"
+    }
+  }
+}

@@ -1,0 +1,69 @@
+{
+    "$id": "#adsense",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Adsense adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/google/adsense.md",
+    "additionalProperties": false,
+
+    "required": [
+      "type",
+      "ad-client",
+      "ad-slot",
+      "width",
+      "height"
+    ],
+
+    "defaultSnippets": [
+      {
+        "label": "Adsense template",
+        "description": "contains required keys",
+        "body": {
+          "type": "adsense",
+          "ad-client": "$1",
+          "ad-slot": "$2",
+          "width": "$3",
+          "height": "$4"
+        }
+      }
+    ],
+
+    "properties": {
+      "type": {
+        "enum": [ "adsense"]
+      },
+      "ad-client": {
+        "type": "string",
+        "title": "Publisher ID.",
+        "description": "example: ca-pub-1234567891234567",
+        "pattern": "^(\\$\\{.+\\}|(ca-pub-(\\d+|\\$\\{.+\\})))$"
+      },
+      "ad-slot": {
+        "type": "string",
+        "title": "String of digits",
+        "description": "example: 9667904487",
+        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+      },
+      "ad-host": {
+        "type": "string"
+      },
+      "adtest": {
+        "type": "string"
+      },
+      "tag-origin": {
+        "type": "string"
+      },
+      "width": {
+        "type": "string",
+        "title": "String of digits",
+        "description": "example: 300",
+        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+      },
+      "height": {
+        "type": "string",
+        "title": "String of digits",
+        "description": "example: 250",
+        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+      }
+    }
+  }

@@ -1,0 +1,19 @@
+{
+    "placements": {
+      "inline": {
+        "adServer": "dfp",
+        "params": {
+          "END_SLOT": "${VIRTUAL_PAGE}"
+        }
+      }
+    },
+    "adServers": {
+      "dfp": {
+        "type": "doubleclick",
+        "slot": "/55115104/marfeelTag_AMP${END_SLOT}",
+        "width": "336",
+        "height": "600",
+        "json": { "targeting": { "marfeeltype": "M" } }
+      }
+    }
+}

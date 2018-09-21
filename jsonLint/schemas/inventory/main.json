@@ -1,0 +1,108 @@
+{
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Inventory JSON - define ads configuration of the tenant.",
+    "description": "https://atenea.marfeel.com/product/marfeel-platform/adops-articles/inventory-json",
+    "additionalProperties": false,
+    "required": [
+        "placements",
+        "adServers"
+    ],
+
+    "default" : {
+        "placements": {},
+        "adServers": {}
+    },
+
+    "properties": {
+
+        "placements": {
+            "$id": "/properties/placements",
+            "type": "object",
+            "title": "Placements Object",
+            "description": "contain the placements with keys like : \n - nativeAd \n - adsBelowTopMedia \n - topMosaicAd \n - inline \n - inline_5",
+            "additionalProperties": false,
+
+            "patternProperties": {
+                "^(inline|sticky|nativeAd|belowTopMedia|bottomAd|topCommentsDetailsAd|extraNativeAdvInDetails|topMosaicAd|bottomDetailsAd)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : { 
+                    "anyOf": [
+                        {"$ref" : "./placements/schema.json"}
+                      ]
+                }
+            }
+
+        
+        },
+
+
+        "adServers": {
+            "$id": "/properties/adServers",
+            "type": "object",
+            "title": "Adservers Object",
+            "description": "contain the adServers used in placements.",
+
+            "properties": {
+                "marfeel" : {
+                    "$ref" : "./adservers/marfeel/schema.json"
+                },
+                "adsense" : {
+                    "$ref" : "./adservers/adsense.json"
+                },
+                "colombia" : {
+                    "$ref" : "./adservers/colombia.json"
+                },
+                "criteo" : {
+                    "$ref" : "./adservers/criteo.json"
+                },
+                "doubleclick" : {
+                    "$ref" : "./adservers/doubleclick.json"
+                },
+                "ligatus" : {
+                    "$ref" : "./adservers/ligatus.json"
+                },
+                "outbrain" : {
+                    "$ref" : "./adservers/outbrain.json"
+                },
+                "postquare" : {
+                    "$ref" : "./adservers/postquare.json"
+                },
+                "revcontent" : {
+                    "$ref" : "./adservers/revcontent.json"
+                },
+                "smartadserver" : {
+                    "$ref" : "./adservers/smartadserver.json"
+                },
+                "smartclip" : {
+                    "$ref" : "./adservers/smartclip.json"
+                },
+                "taboola" : {
+                    "$ref" : "./adservers/taboola.json"
+                },
+                "teads" : {
+                    "$ref" : "./adservers/teads.json"
+                }
+            },
+
+            "patternProperties": {
+                "^.*$": { 
+                    "anyOf": [
+                        {"$ref" : "./adservers/adsense.json"},
+                        {"$ref" : "./adservers/colombia.json"},
+                        {"$ref" : "./adservers/criteo.json"},
+                        {"$ref" : "./adservers/doubleclick.json"},
+                        {"$ref" : "./adservers/ligatus.json"},
+                        {"$ref" : "./adservers/outbrain.json"},
+                        {"$ref" : "./adservers/postquare.json"},
+                        {"$ref" : "./adservers/revcontent.json"},
+                        {"$ref" : "./adservers/smartadserver.json"},
+                        {"$ref" : "./adservers/smartclip.json"},   
+                        {"$ref" : "./adservers/taboola.json"},    
+                        {"$ref" : "./adservers/teads.json"}          
+                      ]
+                }
+            }
+        }
+    }
+}
