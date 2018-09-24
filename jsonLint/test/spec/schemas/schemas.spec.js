@@ -14,14 +14,11 @@
 
 const fs = require('fs');
 const jsonLint = require('../../..');
+const util = require('../../../utils/schemaUtils');
 
 describe('Valid json schemas:', () => {
 	const testFolder = './test/resources/schema';
-	const tests = fs.readdirSync(testFolder);
-
-	beforeEach(() => {
-
-	});
+	const tests = fs.readdirSync(testFolder).filter(util.isNotPrivate);
 
 	function schemaTest(schemaName) {
 		it('required tests', () => {

@@ -16,11 +16,21 @@ const path = require('path');
 const fs = require('fs');
 const util = require('./utils/schemaUtils');
 const Validator = require('jsonschema').Validator;
+const schemasSource = path.resolve(__dirname, 'schemas');
 
 function getSchemaNames() {
-	const source = path.resolve(__dirname, 'schemas');
+	return fs.readdirSync(schemasSource).filter(util.isNotPrivate);
+}
 
-	return fs.readdirSync(source).filter(util.isNotPrivate);
+function getSchemaNamesAndPath() {
+	const schemaNames = fs.readdirSync(schemasSource).filter(util.isNotPrivate);
+
+	return schemaNames.map(name => {
+		return {
+			name,
+			MarfeelPath: util.loadJson(`${util.getSchemaPath(name)}/main.json`).MarfeelPath
+		};
+	});
 }
 
 function validate(jsonObject, schemaName) {
@@ -45,5 +55,6 @@ module.exports = {
 	validate,
 	validateFromPath,
 	getSchemaNames,
+	getSchemaNamesAndPath,
 	loadJson: util.loadJson
 };

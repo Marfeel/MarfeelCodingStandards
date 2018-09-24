@@ -40,6 +40,17 @@ describe('API json schemas:', () => {
 		);
 	});
 
+	it('get schema names and MarfeelPath', ()=> {
+		const schemaDefinitions = jsonLint.getSchemaNamesAndPath();
+		const isInvalid = x => !(typeof x.MarfeelPath === 'string');
+
+		expect(schemaDefinitions.some(isInvalid)
+		).toBe(false,
+			`MarfeelPath needs to be defined in schemaName/main.json.
+			Schema MarfeelPath is undefined : 
+			${JSON.stringify(schemaDefinitions.filter(isInvalid))}`);
+	});
+
 	describe(': validate :', () => {
 
 		it('Valid JSON', () => {
