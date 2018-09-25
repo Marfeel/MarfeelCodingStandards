@@ -1,0 +1,89 @@
+{
+  "$id": "#taboola",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Taboola adserver",
+  "description": "https://www.taboola.com/amp/documentation",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "publisher",
+    "mode",
+    "placement",
+    "article"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "Taboola template",
+      "description": "contains required keys",
+      "body": {
+        "type": "taboola",
+        "publisher": "$1",
+        "mode": "$2",
+        "placement": "$3",
+        "article": "$4"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "taboola"
+      ]
+    },
+    "publisher": {
+      "type": "string",
+      "description": "Publisher identifier as received from Taboola representative."
+    },
+    "mode": {
+      "type": "string",
+      "description": "different UI templates in the Taboola API and usually, have names that follow their general layout and any special properties they have (e.g. 'thumbnails-a' or 'organic-text-links').",
+      "enum": [
+        "alternating-thumbnails-a",
+        "alternating-thumbnails-b",
+        "alternating-thumbnails-rr",
+        "alternating-thumbnails-x-amp",
+        "organic-thumbnails-a",
+        "thumbnails-a",
+        "thumbnails-a-amp",
+        "thumbnails-b",
+        "thumbnails-b-amp",
+        "thumbnails-m",
+        "thumbnails-m-amp",
+        "thumbs-mobile-2r"
+      ]
+    },
+    "placement": {
+      "type": "string",
+      "description": "Sets the placement of the widget, for reporting purposes."
+    },
+    "heights": {
+      "type": "string",
+      "description": "Defines the height of the element in different responsive breakpoints as a percentage of the width. if this attribute is not used, the widget will have a static aspect ratio defined by the width and the height."
+    },
+    "layout": {
+      "type": "string",
+      "description": "in the case where the heights attribute is supplied, the layout attribute can be omitted and layout=responsive is implied, otherwise see amp layout system documentation for a detailed list of layout options",
+      "enum": [
+        "responsive"
+      ]
+    },
+    "container": {
+      "type": "string",
+      "description": "The places where the modules are rendered on the page"
+    },
+    "target_type": {
+      "type": "string",
+      "enum": [
+        "mix"
+      ]
+    },
+    "article": {
+      "type": "string",
+      "description": "The attribute name is used to classify the page type, and the value is used for setting a unique identifier of the page. We recommend using a constant value “auto” which will instruct the widget to use the canonical url of the page as a unique identifier.",
+      "enum": [
+        "auto"
+      ]
+    }
+  }
+}

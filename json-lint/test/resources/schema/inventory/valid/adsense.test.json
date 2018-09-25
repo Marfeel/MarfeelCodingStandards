@@ -1,0 +1,30 @@
+{
+  "placements": {
+    "inline_mosaic_1": {
+      "adServer": "adsense",
+      "params": {
+        "SLOT": "9189520248",
+        "WIDTH": 300,
+        "HEIGHT": 250
+      }
+    },
+    "inline": {
+      "adServer": "adsense",
+      "params": {
+        "SLOT": "8944062649",
+        "WIDTH": 320,
+        "HEIGHT": 250
+      }
+    }
+  },
+  "adServers": {
+    "adsense": {
+      "type": "adsense",
+      "ad-client": "ca-pub-7484406166969543",
+      "ad-slot": "${SLOT}",
+      "auto-format": "rspv",
+      "width": "${WIDTH}",
+      "height": "${HEIGHT}"
+    }
+  }
+}

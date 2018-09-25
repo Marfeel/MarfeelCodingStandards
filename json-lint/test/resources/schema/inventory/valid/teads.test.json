@@ -1,0 +1,14 @@
+{
+    "placements": {
+        "bottomDetailsAd": {
+            "adServer": "teads"
+        }
+    },
+    "adServers": {
+        "teads": {
+            "type": "teads",
+            "pid": "67464",
+            "layout": "responsive"
+        }
+    }
+}

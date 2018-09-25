@@ -1,0 +1,49 @@
+{
+  "$id": "#teads",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Teads adserver",
+  "description": "https://github.com/ampproject/amphtml/blob/master/ads/teads.md",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "pid"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "Teads template",
+      "description": "contains required keys",
+      "body": {
+        "type": "teads",
+        "pid": "$1"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "teads"
+      ]
+    },
+    "pid": {
+      "type": "string"
+    },
+    "layout": {
+      "enum": [
+        "responsive"
+      ]
+    },
+    "width": {
+      "type": "string",
+      "title": "String of digits",
+      "description": "example: 300 (not required, default in outbrain.tag (100))",
+      "pattern": "^(\\d|\\$\\{.+\\})+$"
+    },
+    "height": {
+      "type": "string",
+      "title": "String of digits",
+      "description": "example: 250 (not required, default in outbrain.tag(100))",
+      "pattern": "^(\\d|\\$\\{.+\\})+$"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "placements": {
+    "inline_details_1": {
+      "adServer": "outbrain",
+      "params": {
+        "WIDGET_ID": "MB_3"
+      }
+    },
+    "inline_mosaic_corner_5": {
+      "adServer": "outbrain",
+      "params": {
+        "WIDGET_ID": "MB_4"
+      }
+    },
+    "nativeAd": {
+      "adServer": "outbrain",
+      "params": {
+        "WIDGET_ID": "MB_1"
+      }
+    }
+  },
+  "adServers": {
+    "outbrain": {
+      "type": "outbrain",
+      "layout": "responsive",
+      "widgetIds": "${WIDGET_ID}"
+    }
+  }
+}
