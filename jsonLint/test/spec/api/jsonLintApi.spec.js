@@ -13,7 +13,7 @@
  */
 
 const path = require('path');
-const jsonLint = require('../../../../jsonLint');
+const jsonLint = require('../../../../jsonLint/api');
 
 describe('API json schemas:', () => {
 	const exampleJsonPath = path.resolve(__dirname, '../../resources/api/example.json');

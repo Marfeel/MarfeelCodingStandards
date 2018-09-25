@@ -13,7 +13,7 @@
  */
 
 const fs = require('fs');
-const jsonLint = require('../../..');
+const jsonLint = require('../../../api');
 const util = require('../../../utils/schemaUtils');
 
 describe('Valid json schemas:', () => {

@@ -17,6 +17,7 @@
 	"license": "ISC",
 	"homepage": "https://github.com/Marfeel/MarfeelCodingStandards#readme",
 	"dependencies": {
+		"commander": "^2.18.0",
 		"jsonschema": "^1.2.4"
 	},
 	"devDependencies": {
