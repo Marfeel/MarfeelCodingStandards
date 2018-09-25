@@ -1,0 +1,15 @@
+{
+    "placements": {
+      "inline": {
+        "adServer": "dfp",
+        "params": {
+          "END_SLOT": "${VIRTUAL_PAGE}"
+        }
+      }
+    },
+    "adServers": {
+      "some": {
+        "type": "wrong server type"
+      }
+    }
+}

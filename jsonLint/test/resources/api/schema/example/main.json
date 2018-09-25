@@ -1,0 +1,17 @@
+{
+    "$id": "#example",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Example schema",
+    "additionalProperties": false,
+    "required": [
+        "requiredKey"
+    ],
+    "properties": {
+        "requiredKey": {
+            "enum": [
+                "allowed_value"
+            ]
+        }
+    }
+}
