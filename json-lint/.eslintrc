@@ -1,9 +1,0 @@
-{
-	"extends": [
-		"../eslint/base/.eslintrc"
-	],
-	"env": {
-		"commonjs": true,
-		"node": true
-	}
-} 
