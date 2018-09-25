@@ -1,0 +1,31 @@
+{
+  "placements": {
+    "inline": {
+      "adServer": "dfp",
+      "params": {
+        "END_SLOT": "${VIRTUAL_PAGE}"
+      }
+    },
+    "bottomDetailsAd": {
+      "adServer": "dfp",
+      "params": {
+        "END_SLOT": "_EndOfArticle"
+      }
+    }
+  },
+  "adServers": {
+    "dfp": {
+      "type": "doubleclick",
+      "slot": "/55115104/marfeelTag_AMP${END_SLOT}",
+      "width": "336",
+      "height": "600",
+      "multi_size": "300x250,300x600,300x100,320x480,320x50,336x280",
+      "multi_size_validation": false,
+      "json": {
+        "targeting": {
+          "marfeeltype": "M"
+        }
+      }
+    }
+  }
+}

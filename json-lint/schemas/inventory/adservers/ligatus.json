@@ -1,0 +1,33 @@
+{
+    "$id": "#ligatus",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Ligatus adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/ligatus.md",
+    "additionalProperties": false,
+
+    "required": [
+      "type",
+      "src"
+    ],
+
+    "defaultSnippets": [
+      {
+        "label": "Ligatus template",
+        "description": "contains required keys",
+        "body": {
+          "type": "ligatus",
+          "src": "$1"
+        }
+      }
+    ],
+
+    "properties": {
+      "type": {
+        "enum": [ "ligatus" ]
+      },
+      "src": {
+        "type": "string"
+      }
+    }
+  }

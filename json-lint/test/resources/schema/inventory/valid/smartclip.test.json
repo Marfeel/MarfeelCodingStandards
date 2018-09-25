@@ -1,0 +1,14 @@
+{
+	"placements": {
+		"inline": {
+			"adServer": "smartclip"
+		}
+	},
+	"adServers": {
+		"smartclip": {
+			"type": "smartclip",
+			"plc": "68005",
+			"sz": "400x320"
+		}
+	}
+}
