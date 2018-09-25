@@ -1,1 +1,30 @@
-node_modules/
+target
+bin
+node_modules
+vendor
+npm-debug.log
+.sass-cache
+.idea/libraries
+.idea/workspace.xml
+.idea/compiler.xml
+.idea/modules.xml
+.idea/ant.xml
+.idea/copyright/profiles_settings.xml
+.sass-cache
+*.sassc
+.vscode
+.history
+wepback-report.html
+**/yarn-error.log
+.gradle
+
+######################
+# OS generated files #
+######################
+.DS_Store*
+
+######################
+#  IDEA CONFIG FILES #
+######################
+.idea
+**.iml

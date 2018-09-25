@@ -1,0 +1,56 @@
+{
+  "$id": "#colombia",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Colombia adserver",
+  "description": "https://github.com/ampproject/amphtml/blob/master/ads/colombia.md",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "clmb_slot",
+    "clmb_position",
+    "clmb_section"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "Colombia template",
+      "description": "contains required keys",
+      "body": {
+        "type": "colombia",
+        "clmb_slot": "$1",
+        "clmb_position": "$2",
+        "clmb_section": "$3"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "colombia"
+      ]
+    },
+    "layout": {
+      "enum": [
+        "responsive"
+      ]
+    },
+    "clmb_slot": {
+      "type": "string",
+      "title": "String of digits",
+      "description": "Example : 246927",
+      "pattern": "^(\\d|\\$\\{.+\\})+$"
+    },
+    "clmb_position": {
+      "type": "string",
+      "title": "String of digits",
+      "description": "Example : 1",
+      "pattern": "^(\\d|\\$\\{.+\\})+$"
+    },
+    "clmb_section": {
+      "type": "string",
+      "title": "String of digits",
+      "description": "Example : 0",
+      "pattern": "^(\\d|\\$\\{.+\\})+$"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+	"name": "marfeel-json-lint",
+	"version": "1.0.0",
+	"description": "Marfeel Json Lint",
+	"main": "index.js",
+	"directories": {
+		"test": "test"
+	},
+	"scripts": {
+		"test": "jasmine JASMINE_CONFIG_PATH=./test/spec/support/jasmine.json JSONLINT_TEST=true",
+		"lint": "eslint . "
+	},
+	"keywords": [
+		"json",
+		"json-lint"
+	],
+	"license": "ISC",
+	"homepage": "https://github.com/Marfeel/MarfeelCodingStandards#readme",
+	"dependencies": {
+		"commander": "^2.18.0",
+		"jsonschema": "^1.2.4"
+	},
+	"devDependencies": {
+		"jasmine": "^3.1.0",
+		"eslint": "^5.5.0",
+		"eslint-plugin-node": "^7.0.1"
+	}
+}

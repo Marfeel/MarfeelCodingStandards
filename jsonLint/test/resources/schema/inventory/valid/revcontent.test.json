@@ -1,0 +1,14 @@
+{
+  "placements": {
+    "nativeAd": {
+      "adServer": "revcontent"
+    }
+  },
+  "adServers": {
+    "revcontent": {
+      "type": "revcontent",
+      "id": "9709",
+      "wrapper": "rcjsload_cba4dc"
+    }
+  }
+}
