@@ -1,0 +1,17 @@
+{
+	"env": {
+		"jasmine": true,
+		"node": true
+	},
+	"globals": {
+		"waitsForAndRuns": true,
+		"readFixtures": true,
+		"preloadFixtures": true,
+		"loadFixtures": true,
+		"setFixtures": true,
+		"spyOnEvent": true
+	},
+	"rules": {
+		"max-nested-callbacks": "off"
+	}
+}
