@@ -3,6 +3,7 @@
 	"version": "1.0.0",
 	"description": "Marfeel Json Lint",
 	"main": "index.js",
+	"repository": "https://github.com/Marfeel/MarfeelCodingStandards/tree/master/json-lint",
 	"directories": {
 		"test": "test"
 	},
@@ -15,7 +16,7 @@
 		"json-lint"
 	],
 	"license": "ISC",
-	"homepage": "https://github.com/Marfeel/MarfeelCodingStandards#readme",
+	"homepage": "https://github.com/Marfeel/MarfeelCodingStandards/tree/master/json-lint#readme",
 	"dependencies": {
 		"commander": "^2.18.0",
 		"jsonschema": "^1.2.4"
