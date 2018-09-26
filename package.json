@@ -26,9 +26,6 @@
 	"scripts": {
 		"install": "lerna bootstrap",
 		"test": "lerna run test",
-		"postinstall": "npm install -g ."
-	},
-	"bin": {
-		"mrf-json-lint": "json-lint/index.js"
+		"postinstall": "cd json-lint && npm install -g ."
 	}
 }
