@@ -4,7 +4,7 @@ JSONLINT defines Json Schemas used in Marfeel and probide an interface to valida
 We can access the tool via JavaScript API or via CLI tool.
 
 ### Installing
-Navigate in the console to the folder where package.json exist and run command:
+From package directory
 
 ```
 npm install
