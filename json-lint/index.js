@@ -1,4 +1,4 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 const commandLineParser = require('./commandLineParser');
 const commandRunner = require('./commandRunner');
 

@@ -15,12 +15,11 @@
 const path = require('path');
 const fs = require('fs');
 
-function isJson(filePath) {
-	return filePath.endsWith('.json');
-}
+const isJson = (filePath) => filePath.endsWith('.json');
+const isNotPrivate = (fileName) => fileName[0] !== '.';
 
 function loadJson(_path) {
-	if (! isJson(_path)) {
+	if (!isJson(_path)) {
 		return false;
 	}
 
@@ -40,11 +39,10 @@ function loadJson(_path) {
 }
 
 function getSchemaPath(name) {
-	if (!!process.env.JSONLINT_TEST && name==='example') {
-		return path.resolve(__dirname, `./../test/resources/api/schema/${name}`);
-	}
+	const schemaPath = (process.env.JSONLINT_TEST && name === 'example') ?
+		`./../test/resources/api/schema/${name}` : `./../schemas/${name||''}`;
 
-	return path.resolve(__dirname, `./../schemas/${name}`);
+	return path.resolve(__dirname, schemaPath);
 }
 
 function importUnresolvedRefs(validator, schemaPath) {
@@ -52,16 +50,10 @@ function importUnresolvedRefs(validator, schemaPath) {
 
 	if (!nextSchema) { return; }
 
-	const nextJson = loadJson(
-		getSchemaPath(`${schemaPath}${nextSchema}`)
-	);
+	const nextJson = loadJson(getSchemaPath(`${schemaPath}${nextSchema}`));
 
 	validator.addSchema(nextJson, nextSchema);
 	importUnresolvedRefs(validator, schemaPath);
-}
-
-function isNotPrivate(fileName) {
-	return fileName[0] !== '.';
 }
 
 module.exports = {
