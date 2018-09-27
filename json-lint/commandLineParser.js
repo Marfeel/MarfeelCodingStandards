@@ -20,6 +20,7 @@ function parseArguments() {
 
 		.option('-f, --file <filePath>', 'Path to the JSON that needs to be validated')
 		.option('-s, --schema <schemaName>', 'Name of the schema used for validation')
+		.option('-v, --verbose', 'Verbose message')
 
 		.parse(process.argv);
 }

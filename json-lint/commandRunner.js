@@ -19,6 +19,15 @@ const LIST_SCHEMAS = 'listSchemas';
 const ERROR_EXIT = 1;
 const SUCCESS_EXIT = 0;
 
+function _shortErrorPrint(args, errors) {
+	console.log(`-- json validatio error : ${args.schema || args.file} ---`)
+	errors.forEach(e => {
+		console.log(`   ${e.property}`)
+		console.log(`   ${e.message}`)
+		console.log(`-----`)
+	})
+}
+
 function _validateArguments(args) {
 	if (args.args.length !== 1) {
 		return `Action is necessary: ${VALIDATE} | ${LIST_SCHEMAS}`;
@@ -53,7 +62,11 @@ function run(args) {
 				console.log('Correct schema');
 				process.exit(SUCCESS_EXIT);
 			} else {
-				console.log(errors);
+				if(args.verbose) {
+					console.log(errors);
+				} else {
+					_shortErrorPrint(args, errors)
+				}
 				process.exit(ERROR_EXIT);
 			}
 			break;
