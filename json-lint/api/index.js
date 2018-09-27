@@ -16,22 +16,14 @@ const path = require('path');
 const fs = require('fs');
 const util = require('../utils/schemaUtils');
 const Validator = require('jsonschema').Validator;
-const schemasSource = path.resolve(__dirname, '../schemas');
 
-function getSchemaNames() {
-	return fs.readdirSync(schemasSource).filter(util.isNotPrivate);
-}
+const getSchemaNames = () => fs.readdirSync(util.getSchemaPath()).filter(util.isNotPrivate);
+const getSchemaNamesAndPath = () =>
+	getSchemaNames().map(name => ({
+		name,
+		MarfeelPath: util.loadJson(`${util.getSchemaPath(name)}/main.json`).MarfeelPath
+	}));
 
-function getSchemaNamesAndPath() {
-	const schemaNames = fs.readdirSync(schemasSource).filter(util.isNotPrivate);
-
-	return schemaNames.map(name => {
-		return {
-			name,
-			MarfeelPath: util.loadJson(`${util.getSchemaPath(name)}/main.json`).MarfeelPath
-		};
-	});
-}
 
 function validate(jsonObject, schemaName) {
 	const validator = new Validator();
@@ -44,11 +36,10 @@ function validate(jsonObject, schemaName) {
 	return validator.validate(jsonObject, main);
 }
 
-function validateFromPath(jsonPath, schemaName) {
-	const _schemaName = schemaName || path.basename(jsonPath, '.json');
+function validateFromPath(jsonPath, schemaName = path.basename(jsonPath, '.json')) {
 	const obj = util.loadJson(jsonPath);
 
-	return validate(obj, _schemaName);
+	return validate(obj, schemaName);
 }
 
 

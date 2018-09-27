@@ -20,12 +20,17 @@ const ERROR_EXIT = 1;
 const SUCCESS_EXIT = 0;
 
 function _shortErrorPrint(args, errors) {
-	console.log(`-- json validatio error : ${args.schema || args.file} ---`)
+	console.log(`-- json validatio error : ${args.schema || args.file} ---`);
 	errors.forEach(e => {
 		console.log(`   ${e.property}`)
 		console.log(`   ${e.message}`)
 		console.log(`-----`)
-	})
+	});
+};
+
+function _successPrint(args) {
+	console.log(`JSON validation -> ${args.schema || args.file}`)
+	console.log('   Success');
 }
 
 function _validateArguments(args) {
@@ -59,7 +64,7 @@ function run(args) {
 			const errors = jsonLintApi.validateFromPath(args.file, args.schema).errors;
 
 			if (!errors.length) {
-				console.log('Correct schema');
+				_successPrint(args);
 				process.exit(SUCCESS_EXIT);
 			} else {
 				if(args.verbose) {
