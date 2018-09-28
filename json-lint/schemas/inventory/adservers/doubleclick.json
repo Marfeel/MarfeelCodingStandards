@@ -51,10 +51,13 @@
         "type": "string",
         "title": "String of coma separated sizes",
         "description": "example: 700x90,700x60,300x25 https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/multi-size.md",
-        "pattern": "^(\\d+x\\d+)(,\\d+x\\d+)*" 
+        "pattern": "^(\\d+x\\d+)(,\\d+x\\d+)|\\${.+}*" 
       },
       "multi_size_validation": {
-        "type": "boolean",
+        "anyOf": [
+          { "type": "boolean" },
+          { "type": "string", "enum": ["true", "false"] }
+        ],
         "title": "By default this is assumed to be true.",
         "description": "https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/multi-size.md"
       },
