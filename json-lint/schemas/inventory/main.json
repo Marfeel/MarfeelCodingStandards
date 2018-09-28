@@ -7,9 +7,9 @@
     "title": "Inventory JSON - define ads configuration of the tenant.",
     "description": "https://atenea.marfeel.com/product/marfeel-platform/adops-articles/inventory-json",
     "additionalProperties": false,
-    "required": [
-        "placements",
-        "adServers"
+    "anyOf": [
+        { "required": [ "extends" ] },
+        { "required": [ "placements", "adServers"] }
     ],
 
     "default" : {
