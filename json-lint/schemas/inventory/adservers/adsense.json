@@ -8,11 +8,27 @@
 
     "required": [
       "type",
-      "ad-client",
-      "ad-slot",
       "width",
       "height"
     ],
+
+    "allOf": [
+      { 
+        "anyOf": 
+        [
+          { "required": ["ad-client"] },
+          { "required": ["ad_client"] }
+        ]
+      },
+      { 
+        "anyOf": 
+        [
+          { "required": ["ad-slot"] },
+          { "required": ["ad_slot"] }
+        ]
+      }
+    ],
+
 
     "defaultSnippets": [
       {
@@ -38,7 +54,19 @@
         "description": "example: ca-pub-1234567891234567",
         "pattern": "^(\\$\\{.+\\}|(ca-pub-(\\d+|\\$\\{.+\\})))$"
       },
+      "ad_client": {
+        "type": "string",
+        "title": "Publisher ID.",
+        "description": "example: ca-pub-1234567891234567",
+        "pattern": "^(\\$\\{.+\\}|(ca-pub-(\\d+|\\$\\{.+\\})))$"
+      },
       "ad-slot": {
+        "type": "string",
+        "title": "String of digits",
+        "description": "example: 9667904487",
+        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+      },
+      "ad_slot": {
         "type": "string",
         "title": "String of digits",
         "description": "example: 9667904487",
