@@ -59,14 +59,14 @@
         ]
       },
       "width": {
-        "type": "string",
-        "title": "String of digits",
+        "type": ["string", "number"],
+        "title": "String of digits or number",
         "description": "example: 300",
         "pattern": "^(\\d|\\$\\{.+\\})+$" 
       },
       "height": {
-        "type": "string",
-        "title": "String of digits",
+        "type": ["string", "number"],
+        "title": "String of digits or number",
         "description": "example: 250",
         "pattern": "^(\\d|\\$\\{.+\\})+$" 
       }
