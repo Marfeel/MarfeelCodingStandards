@@ -61,6 +61,14 @@
         "title": "By default this is assumed to be true.",
         "description": "https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/multi-size.md"
       },
+      "data-multi-size-validation": {
+        "anyOf": [
+          { "type": "boolean" },
+          { "type": "string", "enum": ["true", "false"] }
+        ],
+        "title": "By default this is assumed to be true.",
+        "description": "https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/multi-size.md"
+      },
       "layout": {
         "enum": [ "responsive"]
       },

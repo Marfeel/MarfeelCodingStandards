@@ -90,6 +90,9 @@
                 },
                 "teads" : {
                     "$ref" : "./adservers/teads.json"
+                },
+                "widget" : {
+                    "$ref" : "./adservers/widget.json"
                 }
             },
 
@@ -107,7 +110,8 @@
                         {"$ref" : "./adservers/smartadserver.json"},
                         {"$ref" : "./adservers/smartclip.json"},   
                         {"$ref" : "./adservers/taboola.json"},    
-                        {"$ref" : "./adservers/teads.json"}          
+                        {"$ref" : "./adservers/teads.json"}, 
+                        {"$ref" : "./adservers/widget.json"}      
                       ]
                 }
             }

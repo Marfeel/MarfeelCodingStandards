@@ -1,0 +1,41 @@
+{
+    "$id": "#widget",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Widget",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/ligatus.md",
+    "additionalProperties": false,
+
+    "required": [
+      "type",
+      "selector",
+      "src"
+    ],
+
+    "defaultSnippets": [
+      {
+        "label": "Widget template",
+        "description": "contains required keys",
+        "body": {
+          "type": "widget",
+          "selector": "$1",
+          "src": "$2"
+        }
+      }
+    ],
+
+    "properties": {
+      "type": {
+        "enum": [ "widget" ]
+      },
+      "selector": {
+        "type": "string"
+      },
+      "src": {
+        "type": "string"
+      },
+      "height": {
+          "type": "string"
+      }
+    }
+  }
