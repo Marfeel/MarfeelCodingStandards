@@ -34,14 +34,14 @@
       ]
     },
     "width": {
-      "type": "string",
-      "title": "String of digits",
+      "type": ["string", "number"],
+      "title": "String of digits or number",
       "description": "example: 300 (not required, default in outbrain.tag (100))",
       "pattern": "^(\\d|\\$\\{.+\\})+$"
     },
     "height": {
-      "type": "string",
-      "title": "String of digits",
+      "type": ["string", "number"],
+      "title": "String of digits or number",
       "description": "example: 250 (not required, default in outbrain.tag(100))",
       "pattern": "^(\\d|\\$\\{.+\\})+$"
     }

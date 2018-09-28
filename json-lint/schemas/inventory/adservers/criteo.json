@@ -37,14 +37,14 @@
         "pattern": "^(\\d|\\$\\{.+\\})+$"  
       },
       "width": {
-        "type": "string",
-        "title": "String of digits (not required, defautl in criteo.tag (300))",
+        "type": ["string", "number"],
+        "title": "String of digits or number (not required, defautl in criteo.tag (300))",
         "description": "example: 300",
         "pattern": "^(\\d|\\$\\{.+\\})+$" 
       },
       "height": {
-        "type": "string",
-        "title": "String of digits (not required, default in criteo.tag (250))",
+        "type": ["string", "number"],
+        "title": "String of digits or number (not required, default in criteo.tag (250))",
         "description": "example: 250",
         "pattern": "^(\\d|\\$\\{.+\\})+$" 
       }

@@ -53,13 +53,13 @@
       "description": "Your Smart AdServer call domain : https://<YourSmartAdServerDomain>"
     },
     "width": {
-      "type": "string",
-      "title": "String of digits",
+      "type": ["string", "number"],
+      "title": "String of digits or number",
       "pattern": "^(\\d|\\$\\{.+\\})+$"
     },
     "height": {
-      "type": "string",
-      "title": "String of digits",
+      "type": ["string", "number"],
+      "title": "String of digits or number",
       "pattern": "^(\\d|\\$\\{.+\\})+$"
     },
     "target": {
