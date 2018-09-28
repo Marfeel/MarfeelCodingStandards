@@ -75,7 +75,8 @@
     "target_type": {
       "type": "string",
       "enum": [
-        "mix"
+        "mix",
+        "video"
       ]
     },
     "article": {
