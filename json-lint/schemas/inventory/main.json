@@ -37,6 +37,13 @@
         
         },
 
+        "extends": {
+            "$id": "/properties/extends",
+            "type": "string",
+            "title": "Extends String",
+            "description": "contains the filename for extending json object"
+        },
+
 
         "adServers": {
             "$id": "/properties/adServers",
