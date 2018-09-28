@@ -5,8 +5,13 @@
   "title": "placements",
   "description": "placements",
   "additionalProperties": false,
-  "required": [
-    "adServer"
+  "anyOf": [
+    {
+      "required": [ "adServer" ]
+    }, 
+    {
+      "required": [ "adServers" ]
+    }
   ],
   "defaultSnippets": [
     {
@@ -21,6 +26,12 @@
     "adServer": {
       "type": "string",
       "description": "Adserver defined in the adservers block of inventory.json"
+    },
+    "adServers": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
     },
     "params": {
       "type": "object",
