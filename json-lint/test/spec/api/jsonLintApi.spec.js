@@ -70,6 +70,14 @@ describe('API json schemas:', () => {
 			expect(validation.errors[0].name).toEqual('additionalProperties');
 			expect(validation.errors[1].name).toEqual('required');
 		});
+
+		it('Malformed JSON in path', () => {
+			const validation = jsonLint.validateFromPath(malformedPath, 'example');
+
+			expect(validation.schema).toEqual(undefined);
+			expect(validation.errors.length).toEqual(1);
+			expect(validation.errors[0].indexOf('Couldn\'t parse to json the file content')).toBe(0);
+		});
 	});
 
 });
