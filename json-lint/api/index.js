@@ -37,9 +37,13 @@ function validate(jsonObject, schemaName) {
 }
 
 function validateFromPath(jsonPath, schemaName = path.basename(jsonPath, '.json')) {
-	const obj = util.loadJson(jsonPath);
+	try {
+		const obj = util.loadJson(jsonPath);
 
-	return validate(obj, schemaName);
+		return validate(obj, schemaName);
+	} catch (e) {
+		return { errors: [e.message] };
+	}
 }
 
 
