@@ -41,6 +41,20 @@
         "description": "example: 250",
         "pattern": "^(\\d|\\$\\{.+\\})+$" 
       },
+      "size": {
+        "anyOf":
+        [
+          {
+            "type": "array",
+            "items": {
+              "type": "integer"
+            }
+          },
+          {
+            "type": "string"
+          }
+        ]
+      },
       "multi_size": {
         "type": "string",
         "title": "String of coma separated sizes",
