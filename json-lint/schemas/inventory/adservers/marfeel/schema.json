@@ -4,7 +4,8 @@
     "type": "object",
     "title": "Marfeel adserver",
     "description": "marfeelinventory.*.json defines the marfeel position DFP. We can use this adserver of the inventory to pass extra targetings and experimental parameters",
-    
+    "additionalProperties": false,
+
     "not": {
         "anyOf": [
             {
@@ -43,5 +44,30 @@
                 ]
             }
         ]
+    },
+
+    "properties": {
+        "atomic_slot": {
+            "type": "string"
+        },
+        "json": {
+            "type": "object",
+            "properties": {
+                "targeting": {
+                    "type": "object",
+                    "properties": {
+                        "tenant_dfp_slot": {
+                            "type": "string"
+                        },
+                        "tenant_dfp_size": {
+                            "type": "string"
+                        },
+                        "pepito": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
+}

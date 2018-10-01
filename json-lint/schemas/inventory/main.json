@@ -115,7 +115,8 @@
                         {"$ref" : "./adservers/taboola.json"},    
                         {"$ref" : "./adservers/teads.json"}, 
                         {"$ref" : "./adservers/widget.json"},
-                        {"$ref" : "./adservers/engageya.json"}      
+                        {"$ref" : "./adservers/engageya.json"},
+                        {"$ref" : "./adservers/marfeel/schema.json"}   
                       ]
                 }
             }
