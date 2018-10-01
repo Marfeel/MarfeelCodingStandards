@@ -27,7 +27,7 @@
             "additionalProperties": false,
 
             "patternProperties": {
-                "^(inline|sticky|nativeAd|nativeAdvInMosaic|adsBelowTopMedia|belowTopMedia|bottomAd|bottomMosaicAd|topCommentsDetailsAd|nativeAdvInDetails|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320|s320|largeBanner|adAfterTitle|sRoba)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : { 
+                "^(inline|sticky|nativeAd|nativeAdvInMosaic|adsBelowTopMedia|belowTopMedia|bottomAd|bottomMosaicAd|topCommentsDetailsAd|nativeAdvInDetails|extraNativeAdInDetails|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320|s320|largeBanner|adAfterTitle|sRoba)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : { 
                     "anyOf": [
                         {"$ref" : "./placements/schema.json"}
                       ]
