@@ -1,0 +1,58 @@
+{
+  "$id": "#engageya",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "EngageYa",
+  "description": "EngageYa adserver",
+  "additionalProperties": false,
+
+  "required": [
+    "width",
+    "height"
+  ],
+
+  "defaultSnippets": [
+    {
+      "label": "EngageYa template",
+      "description": "contains required keys",
+      "body": {
+        "type": "engageya"
+      }
+    }
+  ],
+
+  "properties": {
+    "widgetIds": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          }
+        }
+      ]
+    },
+    "websiteId": {
+      "type": ["string", "integer"]
+    },
+    "publisherId": {
+      "type": ["string", "integer"]
+    },
+    "height": {
+      "type": "integer"
+    },
+    "layout": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["engageya"]
+    },
+    "width": {
+      "type": "integer"
+    }
+  }
+}
