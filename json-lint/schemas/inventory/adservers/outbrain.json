@@ -8,8 +8,15 @@
 
     "required": [
       "type",
-      "widgetIds",
       "layout"
+    ],
+    "anyOf": [
+      {
+        "required": ["widgetIds"]
+      },
+      {
+        "required": ["widgetids"]
+      }
     ],
 
     "defaultSnippets": [
@@ -40,6 +47,9 @@
         "description": "Example: https://bc.marfeelcache.com/statics/www.thesocialpost.it/index/resources/outbrain.css"
       },
       "widgetIds": {
+        "type": "string"
+      },
+      "widgetids": {
         "type": "string"
       },
       "width": {

@@ -83,6 +83,9 @@
         "title": "By default this is assumed to be true.",
         "description": "https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/multi-size.md"
       },
+      "acc": {
+        "type": "string"
+      },
       "layout": {
         "enum": [ "responsive"]
       },
