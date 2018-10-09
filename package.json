@@ -25,7 +25,6 @@
 	},
 	"scripts": {
 		"install": "lerna bootstrap",
-		"test": "lerna run test",
-		"postinstall": "cd json-lint && npm install -g ."
+		"test": "lerna run test"
 	}
 }
