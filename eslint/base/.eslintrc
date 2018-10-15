@@ -86,6 +86,7 @@
 		"no-use-before-define": "error",
 		"no-undef": "error",
 		"no-duplicate-imports": "error",
+		"no-warning-comments": "error",
 
 		//Styling
 		"array-bracket-spacing": "error",
