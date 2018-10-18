@@ -28,7 +28,9 @@
       ]
     },
     "id": {
-      "type": "string"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$",
+      "title": "integer"
     },
     "wrapper": {
       "type": "string"
@@ -37,16 +39,16 @@
       "type": "string"
     },
     "width": {
-      "type": "string",
-      "title": "String of digits",
-      "description": "example: 300 (not required, default in outbrain.tag (100))",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "integer",
+      "description": "example: 300 (not required, default in outbrain.tag (100))"
     },
     "height": {
-      "type": "string",
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
       "title": "String of digits",
-      "description": "example: 250 (not required, default in outbrain.tag(100))",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "description": "example: 250 (not required, default in outbrain.tag(100))"
     }
   }
 }

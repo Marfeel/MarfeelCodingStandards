@@ -23,31 +23,29 @@
     ],
 
     "properties": {
-      "type": {
-        "enum": [ "doubleclick"]
-      },
+      "type": {"const" : "doubleclick"},
       "slot": {
         "type": "string"
       },
       "width": {
-        "type": "string",
-        "title": "String of digits",
-        "description": "example: 300",
-        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+        "type": ["integer","string"],
+        "pattern": "^(\\$\\{.+\\})$",  
+        "title": "integer",
+        "description": "example: 300"
       },
       "height": {
-        "type": "string",
-        "title": "String of digits",
-        "description": "example: 250",
-        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+        "type": ["integer","string"],
+        "pattern": "^(\\$\\{.+\\})$",  
+        "title": "integer",
+        "description": "example: 250" 
       },
-      "multi_size": {
+      "multi-size": {
         "type": "string",
         "title": "String of coma separated sizes",
         "description": "example: 700x90,700x60,300x25 https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/multi-size.md",
         "pattern": "^(\\d+x\\d+)(,\\d+x\\d+)*" 
       },
-      "multi_size_validation": {
+      "multi-size-validation": {
         "type": "boolean",
         "title": "By default this is assumed to be true.",
         "description": "https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/multi-size.md"

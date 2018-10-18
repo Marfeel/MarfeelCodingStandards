@@ -32,35 +32,35 @@
       ]
     },
     "site": {
-      "type": "string",
-      "title": "String of digits",
-      "description": "Your Smart AdServer Site ID --> Example : 246927",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "integer",
+      "description": "Your Smart AdServer Site ID --> Example : 246927"
     },
     "page": {
-      "type": "string",
-      "title": "String of digits",
-      "description": "Your Smart AdServer Page ID --> Example : 714388",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "integer",
+      "description": "Your Smart AdServer Page ID --> Example : 714388"
     },
     "format": {
-      "type": "string",
-      "description": "Your Smart AdServer Format ID --> Example : 38952",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "description": "Your Smart AdServer Format ID --> Example : 38952"
     },
     "domain": {
       "type": "string",
       "description": "Your Smart AdServer call domain : https://<YourSmartAdServerDomain>"
     },
     "width": {
-      "type": "string",
-      "title": "String of digits",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "integer"
     },
     "height": {
-      "type": "string",
-      "title": "String of digits",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "integer"
     },
     "target": {
       "type": "string",

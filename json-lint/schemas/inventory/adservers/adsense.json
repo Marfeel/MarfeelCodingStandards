@@ -9,9 +9,7 @@
     "required": [
       "type",
       "ad-client",
-      "ad-slot",
-      "width",
-      "height"
+      "ad-slot"
     ],
 
     "defaultSnippets": [
@@ -29,20 +27,28 @@
     ],
 
     "properties": {
-      "type": {
-        "enum": [ "adsense"]
-      },
+      "type": { "const" : "adsense" },
       "ad-client": {
-        "type": "string",
-        "title": "Publisher ID.",
-        "description": "example: ca-pub-1234567891234567",
-        "pattern": "^(\\$\\{.+\\}|(ca-pub-(\\d+|\\$\\{.+\\})))$"
+        "anyOf": [
+            {
+              "type": "string",
+              "title": "Publisher ID.",
+              "description": "example: ca-pub-1234567891234567",
+              "pattern": "^(ca-pub-(\\d+|\\$\\{.+\\}))$"
+            }, 
+            {
+              "type": "string",
+              "title": "Publisher ID.",
+              "description": "we are using a parameter",
+              "pattern": "^(\\$\\{.+\\})$" 
+            }
+        ]
       },
       "ad-slot": {
-        "type": "string",
-        "title": "String of digits",
+        "type": ["integer","string"],
+        "title": "Integer or parameter",
         "description": "example: 9667904487",
-        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+        "pattern": "^(\\$\\{.+\\})$" 
       },
       "ad-host": {
         "type": "string"
@@ -53,22 +59,18 @@
       "tag-origin": {
         "type": "string"
       },
-      "auto-format": {
-        "enum": [
-          "rspv"
-        ]
-      },
+      "auto-format": { "const" : "rspv" },
       "width": {
-        "type": "string",
-        "title": "String of digits",
+        "type": ["integer","string"],
+        "title": "String of digits ( if not set, default is 300 )",
         "description": "example: 300",
-        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+        "pattern": "^(\\$\\{.+\\})$"  
       },
       "height": {
-        "type": "string",
-        "title": "String of digits",
+        "type": ["integer","string"],
+        "title": "String of digits ( if not set, default is 250 )",
         "description": "example: 250",
-        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+        "pattern": "^(\\$\\{.+\\})$" 
       }
     }
   }

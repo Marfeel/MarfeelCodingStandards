@@ -28,7 +28,10 @@
       ]
     },
     "plc": {
-      "type": "string"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "integer",
+      "description": "Example: 68005"
     },
     "sz": {
       "type": "string"
