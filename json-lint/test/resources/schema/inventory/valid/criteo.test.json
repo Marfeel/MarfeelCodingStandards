@@ -1,30 +1,53 @@
 {
     "placements": {
         "inline_mosaic_1": {
-            "adServer": "adsense",
+            "adServer": "criteo",
             "params": {
                 "SLOT": "9189520248",
                 "WIDTH": 300,
                 "HEIGHT": 250
             }
         },
-        "inline": {
-            "adServer": "adsense",
+        "inline_mosaic_3": {
+            "adServer": "params",
             "params": {
-                "SLOT": "8944062649",
-                "WIDTH": 320,
-                "HEIGHT": 250
+                "ZONE": "914429",
+                "TYPE": "passback"
             }
+        },
+        "inline_mosaic_4": {
+            "adServer": "criteo2"
+        },
+        "inline_mosaic_5": {
+            "adServer": "criteo3"
+        },
+        "inline": {
+            "adServer": "required"
         }
     },
     "adServers": {
-        "adsense": {
-            "type": "adsense",
-            "ad-client": "ca-pub-7484406166969543",
-            "ad-slot": "${SLOT}",
-            "auto-format": "rspv",
-            "width": "${WIDTH}",
-            "height": "${HEIGHT}"
+        "criteo": {
+            "type": "criteo",
+            "zone": 914429,
+            "tagtype": "passback"
+        },
+        "criteo2": {
+            "type": "criteo",
+            "zone": 914429,
+            "tagtype": "rta"
+        },
+        "criteo3": {
+            "type": "criteo",
+            "zone": 914429,
+            "tagtype": "standalone"
+        },
+        "params": {
+            "type": "criteo",
+            "zone": "${ZONE}"
+        },
+        "required": {
+            "type": "criteo",
+            "zone": 914429
         }
     }
 }

@@ -24,33 +24,25 @@
     }
   ],
   "properties": {
-    "type": {
-      "enum": [
-        "colombia"
-      ]
-    },
-    "layout": {
-      "enum": [
-        "responsive"
-      ]
-    },
+    "type": { "const": "colombia"},
+    "layout": { "const": "responsive"},
     "clmb_slot": {
-      "type": "string",
-      "title": "String of digits",
-      "description": "Example : 246927",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "Integer or parameter",
+      "description": "Example : 246927"
     },
     "clmb_position": {
-      "type": "string",
-      "title": "String of digits",
-      "description": "Example : 1",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "Integer or parameter",
+      "description": "Example : 1"
     },
     "clmb_section": {
-      "type": "string",
-      "title": "String of digits",
-      "description": "Example : 0",
-      "pattern": "^(\\d|\\$\\{.+\\})+$"
+      "type": ["integer","string"],
+      "pattern": "^(\\$\\{.+\\})$", 
+      "title": "Integer or parameter",
+      "description": "Example : 0"
     }
   }
 }

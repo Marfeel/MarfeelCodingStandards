@@ -7,7 +7,7 @@
 	"adServers": {
 		"smartclip": {
 			"type": "smartclip",
-			"plc": "68005",
+			"plc": 68005,
 			"sz": "400x320"
 		}
 	}

@@ -23,9 +23,7 @@
     ],
 
     "properties": {
-      "type": {
-        "enum": [ "ligatus" ]
-      },
+      "type": {"const" : "ligatus"},
       "src": {
         "type": "string"
       }

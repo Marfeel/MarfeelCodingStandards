@@ -25,9 +25,7 @@
     ],
 
     "properties": {
-      "type": {
-        "enum": [ "outbrain" ]
-      },
+      "type": {"const" : "outbrain"},
       "layout": {
         "enum": [ "responsive"]
       },
@@ -43,16 +41,16 @@
         "type": "string"
       },
       "width": {
-        "type": "string",
-        "title": "String of digits",
-        "description": "example: 300 (not required, default in outbrain.tag (100))",
-        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+        "type": ["integer","string"],
+        "pattern": "^(\\$\\{.+\\})$", 
+        "title": "integer",
+        "description": "example: 300 (not required, default in outbrain.tag (100))"
       },
       "height": {
-        "type": "string",
-        "title": "String of digits",
-        "description": "example: 250 (not required, default in outbrain.tag(100))",
-        "pattern": "^(\\d|\\$\\{.+\\})+$" 
+        "type": ["integer","string"],
+        "pattern": "^(\\$\\{.+\\})$", 
+        "title": "integer",
+        "description": "example: 250 (not required, default in outbrain.tag(100))"
       }
     }
   }

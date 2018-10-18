@@ -2,14 +2,28 @@
   "placements": {
     "nativeAd": {
       "adServer": "colombia"
+    },
+    "inline": {
+      "adServer": "colombia1",
+      "params": {
+        "SLOT": 9189520248,
+        "POS": 1,
+        "SECT": 0
+      }
     }
   },
   "adServers": {
     "colombia": {
       "type": "colombia",
-      "clmb_slot": "246927",
-      "clmb_position": "1",
-      "clmb_section": "0"
+      "clmb_slot": 246927,
+      "clmb_position": 1,
+      "clmb_section": 0
+    },
+    "colombia1": {
+      "type": "colombia",
+      "clmb_slot": "${SLOT}",
+      "clmb_position": "${POS}",
+      "clmb_section": "${SECT}"
     }
   }
 }

@@ -5,16 +5,27 @@
 			"params": {
 				"FORMAT_ID": "49842"
 			}
+		},
+		"inline": {
+			"adServer": "smart2"
 		}
 	},
 	"adServers": {
 		"smart": {
 			"type": "smartadserver",
-			"site": "134720",
+			"site": "${FORMAT_ID}",
 			"page": "${metadatas.AdTargetings.(smartConfig)[0].pageName}",
 			"format": "${FORMAT_ID}",
 			"domain": "https://www.smartadserver.com",
 			"target" : "${metadatas.AdTargetings.(smartConfig)[0].target}"
+		},
+		"smart2": {
+			"type": "smartadserver",
+			"site": 134720,
+			"page": 714388,
+			"format": 38952,
+			"domain": "https://www.smartadserver.com",
+			"target" : "foo=bar"
 		}
 	}
 }

@@ -3,28 +3,39 @@
     "inline_mosaic_1": {
       "adServer": "adsense",
       "params": {
-        "SLOT": "9189520248",
+        "CLIENT": "ca-pub-7484406166969543",
+        "SLOT": 9189520248,
         "WIDTH": 300,
         "HEIGHT": 250
       }
+    },    
+    "inline_mosaic_2": {
+      "adServer": "adsense2"
     },
     "inline": {
-      "adServer": "adsense",
-      "params": {
-        "SLOT": "8944062649",
-        "WIDTH": 320,
-        "HEIGHT": 250
-      }
+      "adServer": "required"
     }
   },
   "adServers": {
     "adsense": {
       "type": "adsense",
-      "ad-client": "ca-pub-7484406166969543",
+      "ad-client": "${CLIENT}",
       "ad-slot": "${SLOT}",
       "auto-format": "rspv",
       "width": "${WIDTH}",
       "height": "${HEIGHT}"
+    },
+    "adsense2": {
+      "type": "adsense",
+      "ad-client": "ca-pub-7484406166969543",
+      "ad-slot": 9667904487,
+      "width": 300,
+      "height": 600
+    },
+    "required": {
+      "type": "adsense",
+      "ad-client": "ca-pub-7484406166969543",
+      "ad-slot": 9667904487
     }
   }
 }
