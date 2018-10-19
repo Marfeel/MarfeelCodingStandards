@@ -11,12 +11,26 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Marfeel Solutions SL.
  */
+const JSON_MERGE_COMMAND = 'mrf-json';
 
 const path = require('path');
 const fs = require('fs');
+const spawnSync = require('child_process').spawnSync;
 
 const isJson = (filePath) => filePath.endsWith('.json');
 const isNotPrivate = (fileName) => fileName[0] !== '.';
+
+function getMarfeelExtendedJson(jsonPath) {
+	const ls = spawnSync(JSON_MERGE_COMMAND , [ jsonPath ]);
+	try{
+		return JSON.parse(ls.stdout)
+	} catch(e) {
+		const wheremrfJson = spawnSync(JSON_MERGE_COMMAND , [ jsonPath ]);
+		throw new Error(`Error merging extended JSON in schemaUtils
+		  command >> ${JSON_MERGE_COMMAND} ${jsonPath}
+		  ${JSON_MERGE_COMMAND} location >> ${spawnSync('command', ['-v', JSON_MERGE_COMMAND]).stdout}`)
+	}
+}
 
 function loadJson(_path) {
 	if (!isJson(_path)) {
@@ -56,7 +70,16 @@ function importUnresolvedRefs(validator, schemaPath) {
 	importUnresolvedRefs(validator, schemaPath);
 }
 
+function loadExtensibleJson(jsonPath) {
+	let obj = loadJson(jsonPath);
+
+	if(Object.keys(obj).includes('extends')){
+		obj = getMarfeelExtendedJson(jsonPath);
+	}	
+	return obj
+}
 module.exports = {
+	loadExtensibleJson,
 	getSchemaPath,
 	importUnresolvedRefs,
 	isNotPrivate,
