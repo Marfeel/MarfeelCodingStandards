@@ -14,7 +14,7 @@
 
 const path = require('path');
 const jsonLint = require('../../../../json-lint/api');
-const SCHEMANAME = 'example';
+const SCHEMA_NAME = 'example';
 
 describe('API json schemas:', () => {
 	const extenderPath = './test/resources/api/exampleExtends.json';
@@ -57,21 +57,21 @@ describe('API json schemas:', () => {
 
 		it('Valid JSON', () => {
 			const obj = jsonLint.loadJson(exampleJsonPath);
-			const validation = jsonLint.validate(obj, SCHEMANAME);
+			const validation = jsonLint.validate(obj, SCHEMA_NAME);
 
 			expect(validation.schema.$id).toEqual('#example');
 			expect(validation.errors.length).toEqual(0);
 		});
 
 		it('Detect and try to handle extended JSON', () => {
-			const validation = jsonLint.validateFromPath(extenderPath, SCHEMANAME);
+			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME);
 			expect(validation.errors.length).toEqual(1);
 			expect(validation.errors[0].message.includes('Error merging extended JSON in schemaUtils')).toBe(true);
 		});
 
 		it('Wrong JSON', () => {
 			const obj = jsonLint.loadJson(invalidExampleJsonPath);
-			const validation = jsonLint.validate(obj, SCHEMANAME);
+			const validation = jsonLint.validate(obj, SCHEMA_NAME);
 
 			expect(validation.schema.$id).toEqual('#example');
 			expect(validation.errors.length).toEqual(2);
@@ -80,7 +80,7 @@ describe('API json schemas:', () => {
 		});
 
 		it('Malformed JSON in path', () => {
-			const validation = jsonLint.validateFromPath(malformedPath, SCHEMANAME);
+			const validation = jsonLint.validateFromPath(malformedPath, SCHEMA_NAME);
 
 			expect(validation.schema).toEqual(undefined);
 			expect(validation.errors.length).toEqual(1);

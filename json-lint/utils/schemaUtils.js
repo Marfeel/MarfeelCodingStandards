@@ -15,20 +15,26 @@ const JSON_MERGE_COMMAND = 'mrf-json';
 
 const path = require('path');
 const fs = require('fs');
-const spawnSync = require('child_process').spawnSync;
+const { spawnSync }  = require('child_process');
 
 const isJson = (filePath) => filePath.endsWith('.json');
 const isNotPrivate = (fileName) => fileName[0] !== '.';
+const getErrorMessage = (jsonPath, status, execPath) => `Error merging extended JSON in schemaUtils: 
+	"${JSON_MERGE_COMMAND} ${jsonPath}" >> return STATUS ${status}  
+	${JSON_MERGE_COMMAND} executable path >> ${execPath}`
 
 function getMarfeelExtendedJson(jsonPath) {
-	const ls = spawnSync(JSON_MERGE_COMMAND , [ jsonPath ]);
+	const mrfJson = spawnSync(JSON_MERGE_COMMAND , [ jsonPath ]);
+	
+	if(!!mrfJson.status){
+		const execPath = spawnSync('command', ['-v', JSON_MERGE_COMMAND]).stdout;
+		throw new Error(getErrorMessage(jsonPath, mrfJson.status, execPath))
+	}
+
 	try{
-		return JSON.parse(ls.stdout)
+		return JSON.parse(mrfJson.stdout)
 	} catch(e) {
-		const wheremrfJson = spawnSync(JSON_MERGE_COMMAND , [ jsonPath ]);
-		throw new Error(`Error merging extended JSON in schemaUtils
-		  command >> ${JSON_MERGE_COMMAND} ${jsonPath}
-		  ${JSON_MERGE_COMMAND} location >> ${spawnSync('command', ['-v', JSON_MERGE_COMMAND]).stdout}`)
+		throw new Error(`Error merging extended JSON in schemaUtils: ${e}`)
 	}
 }
 
