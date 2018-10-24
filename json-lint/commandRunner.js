@@ -20,10 +20,10 @@ const ERROR_EXIT = 1;
 const SUCCESS_EXIT = 0;
 
 function _shortErrorPrint(args, errors) {
-	console.log(`-- json validatio error : ${args.schema || args.file} ---`);
+	console.log(`-- json validation error : ${args.schema || args.file} ---`);
 	errors.forEach(e => {
-		console.log(`   ${e.property}`)
-		console.log(`   ${e.message}`)
+		!!e.property && console.log(`   ${e.property}`)
+		!!e.message && console.log(`   ${e.message}`)
 		console.log(`-----`)
 	});
 };

@@ -12,6 +12,9 @@
             "enum": [
                 "allowed_value"
             ]
+        },
+        "extends": {
+            "type":"string" 
         }
     }
 }

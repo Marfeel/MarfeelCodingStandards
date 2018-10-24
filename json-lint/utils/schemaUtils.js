@@ -11,12 +11,32 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Marfeel Solutions SL.
  */
+const JSON_MERGE_COMMAND = 'mrf-json';
 
 const path = require('path');
 const fs = require('fs');
+const { spawnSync }  = require('child_process');
 
 const isJson = (filePath) => filePath.endsWith('.json');
 const isNotPrivate = (fileName) => fileName[0] !== '.';
+const getErrorMessage = (jsonPath, status, execPath) => `Error merging extended JSON in schemaUtils: 
+	"${JSON_MERGE_COMMAND} ${jsonPath}" >> return STATUS ${status}  
+	${JSON_MERGE_COMMAND} executable path >> ${execPath}`
+
+function getMarfeelExtendedJson(jsonPath) {
+	const mrfJson = spawnSync(JSON_MERGE_COMMAND , [ jsonPath ]);
+	
+	if(!!mrfJson.status){
+		const execPath = spawnSync('command', ['-v', JSON_MERGE_COMMAND]).stdout;
+		throw new Error(getErrorMessage(jsonPath, mrfJson.status, execPath))
+	}
+
+	try{
+		return JSON.parse(mrfJson.stdout)
+	} catch(e) {
+		throw new Error(`Error merging extended JSON in schemaUtils: ${e}`)
+	}
+}
 
 function loadJson(_path) {
 	if (!isJson(_path)) {
@@ -56,7 +76,16 @@ function importUnresolvedRefs(validator, schemaPath) {
 	importUnresolvedRefs(validator, schemaPath);
 }
 
+function loadExtensibleJson(jsonPath) {
+	let obj = loadJson(jsonPath);
+
+	if(Object.keys(obj).includes('extends')){
+		obj = getMarfeelExtendedJson(jsonPath);
+	}	
+	return obj
+}
 module.exports = {
+	loadExtensibleJson,
 	getSchemaPath,
 	importUnresolvedRefs,
 	isNotPrivate,

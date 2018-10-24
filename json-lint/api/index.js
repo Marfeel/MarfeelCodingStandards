@@ -32,17 +32,19 @@ function validate(jsonObject, schemaName) {
 
 	validator.addSchema(main);
 	util.importUnresolvedRefs(validator, schemaName);
-
+	if(!(jsonObject instanceof Object)){
+		return {errors: [{message:`invalid instance sent to json validation >> ${jsonObject}`}]}
+	}
 	return validator.validate(jsonObject, main);
 }
 
 function validateFromPath(jsonPath, schemaName = path.basename(jsonPath, '.json')) {
 	try {
-		const obj = util.loadJson(jsonPath);
+		const obj = util.loadExtensibleJson(jsonPath);
 
 		return validate(obj, schemaName);
 	} catch (e) {
-		return { errors: [e.message] };
+		return { errors: [{message: e.message}] };
 	}
 }
 
