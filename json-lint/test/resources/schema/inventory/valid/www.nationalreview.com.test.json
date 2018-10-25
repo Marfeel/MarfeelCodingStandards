@@ -1,0 +1,62 @@
+{
+  "placements": {
+    "inline_3": {
+      "adServer": "dfpMultisize",
+      "params": {
+        "POSITION": "middle"
+      }
+    },
+    "inline_details_1": {
+      "adServer": "outbrain",
+      "params": {
+        "WIDGET_ID": "MB_3"
+      }
+    },
+    "inline_mosaic_corner_5": {
+      "adServer": "outbrain",
+      "params": {
+        "WIDGET_ID": "MB_4"
+      }
+    },
+    "inline": {
+      "adServer": "dfp",
+      "params": {
+        "POSITION": "mobile_middle_2"
+      }
+    },
+    "nativeAd": {
+      "adServer": "outbrain",
+      "params": {
+        "WIDGET_ID": "MB_1"
+      }
+    }
+  },
+  "adServers": {
+    "dfp": {
+      "type": "doubleclick",
+      "width": 300,
+      "height": 250,
+      "json": {
+        "targeting": {
+          "pos": "${POSITION}"
+        }
+      }
+    },
+    "dfpMultisize": {
+      "type": "doubleclick",
+      "width": 320,
+      "height": 50,
+      "multi-size": "320x50,320x100",
+      "json": {
+        "targeting": {
+          "pos": "${POSITION}"
+        }
+      }
+    },
+    "outbrain": {
+      "type": "outbrain",
+      "layout": "responsive",
+      "widgetIds": "${WIDGET_ID}"
+    }
+  }
+}
