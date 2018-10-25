@@ -1,0 +1,51 @@
+pipeline {
+    agent { node { label 'docker' } }
+    environment {
+       COMPOSE_PROJECT_NAME = "${env.JOB_NAME}_${env.BUILD_ID}"
+    }
+
+    stages {
+        stage('prepare') {
+            steps {
+                sh 'whoami'
+                sh '''
+                    docker ps
+                    ls -la
+                    pwd
+                    env | sort
+                   '''
+            }
+        }
+        stage('Docker build and start') {
+            steps {
+                sh "echo $COMPOSE_PROJECT_NAME"
+                sh 'docker-compose -f build/ci/docker-compose.yml up -d'
+                sh 'docker-compose -f build/ci/docker-compose.yml ps'
+
+            }
+        }
+        stage('Run yarn') {
+            steps {
+                sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app yarn"
+            }
+        }
+        stage('Run yarn test') {
+            steps {
+                sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app yarn test"
+
+            }
+        }
+    }
+    post {
+      always {
+          sh "docker-compose -f build/ci/docker-compose.yml down || true"
+          sh 'echo "Job ran @ ${JENKINS_NODE_NAME}"'
+      }
+    }
+  options {
+    buildDiscarder(logRotator(daysToKeepStr:'60'))
+    timeout(time: 10, unit: 'MINUTES')
+    timestamps()
+  }
+
+}
