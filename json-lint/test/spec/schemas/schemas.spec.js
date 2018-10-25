@@ -42,9 +42,9 @@ describe('Valid json schemas:', () => {
 					const objectValidation = jsonLint.validate(obj, schemaName);
 					const pathValidation = jsonLint.validateFromPath(_path, schemaName);
 					const objErrorMessage = !!objectValidation.errors.length &&
-						`Error validating "${file}" with schema "${schemaName}" : ${objectValidation.errors[0]} `;
+					`Schema ${schemaName} should give no errors on ${file} but: ${objectValidation.errors[0]} `;
 					const pathErrorMessage = !!pathValidation.errors.length &&
-                        `Error validating "${file}" with schema "${schemaName}" : ${pathValidation.errors[0]} `;
+					`Schema ${schemaName} should give no errors on ${file} but: ${pathValidation.errors[0]} `;
 
 					expect(objectValidation.errors.length).toBe(0, objErrorMessage);
 					expect(pathValidation.errors.length).toBe(0, pathErrorMessage);
@@ -64,7 +64,7 @@ describe('Valid json schemas:', () => {
 
 					const validation = jsonLint.validate(obj, schemaName);
 					const pathValidation = jsonLint.validateFromPath(_path, schemaName);
-					const ErrorMessage = `Error detecting problems while validating wrong "${file}" with schema "${schemaName}"`;
+					const ErrorMessage = `Wrong json ${file} not giving errors in schema ${schemaName}`;
 
 					expect(validation.errors.length).not.toBe(0, ErrorMessage);
 					expect(pathValidation.errors.length).not.toBe(0, ErrorMessage);
