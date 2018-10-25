@@ -21,7 +21,7 @@
         "extends" : {
             "$id": "/properties/placements",
             "type": "string",
-            "title": "Extends Path:", 
+            "title": "Extends Path:",
             "description": "Path of JSON that we want to extend. Example: www.diariopopular.com.ar/index/resources/inventory.json"
         },
 
@@ -33,14 +33,14 @@
             "additionalProperties": false,
 
             "patternProperties": {
-                "^(inline|sticky|nativeAd|belowTopMedia|bottomAd|topCommentsDetailsAd|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : { 
+                "^(inline|sticky|nativeAd|belowTopMedia|bottomAd|topCommentsDetailsAd|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : {
                     "anyOf": [
                         {"$ref" : "./placements/schema.json"}
                       ]
                 }
             }
 
-        
+
         },
 
 
@@ -93,7 +93,7 @@
             },
 
             "patternProperties": {
-                "^.*$": { 
+                "^.*$": {
                     "anyOf": [
                         {"$ref" : "./adservers/adsense.json"},
                         {"$ref" : "./adservers/colombia.json"},
@@ -104,9 +104,10 @@
                         {"$ref" : "./adservers/postquare.json"},
                         {"$ref" : "./adservers/revcontent.json"},
                         {"$ref" : "./adservers/smartadserver.json"},
-                        {"$ref" : "./adservers/smartclip.json"},   
-                        {"$ref" : "./adservers/taboola.json"},    
-                        {"$ref" : "./adservers/teads.json"}          
+                        {"$ref" : "./adservers/smartclip.json"},
+                        {"$ref" : "./adservers/taboola.json"},
+                        {"$ref" : "./adservers/teads.json"},
+                        {"$ref" : "./adservers/marfeel/schema.json"}
                       ]
                 }
             }
