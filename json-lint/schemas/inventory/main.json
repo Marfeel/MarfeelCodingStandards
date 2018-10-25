@@ -36,7 +36,7 @@
                 "^(inline|sticky|nativeAd|belowTopMedia|bottomAd|topCommentsDetailsAd|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : {
                     "anyOf": [
                         {"$ref" : "./placements/schema.json"}
-                      ]
+                    ]
                 }
             }
 
@@ -106,9 +106,8 @@
                         {"$ref" : "./adservers/smartadserver.json"},
                         {"$ref" : "./adservers/smartclip.json"},
                         {"$ref" : "./adservers/taboola.json"},
-                        {"$ref" : "./adservers/teads.json"},
-                        {"$ref" : "./adservers/marfeel/schema.json"}
-                      ]
+                        {"$ref" : "./adservers/teads.json"}
+                    ]
                 }
             }
         }
