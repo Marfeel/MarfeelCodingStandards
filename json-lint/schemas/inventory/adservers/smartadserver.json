@@ -33,19 +33,19 @@
     },
     "site": {
       "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$", 
+      "pattern": "^(\\$\\{.+\\})$",
       "title": "integer",
       "description": "Your Smart AdServer Site ID --> Example : 246927"
     },
     "page": {
       "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$", 
+      "pattern": "^(\\$\\{.+\\})$",
       "title": "integer",
       "description": "Your Smart AdServer Page ID --> Example : 714388"
     },
     "format": {
       "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$", 
+      "pattern": "^(\\$\\{.+\\})$",
       "description": "Your Smart AdServer Format ID --> Example : 38952"
     },
     "domain": {
@@ -54,12 +54,12 @@
     },
     "width": {
       "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$", 
+      "pattern": "^[0-9]+$",
       "title": "integer"
     },
     "height": {
       "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$", 
+      "pattern": "^[0-9]+$",
       "title": "integer"
     },
     "target": {
