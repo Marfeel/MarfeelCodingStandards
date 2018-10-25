@@ -51,49 +51,23 @@
             "description": "contain the adServers used in placements.",
 
             "properties": {
-                "marfeel" : {
-                    "$ref" : "./adservers/marfeel/schema.json"
-                },
-                "adsense" : {
-                    "$ref" : "./adservers/adsense.json"
-                },
-                "colombia" : {
-                    "$ref" : "./adservers/colombia.json"
-                },
-                "criteo" : {
-                    "$ref" : "./adservers/criteo.json"
-                },
-                "doubleclick" : {
-                    "$ref" : "./adservers/doubleclick.json"
-                },
-                "ligatus" : {
-                    "$ref" : "./adservers/ligatus.json"
-                },
-                "outbrain" : {
-                    "$ref" : "./adservers/outbrain.json"
-                },
-                "postquare" : {
-                    "$ref" : "./adservers/postquare.json"
-                },
-                "revcontent" : {
-                    "$ref" : "./adservers/revcontent.json"
-                },
-                "smartadserver" : {
-                    "$ref" : "./adservers/smartadserver.json"
-                },
-                "smartclip" : {
-                    "$ref" : "./adservers/smartclip.json"
-                },
-                "taboola" : {
-                    "$ref" : "./adservers/taboola.json"
-                },
-                "teads" : {
-                    "$ref" : "./adservers/teads.json"
-                }
+                "marfeel" :     { "$ref" : "./adservers/marfeel/schema.json" },
+                "adsense" :     { "$ref" : "./adservers/adsense.json" },
+                "colombia" :    { "$ref" : "./adservers/colombia.json" },
+                "criteo" :      { "$ref" : "./adservers/criteo.json" },
+                "doubleclick" : { "$ref" : "./adservers/doubleclick.json" },
+                "ligatus" :     { "$ref" : "./adservers/ligatus.json" },
+                "outbrain" :    { "$ref" : "./adservers/outbrain.json" },
+                "postquare" :   { "$ref" : "./adservers/postquare.json" },
+                "revcontent" :  { "$ref" : "./adservers/revcontent.json" },
+                "smartadserver" :{"$ref" : "./adservers/smartadserver.json" },
+                "smartclip" :   { "$ref" : "./adservers/smartclip.json" },
+                "taboola" :     { "$ref" : "./adservers/taboola.json" },
+                "teads" :       { "$ref" : "./adservers/teads.json" }
             },
 
             "patternProperties": {
-                "^.*$": { 
+                "^(?!marfeel$).*$": { 
                     "anyOf": [
                         {"$ref" : "./adservers/adsense.json"},
                         {"$ref" : "./adservers/colombia.json"},
