@@ -1,0 +1,111 @@
+{
+  "placements": {
+    "s320": {
+      "adServer": "criteoSticky"
+    },
+    "inline_1": {
+      "adServer": "dfp",
+      "params": {
+        "END_SLOT": "1",
+        "CUSTOM_VIRTUAL_PAGE": "1"
+      }
+    },
+    "inline_3": {
+      "adServer": "dfp",
+      "params": {
+        "END_SLOT": "2",
+        "CUSTOM_VIRTUAL_PAGE": "2"
+      }
+    },
+    "inline_4": {
+      "adServer": "dfp2",
+      "params": {
+        "CUSTOM_VIRTUAL_PAGE": "3"
+      }
+    },
+    "inline_5": {
+      "adServer": "dfp2",
+      "params": {
+        "CUSTOM_VIRTUAL_PAGE": "4"
+      }
+    },
+    "inline_6": {
+      "adServer": "dfp2",
+      "params": {
+        "CUSTOM_VIRTUAL_PAGE": "5"
+      }
+    },
+    "inline_7": {
+      "adServer": "dfp2",
+      "params": {
+        "CUSTOM_VIRTUAL_PAGE": "6"
+      }
+    },
+    "inline_8": {
+      "adServer": "dfp2",
+      "params": {
+        "CUSTOM_VIRTUAL_PAGE": "7"
+      }
+    },
+    "inline": {
+      "adServer": "dfp2",
+      "params": {
+        "CUSTOM_VIRTUAL_PAGE": "${VIRTUAL_PAGE}"
+      }
+    },
+    "nativeAd": {
+      "adServer": "criteoNative"
+    },
+    "extraNativeAdInDetails": {
+      "adServer": "taboola"
+    }
+  },
+  "adServers": {
+    "criteoNative": {
+      "type": "criteo",
+      "tagtype": "passback",
+      "zone": "914429"
+    },
+    "taboola": {
+      "type": "taboola",
+      "mode": "alternating-thumbnails-rr",
+      "placement": "Right Rail Thumbnails",
+      "target_type": "mix"
+    },
+    "criteoSticky": {
+      "type": "criteo",
+      "tagtype": "passback",
+      "zone": "215740"
+    },
+    "dfp": {
+      "type": "doubleclick",
+      "slot": "/133801272/marfeel_ad${END_SLOT}",
+      "multi_size": "160x600,300x600,336x280,300x250,320x100,320x100,320x50",
+      "multi_size_validation": "false",
+      "width": 336,
+      "height": 600,
+      "json": {
+        "targeting": {
+          "platform": "marfeel",
+          "section": "articles",
+          "position": "${CUSTOM_VIRTUAL_PAGE}"
+        }
+      }
+    },
+    "dfp2": {
+      "type": "doubleclick",
+      "slot": "/133801272/marfeel_ad3",
+      "multi_size": "160x600,300x600,336x280,300x250,320x100,320x100,320x50",
+      "multi_size_validation": "false",
+      "width": 336,
+      "height": 600,
+      "json": {
+        "targeting": {
+          "platform": "marfeel",
+          "section": "articles",
+          "position": "${CUSTOM_VIRTUAL_PAGE}"
+        }
+      }
+    }
+  }
+}

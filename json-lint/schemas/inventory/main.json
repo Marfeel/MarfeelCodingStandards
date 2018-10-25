@@ -33,7 +33,7 @@
             "additionalProperties": false,
 
             "patternProperties": {
-                "^(inline|sticky|nativeAd|belowTopMedia|bottomAd|topCommentsDetailsAd|nativeAdvInDetails|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320|bottomMosaicAd|adsBelowTopMedia)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : {
+                "^(inline|sticky|nativeAd|belowTopMedia|bottomAd|topCommentsDetailsAd|nativeAdvInDetails|extranativeAdvInDetails|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320|bottomMosaicAd|adsBelowTopMedia|s320)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : {
                     "anyOf": [
                         {"$ref" : "./placements/schema.json"}
                       ]
