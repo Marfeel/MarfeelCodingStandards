@@ -29,9 +29,9 @@ pipeline {
                 sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app yarn"
             }
         }
-        stage('Run jspec') {
+        stage('Run yarn test') {
             steps {
-                sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app jspec"
+                sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app yarn test"
 
             }
         }
