@@ -5,7 +5,7 @@
     "title": "DoubleClick adserver",
     "description": "https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/amp-ad-network-doubleclick-impl-internal.md",
     "additionalProperties": false,
-
+    
     "required": [
       "type",
       "slot"
@@ -29,21 +29,21 @@
       },
       "width": {
         "type": ["integer","string"],
-        "pattern": "^[0-9]+$",
+        "pattern": "^(\\$\\{.+\\})$",  
         "title": "integer",
         "description": "example: 300"
       },
       "height": {
         "type": ["integer","string"],
-        "pattern": "^[0-9]+$",
+        "pattern": "^(\\$\\{.+\\})$",  
         "title": "integer",
-        "description": "example: 250"
+        "description": "example: 250" 
       },
       "multi-size": {
         "type": "string",
         "title": "String of coma separated sizes",
         "description": "example: 700x90,700x60,300x25 https://github.com/ampproject/amphtml/blob/master/extensions/amp-ad-network-doubleclick-impl/multi-size.md",
-        "pattern": "^(\\d+x\\d+)(,\\d+x\\d+)*"
+        "pattern": "^(\\d+x\\d+)(,\\d+x\\d+)*" 
       },
       "multi-size-validation": {
         "type": "boolean",
