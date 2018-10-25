@@ -94,20 +94,20 @@
     "dfp0": {
       "type": "doubleclick",
       "slot": "/21622511100/revistaforum_home/revistaforum_${END_SLOT}",
-      "multi_size": "${SIZE}",
+      "multi-size": "${SIZE}",
       "height": "${HEIGHT}",
       "width": "${WIDTH}",
-      "multi-size-validation": "false"
+      "multi-size-validation": false
     },
     "dfp1": {
       "type": "doubleclick",
       "slot": "/21622511100/revistaforum_home/revistaforum_${END_SLOT}",
-      "multi_size": "320x50,336x280,300x250"
+      "multi-size": "320x50,336x280,300x250"
     },
     "dfp2": {
       "type": "doubleclick",
       "slot": "/21622511100/revistaforum_home/revistaforum_${END_SLOT}",
-      "multi_size": "300x250,300x600,300x100,320x50,336x280,468x60"
+      "multi-size": "300x250,300x600,300x100,320x50,336x280,468x60"
     },
     "teads": {
       "type": "teads",
