@@ -5,7 +5,7 @@
     "title": "Criteo adserver",
     "description": "https://github.com/ampproject/amphtml/blob/master/ads/criteo.md",
     "additionalProperties": false,
-
+    
     "required": [
       "type",
       "zone"
@@ -30,19 +30,19 @@
       },
       "zone": {
         "type": ["integer","string"],
-        "pattern": "^(\\$\\{.+\\})$",
+        "pattern": "^(\\$\\{.+\\})$", 
         "title": "integer",
         "description": "Example : 567890"
       },
       "width": {
         "type": ["integer","string"],
-        "pattern": "^[0-9]+$",
+        "pattern": "^(\\$\\{.+\\})$", 
         "title": "integer (not required, defautl in criteo.tag (300))",
         "description": "example: 300"
       },
       "height": {
         "type": ["integer","string"],
-        "pattern": "^[0-9]+$",
+        "pattern": "^(\\$\\{.+\\})$", 
         "title": "integer (not required, default in criteo.tag (250))",
         "description": "example: 250"
       }
