@@ -3,7 +3,6 @@ services:
   node_app:
     build: .
     working_dir: /usr/src/node/
-    environment:
     volumes:
     - ${PWD}:/usr/src/node/
     - ~/.ssh/${SSH_CONFIG_FILE}:/home/jenkins/.ssh/id_rsa
