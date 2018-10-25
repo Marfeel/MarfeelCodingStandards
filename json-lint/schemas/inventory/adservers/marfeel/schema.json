@@ -4,7 +4,7 @@
     "type": "object",
     "title": "Marfeel adserver",
     "description": "marfeelinventory.*.json defines the marfeel position DFP. We can use this adserver of the inventory to pass extra targetings and experimental parameters",
-
+    
     "not": {
         "anyOf": [
             {
