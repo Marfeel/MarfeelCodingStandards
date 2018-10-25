@@ -56,7 +56,7 @@
     "nativeAd": {
       "adServer": "criteoNative"
     },
-    "extraNativeAdInDetails": {
+    "extraNativeAdvInDetails": {
       "adServer": "taboola"
     }
   },
@@ -64,24 +64,26 @@
     "criteoNative": {
       "type": "criteo",
       "tagtype": "passback",
-      "zone": "914429"
+      "zone": 914429
     },
     "taboola": {
       "type": "taboola",
       "mode": "alternating-thumbnails-rr",
       "placement": "Right Rail Thumbnails",
-      "target_type": "mix"
+      "target_type": "mix",
+      "publisher": "testPublisher",
+      "article": "auto"
     },
     "criteoSticky": {
       "type": "criteo",
       "tagtype": "passback",
-      "zone": "215740"
+      "zone": 215740
     },
     "dfp": {
       "type": "doubleclick",
       "slot": "/133801272/marfeel_ad${END_SLOT}",
-      "multi_size": "160x600,300x600,336x280,300x250,320x100,320x100,320x50",
-      "multi_size_validation": "false",
+      "multi-size": "160x600,300x600,336x280,300x250,320x100,320x100,320x50",
+      "multi-size-validation": false,
       "width": 336,
       "height": 600,
       "json": {
@@ -95,8 +97,8 @@
     "dfp2": {
       "type": "doubleclick",
       "slot": "/133801272/marfeel_ad3",
-      "multi_size": "160x600,300x600,336x280,300x250,320x100,320x100,320x50",
-      "multi_size_validation": "false",
+      "multi-size": "160x600,300x600,336x280,300x250,320x100,320x100,320x50",
+      "multi-size-validation": false,
       "width": 336,
       "height": 600,
       "json": {
