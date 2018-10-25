@@ -64,7 +64,7 @@
     },
     "height": {
       "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$",
+      "pattern": "^(\\$\\{.+\\})$", 
       "title": "integer",
       "description": "example: 250 (not required, default in outbrain.tag(100))"
     }
