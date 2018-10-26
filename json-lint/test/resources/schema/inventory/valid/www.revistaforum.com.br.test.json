@@ -1,0 +1,120 @@
+{
+  "placements": {
+    "inline_mosaic_1": {
+      "adServer": "dfp1",
+      "params": {
+        "END_SLOT": "mosaic_1"
+      }
+    },
+    "inline_mosaic_3": {
+      "adServer": "dfp2",
+      "params": {
+        "END_SLOT": "mosaic_2"
+      }
+    },
+    "inline_mosaic_4": {
+      "adServer": "dfp2",
+      "params": {
+        "END_SLOT": "mosaic_3"
+      }
+    },
+    "inline_mosaic_5": {
+      "adServer": "dfp2",
+      "params": {
+        "END_SLOT": "mosaic_4"
+      }
+    },
+    "inline_mosaic_6": {
+      "adServer": "dfp2",
+      "params": {
+        "END_SLOT": "mosaic_5"
+      }
+    },
+    "inline_mosaic_8": {
+      "adServer": "dfp2",
+      "params": {
+        "END_SLOT": "mosaic_bottom"
+      }
+    },
+    "inline_mosaic": {
+      "adServer": "dfp2",
+      "params": {
+        "END_SLOT": "mosaic_6"
+      }
+    },
+    "bottomMosaicAd": {
+      "adServer": "outbrain"
+    },
+    "adsBelowTopMedia": {
+      "adServer": "dfp0",
+      "params": {
+        "END_SLOT": "marfeel_0",
+        "SIZE": "300x250",
+        "HEIGHT": "250",
+        "WIDTH": "300"
+      }
+    },
+    "inline_details_1": {
+      "adServer": "dfp1",
+      "params": {
+        "END_SLOT": "marfeel_1"
+      }
+    },
+    "inline_details_3": {
+      "adServer": "dfp2",
+      "params": {
+        "END_SLOT": "marfeel_2"
+      }
+    },
+    "inline_details_4": {
+      "adServer": "dfp2",
+      "params": {
+        "END_SLOT": "marfeel_3"
+      }
+    },
+    "inline_details": {
+      "adServer": "dfp1",
+      "params": {
+        "END_SLOT": "marfeel_x"
+      }
+    },
+    "nativeAd": {
+      "adServer": "outbrain"
+    },
+    "extraNativeAdvInDetails": {
+      "adServer": "teads"
+    }
+  },
+  "adServers": {
+    "outbrain": {
+      "type": "outbrain",
+      "widgetIds": "AR_1",
+      "layout": "responsive"
+    },
+    "dfp0": {
+      "type": "doubleclick",
+      "slot": "/21622511100/revistaforum_home/revistaforum_${END_SLOT}",
+      "multi-size": "${SIZE}",
+      "height": "${HEIGHT}",
+      "width": "${WIDTH}",
+      "multi-size-validation": false
+    },
+    "dfp1": {
+      "type": "doubleclick",
+      "slot": "/21622511100/revistaforum_home/revistaforum_${END_SLOT}",
+      "multi-size": "320x50,336x280,300x250"
+    },
+    "dfp2": {
+      "type": "doubleclick",
+      "slot": "/21622511100/revistaforum_home/revistaforum_${END_SLOT}",
+      "multi-size": "300x250,300x600,300x100,320x50,336x280,468x60"
+    },
+    "teads": {
+      "type": "teads",
+      "pid": 67798
+    },
+    "marfeel": {
+      "atomic_slot": "/22571134/atomic/revistaforum.com.br"
+    }
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "placements": {
+    "nativeAdvInDetails": {
+      "adServer": "taboola"
+    },
+    "inline_1": {
+      "adServer": "dfp1"
+    },
+    "inline_3": {
+      "adServer": "dfp3_6"
+    },
+    "inline_4": {
+      "adServer": "dfp3_6"
+    },
+    "inline_5": {
+      "adServer": "dfp3_6"
+    },
+    "inline_6": {
+      "adServer": "dfp3_6"
+    },
+    "inline": {
+      "adServer": "dfp_default"
+    }
+  },
+  "adServers": {
+    "taboola": {
+      "type": "taboola",
+      "publisher": "elplural2",
+      "mode": "alternating-thumbnails-x-amp",
+      "container": "taboola-below-article-thumbnails",
+      "placement": "Mobile Below Article Thumbnails AMP",
+      "target_type": "mix",
+      "article": "auto"
+    },
+    "dfp_default": {
+      "type": "doubleclick",
+      "slot": "440887751/Mobile_${VIRTUAL_PAGE}",
+      "width": 320,
+      "height": 600,
+      "multi-size": "300x100,300x50,320x100,300x250,320x600",
+      "multi-size-validation": false,
+      "json": {
+        "targeting": {
+          "${metadatas.AdTargetings.(dfpSlots)[1].(globalTargeting)[0]}": "${metadatas.AdTargetings.(dfpSlots)[1].(globalTargeting)[1]}",
+          "${metadatas.AdTargetings.(dfpSlots)[2].(globalTargeting)[0]}": "${metadatas.AdTargetings.(dfpSlots)[2].(globalTargeting)[1]}"
+        }
+      }
+    },
+    "dfp1": {
+      "type": "doubleclick",
+      "slot": "440887751/Mobile_${VIRTUAL_PAGE}",
+      "width": 320,
+      "height": 250,
+      "multi-size": "300x100,300x50,320x100,300x250,320x50",
+      "multi-size-validation": false,
+      "json": {
+        "targeting": {
+          "${metadatas.AdTargetings.(dfpSlots)[1].(globalTargeting)[0]}": "${metadatas.AdTargetings.(dfpSlots)[1].(globalTargeting)[1]}",
+          "${metadatas.AdTargetings.(dfpSlots)[2].(globalTargeting)[0]}": "${metadatas.AdTargetings.(dfpSlots)[2].(globalTargeting)[1]}"
+        }
+      }
+    },
+    "dfp3_6": {
+      "type": "doubleclick",
+      "slot": "440887751/Mobile_${VIRTUAL_PAGE}",
+      "width": 320,
+      "height": 600,
+      "multi-size": "300x100,300x100,320x50,300x250,300x600,320x50",
+      "multi-size-validation": false,
+      "json": {
+        "targeting": {
+          "${metadatas.AdTargetings.(dfpSlots)[1].(globalTargeting)[0]}": "${metadatas.AdTargetings.(dfpSlots)[1].(globalTargeting)[1]}",
+          "${metadatas.AdTargetings.(dfpSlots)[2].(globalTargeting)[0]}": "${metadatas.AdTargetings.(dfpSlots)[2].(globalTargeting)[1]}"
+        }
+      }
+    }
+  }
+}
