@@ -11,12 +11,10 @@
         "placements",
         "adServers"
     ],
-
     "default" : {
         "placements": {},
         "adServers": {}
     },
-
     "properties": {
         "extends" : {
             "$id": "/properties/placements",
@@ -36,20 +34,15 @@
                 "^(inline|sticky|nativeAd|belowTopMedia|bottomAd|topCommentsDetailsAd|nativeAdvInDetails|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320|bottomMosaicAd|adsBelowTopMedia|s320)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : {
                     "anyOf": [
                         {"$ref" : "./placements/schema.json"}
-                      ]
+                    ]
                 }
             }
-
-
         },
-
-
         "adServers": {
             "$id": "/properties/adServers",
             "type": "object",
             "title": "Adservers Object",
             "description": "contain the adServers used in placements.",
-
             "properties": {
                 "marfeel" :     { "$ref" : "./adservers/marfeel/schema.json" },
                 "adsense" :     { "$ref" : "./adservers/adsense.json" },
@@ -63,9 +56,9 @@
                 "smartadserver" :{"$ref" : "./adservers/smartadserver.json" },
                 "smartclip" :   { "$ref" : "./adservers/smartclip.json" },
                 "taboola" :     { "$ref" : "./adservers/taboola.json" },
-                "teads" :       { "$ref" : "./adservers/teads.json" }
+                "teads" :       { "$ref" : "./adservers/teads.json" },
+                "engageya":     { "$href": "./adservers/engageya.json" }
             },
-
             "patternProperties": {
                 "^(?!marfeel$).*$": {
                     "anyOf": [
@@ -80,8 +73,9 @@
                         {"$ref" : "./adservers/smartadserver.json"},
                         {"$ref" : "./adservers/smartclip.json"},
                         {"$ref" : "./adservers/taboola.json"},
-                        {"$ref" : "./adservers/teads.json"}
-                      ]
+                        {"$ref" : "./adservers/teads.json"},
+                        {"$ref" : "./adservers/engageya.json"}
+                    ]
                 }
             }
         }

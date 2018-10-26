@@ -1,0 +1,72 @@
+{
+    "$id": "#engageya",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Engageya adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/engageya.md",
+    "additionalProperties": false,
+    "required": [
+        "data-widgetIds",
+        "data-websiteId",
+        "data-publisherId"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "Engageya template",
+            "description": "contains required keys",
+            "body": {
+                "type": "engageya",
+                "layout": "responsive",
+                "data-widgetIds": "$1",
+                "data-websiteId": "$2",
+                "data-publisherId": "$3"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "enum": [
+                "engageya"
+            ]
+        },
+        "layout": {
+            "type": "string"
+        },
+        "data-widgetIds": {
+            "type": "string"
+        },
+        "data-websiteId": {
+            "type": "string"
+        },
+        "data-publisherId": {
+            "type": "string"
+        },
+        "data-url": {
+            "type": "string"
+        },
+        "data-ampUrl": {
+            "type": "string"
+        },
+        "data-styleCSS": {
+            "type": "string"
+        },
+        "width": {
+            "type": [
+                "integer",
+                "string"
+            ],
+            "title": "String of digits ( if not set, default is 300 )",
+            "description": "example: 300",
+            "pattern": "^(\\$\\{.+\\})$"
+        },
+        "height": {
+            "type": [
+                "integer",
+                "string"
+            ],
+            "title": "String of digits ( if not set, default is 250 )",
+            "description": "example: 250",
+            "pattern": "^(\\$\\{.+\\})$"
+        }
+    }
+}
