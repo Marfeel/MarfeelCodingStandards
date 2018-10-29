@@ -6,9 +6,9 @@
     "description": "https://github.com/ampproject/amphtml/blob/master/ads/engageya.md",
     "additionalProperties": false,
     "required": [
-        "data-widgetIds",
-        "data-websiteId",
-        "data-publisherId"
+        "widgetIds",
+        "websiteId",
+        "publisherId"
     ],
     "defaultSnippets": [
         {
@@ -17,9 +17,9 @@
             "body": {
                 "type": "engageya",
                 "layout": "responsive",
-                "data-widgetIds": "$1",
-                "data-websiteId": "$2",
-                "data-publisherId": "$3"
+                "widgetIds": "$1",
+                "websiteId": "$2",
+                "publisherId": "$3"
             }
         }
     ],
@@ -30,22 +30,22 @@
         "layout": {
             "$ref": "./types/layout.json"
         },
-        "data-widgetIds": {
+        "widgetIds": {
             "type": "string"
         },
-        "data-websiteId": {
+        "websiteId": {
             "type": "string"
         },
-        "data-publisherId": {
+        "publisherId": {
             "type": "string"
         },
-        "data-url": {
+        "url": {
             "type": "string"
         },
-        "data-ampUrl": {
+        "ampUrl": {
             "type": "string"
         },
-        "data-styleCSS": {
+        "styleCSS": {
             "type": "string"
         },
         "width": {

@@ -1,18 +1,28 @@
 {
     "placements": {
-        "nativeAd": {
-            "adServer": "engageya"
-        }
+      "inline": {
+        "adServer": "adsense"
+      },
+      "nativeAd": {
+        "adServer": "engageya"
+      }
     },
     "adServers": {
-        "engageya": {
-            "data-widgetIds": "108404",
-            "data-websiteId": "154423",
-            "data-publisherId": "178403",
-            "layout": "responsive",
-            "type": "engageya",
-            "height": 200,
-            "width": 200
-        }
+      "adsense": {
+        "ad-client": "ca-pub-7167863529667065",
+        "ad-slot": 5164015097,
+        "height": 280,
+        "type": "adsense",
+        "width": 336
+      },
+      "engageya": {
+        "widgetIds": "108404",
+        "websiteId": "154423",
+        "publisherId": "178403",
+        "height": 200,
+        "layout": "responsive",
+        "type": "engageya",
+        "width": 200
+      }
     }
-}
+  }
