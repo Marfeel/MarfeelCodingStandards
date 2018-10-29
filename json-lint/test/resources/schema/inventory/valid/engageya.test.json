@@ -9,9 +9,9 @@
             "data-widgetIds": "108404",
             "data-websiteId": "154423",
             "data-publisherId": "178403",
-            "height": 200,
             "layout": "responsive",
             "type": "engageya",
+            "height": 200,
             "width": 200
         }
     }

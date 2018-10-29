@@ -25,12 +25,10 @@
     ],
     "properties": {
         "type": {
-            "enum": [
-                "engageya"
-            ]
+            "const": "engageya"
         },
         "layout": {
-            "type": "string"
+            "$ref": "./../layout.json"
         },
         "data-widgetIds": {
             "type": "string"
@@ -51,22 +49,10 @@
             "type": "string"
         },
         "width": {
-            "type": [
-                "integer",
-                "string"
-            ],
-            "title": "String of digits ( if not set, default is 300 )",
-            "description": "example: 300",
-            "pattern": "^(\\$\\{.+\\})$"
+            "$ref": "./../dimension.json"
         },
         "height": {
-            "type": [
-                "integer",
-                "string"
-            ],
-            "title": "String of digits ( if not set, default is 250 )",
-            "description": "example: 250",
-            "pattern": "^(\\$\\{.+\\})$"
+            "$ref": "./../dimension.json"
         }
     }
 }
