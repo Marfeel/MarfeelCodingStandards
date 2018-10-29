@@ -28,15 +28,7 @@
             "type": "object",
             "title": "Placements Object",
             "description": "contain the placements with keys like : \n - nativeAd \n - adsBelowTopMedia \n - topMosaicAd \n - inline \n - inline_5",
-            "additionalProperties": false,
-
-            "patternProperties": {
-                "^(inline|sticky|nativeAd|belowTopMedia|bottomAd|topCommentsDetailsAd|nativeAdvInDetails|extraNativeAdvInDetails|topMosaicAd|topDetailsAd|bottomDetailsAd|adsBelowTopMedia320|bottomMosaicAd|adsBelowTopMedia|s320)(_mosaic|_details|_gallery)?(_[^_]+)?(_\\d+)?(_amp|_web)?$" : {
-                    "anyOf": [
-                        {"$ref" : "./placements/schema.json"}
-                    ]
-                }
-            }
+            "additionalProperties": true
         },
         "adServers": {
             "$id": "/properties/adServers",
