@@ -63,12 +63,11 @@ describe('API json schemas:', () => {
 			expect(validation.errors.length).toEqual(0);
 		});
 
-		// TODO: mock mrf-json and decomment the test
-		// it('Detect and try to handle extended JSON', () => {
-		// 	const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME);
-		// 	expect(validation.errors.length).toEqual(1);
-		// 	expect(validation.errors[0].message.includes('Error merging extended JSON in schemaUtils')).toBe(true);
-		// });
+		it('Detect and try to handle extended JSON', () => {
+			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME);
+			expect(validation.errors.length).toEqual(1);
+			expect(validation.errors[0].message.includes('Error merging extended JSON in schemaUtils')).toBe(true);
+		});
 
 		it('Wrong JSON', () => {
 			const obj = jsonLint.loadJson(invalidExampleJsonPath);
