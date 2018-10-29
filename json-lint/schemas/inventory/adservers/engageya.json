@@ -28,7 +28,7 @@
             "const": "engageya"
         },
         "layout": {
-            "$ref": "./../layout.json"
+            "$ref": "./types/layout.json"
         },
         "data-widgetIds": {
             "type": "string"
@@ -49,10 +49,10 @@
             "type": "string"
         },
         "width": {
-            "$ref": "./../dimension.json"
+            "$ref": "./types/dimension.json"
         },
         "height": {
-            "$ref": "./../dimension.json"
+            "$ref": "./types/dimension.json"
         }
     }
 }
