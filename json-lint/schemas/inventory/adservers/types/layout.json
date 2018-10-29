@@ -4,7 +4,6 @@
     "type": "string",
     "title": "Layout attribute",
     "description": "https://www.ampproject.org/docs/design/responsive/control_layout",
-    "additionalProperties": false,
     "enum": [
         "nodisplay",
         "fixed",

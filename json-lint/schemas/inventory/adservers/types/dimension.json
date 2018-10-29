@@ -7,6 +7,5 @@
     ],
     "title": "Width or Height",
     "description": "Example: 300",
-    "additionalProperties": false,
     "pattern": "^(\\$\\{.+\\})$"
 }
