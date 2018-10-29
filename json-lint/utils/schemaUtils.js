@@ -18,7 +18,6 @@ const path = require('path');
 const fs = require('fs');
 const { spawnSync }  = require('child_process');
 
-const isJson = (filePath) => filePath.endsWith('.json');
 const isNotPrivate = (fileName) => fileName[0] !== '.';
 const getErrorMessage = (jsonPath, status, execPath) => `${MERGE_ERROR}
 	"${JSON_MERGE_COMMAND} ${jsonPath}" >> return STATUS ${status}  
@@ -44,10 +43,6 @@ function getMarfeelExtendedJson(jsonPath) {
 }
 
 function loadJson(_path) {
-	if (!isJson(_path)) {
-		return false;
-	}
-
 	let textFile = '';
 
 	try {
@@ -59,7 +54,7 @@ function loadJson(_path) {
 	try {
 		return JSON.parse(textFile);
 	} catch (e) {
-		throw new Error(`Couldn\'t parse to json the file content : ${_path}`);
+		throw new Error(`JSON parse error:\t${e.message}\n\tin file: ${_path}`);
 	}
 }
 
@@ -94,6 +89,5 @@ module.exports = {
 	getSchemaPath,
 	importUnresolvedRefs,
 	isNotPrivate,
-	isJson,
 	loadJson
 };

@@ -17,6 +17,7 @@ npm-debug.log
 wepback-report.html
 **/yarn-error.log
 .gradle
+**.log
 
 ######################
 # OS generated files #

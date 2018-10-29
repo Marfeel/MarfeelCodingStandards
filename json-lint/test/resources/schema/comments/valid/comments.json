@@ -1,0 +1,27 @@
+{
+    "custom" : [ {
+        "name" : "custom-disqus",
+        "file" : "Comments"
+    } ],
+    "disqus" : [ {
+        "name" : "disqus",
+        "shortName": "test"
+    } ],
+    "facebook" : [ {
+        "name" : "custom-disqus"
+    } ],
+    "bublaa" : [ {
+        "name" : "custom-disqus"
+    } ],
+    "vuukle" : [ {
+        "name" : "custom-disqus"
+    } ],
+    "spotIM" : [ {
+        "name" : "custom-disqus",
+        "spotId": "test",
+        "recirculation": "test"
+    } ],
+    "wordpress" : [ {
+        "name" : "custom-disqus"
+    } ]
+}

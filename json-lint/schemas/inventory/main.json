@@ -17,7 +17,7 @@
     },
     "properties": {
         "extends" : {
-            "$id": "/properties/placements",
+            "$id": "/properties/extends",
             "type": "string",
             "title": "Extends Path:",
             "description": "Path of JSON that we want to extend. Example: www.diariopopular.com.ar/index/resources/inventory.json"

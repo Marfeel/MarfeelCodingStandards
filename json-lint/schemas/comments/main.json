@@ -1,0 +1,155 @@
+{
+    "MarfeelPath": "/resources/comments.json",
+    "definitions": {
+        "commentSystem": {
+            "type": "object",
+            "title": "Comment System",
+            "description": "Comment system definition",
+            "required": [
+                "name"
+            ],
+            "properties": {
+                "name": {
+                    "type": "string",
+                    "title": "Plugin Name",
+                    "description": "Name of the plugin"
+                }
+            }
+        }
+    },
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Comments JSON ",
+    "description": "Define comments configuration of the tenant.",
+    "additionalProperties": false,
+    "properties": {
+        "extends": {
+            "$id": "/properties/extends",
+            "type": "string",
+            "title": "Extends Path:",
+            "description": "Path of JSON that we want to extend."
+        },
+        "custom": {
+            "$id": "/properties/custom",
+            "type": "array",
+            "title": "Custom commenting system",
+            "description": "Define Disqus as commenting system",
+            "items": {
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Plugin Name",
+                        "description": "Name of the plugin"
+                    },
+                    "file": {
+                        "type": "string",
+                        "title": "filename",
+                        "description": "Name of the file to be found in src/js/features/comments"
+                    }
+                },
+                "required": [
+                    "name",
+                    "file"
+                ],
+                "additionalProperties": false
+            }
+        },
+        "disqus": {
+            "$id": "/properties/disqus",
+            "type": "array",
+            "title": "Disqus commenting system",
+            "description": "Define Disqus as commenting system",
+            "items": {
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Plugin Name",
+                        "description": "Name of the plugin"
+                    },
+                    "shortName": {
+                        "type": "string",
+                        "title": "shortName",
+                        "description": "data-shortname attribute"
+                    }
+                },
+                "required": [
+                    "name",
+                    "shortName"
+                ],
+                "additionalProperties": false
+            }
+        },
+        "facebook": {
+            "$id": "/properties/disqus",
+            "type": "array",
+            "title": "Disqus commenting system",
+            "description": "Define Disqus as commenting system",
+            "items": {
+                "additionalProperties": false,
+                "$ref": "#/definitions/commentSystem"
+            }
+        },
+        "spotIM": {
+            "$id": "/properties/disqus",
+            "type": "array",
+            "title": "spotIM commenting system",
+            "description": "Define spotIM as commenting system",
+            "items": {
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Plugin Name",
+                        "description": "Name of the plugin"
+                    },
+                    "spotId": {
+                        "type": "string",
+                        "title": "SpotIM ID",
+                        "description": "data-spotid attribute"
+                    },
+                    "recirculation": {
+                        "type": "string",
+                        "title": "Recirculation",
+                        "description": "recirculation attribute"
+                    }
+                },
+                "required": [
+                    "name",
+                    "spotId",
+                    "recirculation"
+                ],
+                "additionalProperties": false
+            }
+        },
+        "wordpress": {
+            "$id": "/properties/wordpress",
+            "type": "array",
+            "title": "Wordpress commenting system",
+            "description": "Define Wordpress as commenting system",
+            "items": {
+                "additionalProperties": false,
+                "$ref": "#/definitions/commentSystem"
+            }
+        },
+        "bublaa": {
+            "$id": "/properties/bublaa",
+            "type": "array",
+            "title": "Bublaa commenting system",
+            "description": "Define Bublaa as commenting system",
+            "items": {
+                "additionalProperties": false,
+                "$ref": "#/definitions/commentSystem"
+            }
+        },
+        "vuukle": {
+            "$id": "/properties/vuukle",
+            "type": "array",
+            "title": "Vuukle commenting system",
+            "description": "Define Vuukle as commenting system",
+            "items": {
+                "additionalProperties": false,
+                "$ref": "#/definitions/commentSystem"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "custom" : [ {
+        "name" : "custom-disqus",
+        "file" : "Comments"
+    } ],
+    "disqus" : [ {
+        "name" : "disqus"
+    } ],
+    "facebook" : [ {
+        "name" : "custom-disqus"
+    } ],
+    "bublaa" : [ {
+        "name" : "custom-disqus"
+    } ],
+    "vuukle" : [ {
+        "name" : "custom-disqus"
+    } ],
+    "spotIM" : [ {
+        "name" : "custom-disqus"
+    } ],
+    "wordpress" : [ {
+        "name" : "custom-disqus"
+    } ]
+}
