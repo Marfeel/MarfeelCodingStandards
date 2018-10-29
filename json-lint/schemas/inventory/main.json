@@ -11,12 +11,10 @@
         "placements",
         "adServers"
     ],
-
     "default" : {
         "placements": {},
         "adServers": {}
     },
-
     "properties": {
         "extends" : {
             "$id": "/properties/placements",
@@ -32,14 +30,11 @@
             "description": "contain the placements with keys like : \n - nativeAd \n - adsBelowTopMedia \n - topMosaicAd \n - inline \n - inline_5",
             "additionalProperties": true
         },
-
-
         "adServers": {
             "$id": "/properties/adServers",
             "type": "object",
             "title": "Adservers Object",
             "description": "contain the adServers used in placements.",
-
             "properties": {
                 "marfeel" :     { "$ref" : "./adservers/marfeel/schema.json" },
                 "adsense" :     { "$ref" : "./adservers/adsense.json" },
@@ -53,9 +48,9 @@
                 "smartadserver" :{"$ref" : "./adservers/smartadserver.json" },
                 "smartclip" :   { "$ref" : "./adservers/smartclip.json" },
                 "taboola" :     { "$ref" : "./adservers/taboola.json" },
-                "teads" :       { "$ref" : "./adservers/teads.json" }
+                "teads" :       { "$ref" : "./adservers/teads.json" },
+                "engageya":     { "$href": "./adservers/engageya.json" }
             },
-
             "patternProperties": {
                 "^(?!marfeel$).*$": {
                     "anyOf": [
@@ -70,8 +65,9 @@
                         {"$ref" : "./adservers/smartadserver.json"},
                         {"$ref" : "./adservers/smartclip.json"},
                         {"$ref" : "./adservers/taboola.json"},
-                        {"$ref" : "./adservers/teads.json"}
-                      ]
+                        {"$ref" : "./adservers/teads.json"},
+                        {"$ref" : "./adservers/engageya.json"}
+                    ]
                 }
             }
         }

@@ -1,0 +1,58 @@
+{
+    "$id": "#engageya",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Engageya adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/engageya.md",
+    "additionalProperties": false,
+    "required": [
+        "data-widgetIds",
+        "data-websiteId",
+        "data-publisherId"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "Engageya template",
+            "description": "contains required keys",
+            "body": {
+                "type": "engageya",
+                "layout": "responsive",
+                "data-widgetIds": "$1",
+                "data-websiteId": "$2",
+                "data-publisherId": "$3"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "engageya"
+        },
+        "layout": {
+            "$ref": "./types/layout.json"
+        },
+        "data-widgetIds": {
+            "type": "string"
+        },
+        "data-websiteId": {
+            "type": "string"
+        },
+        "data-publisherId": {
+            "type": "string"
+        },
+        "data-url": {
+            "type": "string"
+        },
+        "data-ampUrl": {
+            "type": "string"
+        },
+        "data-styleCSS": {
+            "type": "string"
+        },
+        "width": {
+            "$ref": "./types/dimension.json"
+        },
+        "height": {
+            "$ref": "./types/dimension.json"
+        }
+    }
+}
