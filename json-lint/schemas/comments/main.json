@@ -33,7 +33,7 @@
         "custom": {
             "$id": "/properties/custom",
             "type": "array",
-            "title": "Custom commenting system",
+            "title": "Custom Commenting System",
             "description": "Define Disqus as commenting system",
             "items": {
                 "properties": {
@@ -58,7 +58,7 @@
         "disqus": {
             "$id": "/properties/disqus",
             "type": "array",
-            "title": "Disqus commenting system",
+            "title": "Disqus Commenting System",
             "description": "Define Disqus as commenting system",
             "items": {
                 "properties": {
@@ -81,19 +81,19 @@
             }
         },
         "facebook": {
-            "$id": "/properties/disqus",
+            "$id": "/properties/facebook",
             "type": "array",
-            "title": "Disqus commenting system",
-            "description": "Define Disqus as commenting system",
+            "title": "Facebook Commenting System",
+            "description": "Define Facebook as commenting system",
             "items": {
                 "additionalProperties": false,
                 "$ref": "#/definitions/commentSystem"
             }
         },
         "spotIM": {
-            "$id": "/properties/disqus",
+            "$id": "/properties/spotIM",
             "type": "array",
-            "title": "spotIM commenting system",
+            "title": "spotIM Commenting System",
             "description": "Define spotIM as commenting system",
             "items": {
                 "properties": {
@@ -134,11 +134,32 @@
         "bublaa": {
             "$id": "/properties/bublaa",
             "type": "array",
-            "title": "Bublaa commenting system",
+            "title": "Bublaa Commenting System",
             "description": "Define Bublaa as commenting system",
             "items": {
-                "additionalProperties": false,
-                "$ref": "#/definitions/commentSystem"
+                "properties": {
+                    "name": {
+                        "type": "string",
+                        "title": "Plugin Name",
+                        "description": "Name of the plugin"
+                    },
+                    "uri": {
+                        "type": "string",
+                        "title": "uri",
+                        "description": ""
+                    },
+                    "bublaaId": {
+                        "type": "string",
+                        "title": "bublaaId",
+                        "description": "data-forum attribute"
+                    }
+                },
+                "required": [
+                    "name",
+                    "uri",
+                    "bublaaId"
+                ],
+                "additionalProperties": false
             }
         },
         "vuukle": {
