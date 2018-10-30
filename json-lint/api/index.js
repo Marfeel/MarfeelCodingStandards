@@ -38,9 +38,9 @@ function validate(jsonObject, schemaName) {
 	return validator.validate(jsonObject, main);
 }
 
-function validateFromPath(jsonPath, schemaName = path.basename(jsonPath, '.json')) {
+function validateFromPath(jsonPath, schemaName = path.basename(jsonPath, '.json'), command = undefined) {
 	try {
-		const obj = util.loadExtensibleJson(jsonPath);
+		const obj = util.loadExtensibleJson(jsonPath, command);
 
 		return validate(obj, schemaName);
 	} catch (e) {

@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+
+
+// MOCK FOR bash util mrf-json
+console.log(
+`
+{
+    "requiredKey": "allowed_value",
+    "extends" : "some/path/to/other/file.json",
+    "wrong_key" : 1
+}
+`
+);

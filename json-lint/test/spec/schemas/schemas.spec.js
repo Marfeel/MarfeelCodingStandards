@@ -48,7 +48,6 @@ describe('Valid json schemas:', () => {
 
 					expect(objectValidation.errors.length).toBe(0, objErrorMessage);
 					expect(pathValidation.errors.length).toBe(0, pathErrorMessage);
-
 				});
 			});
 
