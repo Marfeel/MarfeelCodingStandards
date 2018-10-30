@@ -1,4 +1,4 @@
-FROM node:8.10.0
+FROM node:8.12.0
 
 CMD exec /bin/bash -c "trap : TERM INT; sleep infinity & wait"
 
