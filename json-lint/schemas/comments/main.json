@@ -27,14 +27,14 @@
         "extends": {
             "$id": "/properties/extends",
             "type": "string",
-            "title": "Extends Path:",
+            "title": "Extends Path",
             "description": "Path of JSON that we want to extend."
         },
         "custom": {
             "$id": "/properties/custom",
             "type": "array",
             "title": "Custom Commenting System",
-            "description": "Define Disqus as commenting system",
+            "description": "Define a custom commenting system",
             "items": {
                 "properties": {
                     "name": {
@@ -44,7 +44,7 @@
                     },
                     "file": {
                         "type": "string",
-                        "title": "filename",
+                        "title": "Filename",
                         "description": "Name of the file to be found in src/js/features/comments"
                     }
                 },
@@ -93,7 +93,7 @@
         "spotIM": {
             "$id": "/properties/spotIM",
             "type": "array",
-            "title": "spotIM Commenting System",
+            "title": "SpotIM Commenting System",
             "description": "Define spotIM as commenting system",
             "items": {
                 "properties": {

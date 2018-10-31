@@ -11,7 +11,9 @@
         "name" : "custom-disqus"
     } ],
     "bublaa" : [ {
-        "name" : "custom-disqus"
+        "name" : "custom-disqus",
+        "uri": "test url",
+        "bublaaId": "test id"
     } ],
     "vuukle" : [ {
         "name" : "custom-disqus"
