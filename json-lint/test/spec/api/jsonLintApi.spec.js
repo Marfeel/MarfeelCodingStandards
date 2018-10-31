@@ -37,9 +37,9 @@ describe('API json schemas:', () => {
 
 
 	it('get schema names available', () => {
-		expect(jsonLint.getSchemaNames()).toEqual(
-			['inventory']
-		);
+		const expectedSchemas = ['inventory', 'comments'];
+
+		expect(jsonLint.getSchemaNames().every(schema => expectedSchemas.includes(schema))).toBeTruthy();
 	});
 
 	it('get schema names and MarfeelPath', ()=> {
@@ -103,7 +103,7 @@ describe('API json schemas:', () => {
 
 			expect(validation.schema).toEqual(undefined);
 			expect(validation.errors.length).toEqual(1);
-			expect(validation.errors[0].message.indexOf('Couldn\'t parse to json the file content')).toBe(0);
+			expect(validation.errors[0].message.startsWith('JSON parse error:\tUnexpected token / in JSON at position 6')).toBe(true);
 		});
 	});
 

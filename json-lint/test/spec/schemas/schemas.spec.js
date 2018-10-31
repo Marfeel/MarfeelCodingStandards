@@ -40,14 +40,10 @@ describe('Valid json schemas:', () => {
 					const obj = jsonLint.loadJson(_path);
 
 					const objectValidation = jsonLint.validate(obj, schemaName);
-					const pathValidation = jsonLint.validateFromPath(_path, schemaName);
 					const objErrorMessage = !!objectValidation.errors.length &&
-						`Error validating "${file}" with schema "${schemaName}" : ${objectValidation.errors[0]} `;
-					const pathErrorMessage = !!pathValidation.errors.length &&
-                        `Error validating "${file}" with schema "${schemaName}" : ${pathValidation.errors[0]} `;
+						`Error validating "${file}" with schema "${schemaName}" :\n${objectValidation.errors.join('\n')}`;
 
 					expect(objectValidation.errors.length).toBe(0, objErrorMessage);
-					expect(pathValidation.errors.length).toBe(0, pathErrorMessage);
 				});
 			});
 
@@ -62,15 +58,29 @@ describe('Valid json schemas:', () => {
 					const obj = jsonLint.loadJson(_path);
 
 					const validation = jsonLint.validate(obj, schemaName);
-					const pathValidation = jsonLint.validateFromPath(_path, schemaName);
 					const ErrorMessage = `Error detecting problems while validating wrong "${file}" with schema "${schemaName}"`;
 
 					expect(validation.errors.length).not.toBe(0, ErrorMessage);
-					expect(pathValidation.errors.length).not.toBe(0, ErrorMessage);
 				});
 			});
 		});
 	}
+
+	it('malformed JSON file has validation errors', () => {
+		const path = `./test/resources/malformed.json`;
+		const { errors } = jsonLint.validateFromPath(path);
+
+		expect(errors.length).toBe(1);
+		expect(errors[0].message).toBe('JSON parse error:\tUnexpected token m in JSON at position 6\n\tin file: ./test/resources/malformed.json');
+	});
+
+	it('wrong json file path has validation errors', () => {
+		const path = `./does/not/exists.json`;
+		const { errors } = jsonLint.validateFromPath(path);
+
+		expect(errors.length).toBe(1);
+		expect(errors[0].message).toBe('Json file not found : ./does/not/exists.json');
+	});
 
 	tests.forEach(file => { schemaTest(file); });
 });
