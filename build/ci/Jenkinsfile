@@ -24,14 +24,14 @@ pipeline {
 
             }
         }
-        stage('Run yarn') {
+        stage('Run npm') {
             steps {
-                sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app yarn"
+                sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app npm ci"
             }
         }
-        stage('Run yarn test') {
+        stage('Run npm test') {
             steps {
-                sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app yarn test"
+                sh "docker-compose -f build/ci/docker-compose.yml exec -T node_app npm test"
 
             }
         }

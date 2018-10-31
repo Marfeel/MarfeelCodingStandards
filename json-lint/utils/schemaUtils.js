@@ -12,33 +12,28 @@
  * from Marfeel Solutions SL.
  */
 const JSON_MERGE_COMMAND = 'mrf-json';
-const MERGE_ERROR = 'Error merging extended JSON in schemaUtils: ';
 
 const path = require('path');
 const fs = require('fs');
 const { spawnSync }  = require('child_process');
 
 const isNotPrivate = (fileName) => fileName[0] !== '.';
-const getErrorMessage = (jsonPath, status, execPath) => `${MERGE_ERROR}
-	"${JSON_MERGE_COMMAND} ${jsonPath}" >> return STATUS ${status}  
-	${JSON_MERGE_COMMAND} executable path >> ${execPath}`
+const getErrorMessage = (command, jsonPath, status, execPath) => `Error merging extended JSON in schemaUtils: 
+	"${command} ${jsonPath}" >> return STATUS ${status}  
+	${command} executable path >> ${execPath}`
 
-function getMarfeelExtendedJson(jsonPath) {
-	const mrfJson = spawnSync(JSON_MERGE_COMMAND , [ jsonPath ]);
-
-	if(!mrfJson.status){
-		try{
-			const execPath = spawnSync('command', ['-v', JSON_MERGE_COMMAND]).stdout;
-			throw new Error(getErrorMessage(jsonPath, mrfJson.status, execPath))
-		}catch(e){
-			throw new Error(`${MERGE_ERROR}command not found ${JSON_MERGE_COMMAND}`)
-		}
+function getMarfeelExtendedJson(jsonPath, command = JSON_MERGE_COMMAND ) {
+	const mrfJson = spawnSync(command , [ jsonPath ]);
+	
+	if(mrfJson.stderr.length > 0 ||!!mrfJson.status){
+		const execPath = spawnSync('command', ['-v', command]).stdout;
+		throw new Error(getErrorMessage(command, jsonPath, mrfJson.status, execPath))
 	}
 
 	try{
 		return JSON.parse(mrfJson.stdout)
 	} catch(e) {
-		throw new Error(`${MERGE_ERROR}${e}`)
+		throw new Error(`Error merging extended JSON in schemaUtils: ${e}`)
 	}
 }
 
@@ -76,11 +71,11 @@ function importUnresolvedRefs(validator, schemaPath) {
 	importUnresolvedRefs(validator, schemaPath);
 }
 
-function loadExtensibleJson(jsonPath) {
+function loadExtensibleJson(jsonPath, command = undefined) {
 	let obj = loadJson(jsonPath);
 
 	if(Object.keys(obj).includes('extends')){
-		obj = getMarfeelExtendedJson(jsonPath);
+		obj = getMarfeelExtendedJson(jsonPath, command);
 	}	
 	return obj
 }

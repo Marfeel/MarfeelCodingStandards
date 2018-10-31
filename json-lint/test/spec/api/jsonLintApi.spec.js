@@ -53,6 +53,31 @@ describe('API json schemas:', () => {
 			${JSON.stringify(schemaDefinitions.filter(isInvalid))}`);
 	});
 
+	describe(': extended JSON :', () => {
+		it('valid extension', () => {
+			const mockMrfJson = path.resolve('test/resources/api/mrf-json/valid')
+			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME, mockMrfJson);
+
+			expect(validation.errors.length).toEqual(0);
+		});
+
+		it('throwing on extension', () => {
+			const mockMrfJson = path.resolve('test/resources/api/mrf-json/throwing')
+			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME, mockMrfJson);
+
+			expect(validation.errors.length).toEqual(1);
+			expect(validation.errors[0].message.includes('Error merging extended JSON in schemaUtils')).toBe(true);
+		});
+
+		it('validation errors after extension', () => {
+			const mockMrfJson = path.resolve('test/resources/api/mrf-json/wrong')
+			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME, mockMrfJson);
+			
+			expect(validation.errors.length).toEqual(1);
+			expect(validation.errors[0].message.includes('additionalProperty "wrong_key" exists in instance when not allowed')).toBe(true);
+		});
+	});
+
 	describe(': validate :', () => {
 
 		it('Valid JSON', () => {
@@ -61,12 +86,6 @@ describe('API json schemas:', () => {
 
 			expect(validation.schema.$id).toEqual('#example');
 			expect(validation.errors.length).toEqual(0);
-		});
-
-		it('Detect and try to handle extended JSON', () => {
-			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME);
-			expect(validation.errors.length).toEqual(1);
-			expect(validation.errors[0].message.includes('Error merging extended JSON in schemaUtils')).toBe(true);
 		});
 
 		it('Wrong JSON', () => {
