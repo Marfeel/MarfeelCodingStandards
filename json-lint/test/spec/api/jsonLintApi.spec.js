@@ -37,7 +37,7 @@ describe('API json schemas:', () => {
 
 
 	it('get schema names available', () => {
-		const expectedSchemas = ['inventory', 'comments'];
+		const expectedSchemas = ['inventory', 'comments', 'metrics'];
 
 		expect(jsonLint.getSchemaNames().every(schema => expectedSchemas.includes(schema))).toBeTruthy();
 	});
