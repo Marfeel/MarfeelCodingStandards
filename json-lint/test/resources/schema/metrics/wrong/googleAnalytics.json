@@ -1,0 +1,13 @@
+{
+    "googleAnalytics": [{
+        "name": "test",
+        "uaCode": "UA-12345-1"
+    },
+    {
+        "name": "test"
+    }],
+    "googleArf": [{
+        "name": "test",
+        "uaCode": "UA-123456"
+    }]
+}

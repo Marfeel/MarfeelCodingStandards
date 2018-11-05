@@ -1,0 +1,67 @@
+{
+    "$id": "#customTracker",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define a custom Metrics Provider",
+    "title": "Custom Metrics Provider",
+    "type": "array",
+    "items": {
+        "anyOf": [{
+                "additionalProperties": false,
+                "properties": {
+                    "type": {
+                        "const": "js"
+                    },
+                    "file": {
+                        "type": "string"
+                    },
+                    "params": {
+                        "type": "object"
+                    }
+                },
+                "required": ["type", "file", "params"]
+            },
+            {
+                "additionalProperties": false,
+                "properties": {
+                    "type": {
+                        "const": "json"
+                    },
+                    "jsonContent": {
+                        "type": "string"
+                    },
+                    "typeAttribute": {
+                        "type": "string"
+                    },
+                    "idAttribute": {
+                        "type": "string"
+                    }
+                },
+                "required": ["type", "jsonContent", "typeAttribute", "idAttribute"]
+            },
+            {
+                "additionalProperties": false,
+                "properties": {
+                    "type": {
+                        "const": "jsp"
+                    },
+                    "srcPath": {
+                        "type": "string"
+                    }
+                },
+                "required": ["type", "srcPath"]
+            },
+            {
+                "additionalProperties": false,
+                "properties": {
+                    "type": {
+                        "const": "pixel"
+                    },
+                    "pixelSrc": {
+                        "type": "string"
+                    }
+                },
+                "required": ["type", "pixelSrc"]
+            }
+        ]
+    }
+}

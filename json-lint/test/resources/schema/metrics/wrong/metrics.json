@@ -1,0 +1,18 @@
+{
+    "custom": [{
+            "type": "js",
+            "file": "test file",
+            "params": ""
+        }, {
+            "type": "json",
+            "jsonContent": "{}",
+            "idAttribute": "id"
+        }, {
+            "type": "jsp"
+        }, {
+            "type": "pixel",
+            "pixelSrc": "test src",
+            "srcPath": "path"
+        }
+    ]
+}
