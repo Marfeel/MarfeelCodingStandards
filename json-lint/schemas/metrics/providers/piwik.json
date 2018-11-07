@@ -1,0 +1,28 @@
+{
+    "$id": "/properties/piwik",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Piwik as Metrics Provider",
+    "title": "AdobeNative Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "piwikUrl": {
+                "type": "string"
+            },
+            "siteId": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "piwikUrl",
+            "siteId"
+        ]
+    }
+}

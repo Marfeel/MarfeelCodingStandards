@@ -1,0 +1,20 @@
+{
+    "$id": "/properties/effective",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Effective as Metrics Provider",
+    "title": "Effective Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            }
+        },
+        "required": [
+            "name"
+        ]
+    }
+}

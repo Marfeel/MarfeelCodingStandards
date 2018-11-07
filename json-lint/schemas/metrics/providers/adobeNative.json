@@ -1,0 +1,24 @@
+{
+    "$id": "/properties/adobeNative",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define AdobeNative as Metrics Provider",
+    "title": "AdobeNative Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "iframeMessage": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "iframeMessage"
+        ]
+    }
+}

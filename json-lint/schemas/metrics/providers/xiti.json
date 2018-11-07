@@ -1,0 +1,40 @@
+{
+    "$id": "/properties/xiti",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Xiti as Metrics Provider",
+    "title": "Xiti Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "site": {
+                "type": "string"
+            },
+            "logs": {
+                "type": "string"
+            },
+            "domain": {
+                "type": "string"
+            },
+            "level2": {
+                "type": "string"
+            },
+            "host": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "site",
+            "logs",
+            "domain",
+            "level2",
+            "host"
+        ]
+    }
+}

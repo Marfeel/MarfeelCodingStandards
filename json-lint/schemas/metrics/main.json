@@ -8,154 +8,25 @@
     "additionalProperties": false,
     "properties": {
         "adobeNative": {
-            "$id": "/properties/adobeNative",
-            "description": "Define AdobeNative as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "iframeMessage": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "iframeMessage"
-                ]
-            },
-            "title": "AdobeNative Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/adobeNative.json"
         },
         "alexa": {
-            "$id": "/properties/alexa",
-            "description": "Define alexa as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "acctNum": {
-                        "type": "string"
-                    },
-                    "domain": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "acctNum",
-                    "domain"
-                ]
-            },
-            "title": "alexa Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/alexa.json"
         },
         "chartbeat": {
-            "$id": "/properties/chartbeat",
-            "description": "Define Chartbeat as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "uid": {
-                        "type": "string"
-                    },
-                    "domain": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "uid",
-                    "domain"
-                ]
-            },
-            "title": "Chartbeat Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/chartbeat.json"
         },
         "comscore": {
-            "$id": "/properties/comscore",
-            "description": "Define Comscore as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "c2Var": {
-                        "type": "string"
-                    },
-                    "nsSite": {
-                        "type": "string"
-                    },"extraUrlParams": {
-                        "type": "object"
-                    }
-                },
-                "required": [
-                    "name",
-                    "c2Var"
-                ]
-            },
-            "title": "Comscore Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/comscore.json"
         },
         "custom": {
             "$ref" : "./providers/custom.json"
         },
         "dataxpand": {
-            "$id": "/properties/dataxpand",
-            "description": "Define Dataxpand as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "siteId": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "siteId"
-                ]
-            },
-            "title": "Dataxpand Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/dataxpand.json"
         },
         "effective": {
-            "$id": "/properties/effective",
-            "description": "Define Effective as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name"
-                ]
-            },
-            "title": "Effective Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/effective.json"
         },
         "extends": {
             "$id": "/properties/extends",
@@ -164,27 +35,7 @@
             "type": "string"
         },
         "facebookMetric": {
-            "$id": "/properties/facebookMetric",
-            "description": "Define Facebook as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "id": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "id"
-                ]
-            },
-            "title": "Facebook Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/facebookMetric.json"
         },
         "googleAnalytics": {
             "$ref": "./providers/googleAnalytics.json"
@@ -193,266 +44,34 @@
             "$ref": "./providers/googleAnalytics.json"
         },
         "jetpack": {
-            "$id": "/properties/jetpack",
-            "description": "Define Jetpack as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "blog": {
-                        "type": "string"
-                    },
-                    "tz": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "blog",
-                    "tz"
-                ]
-            },
-            "title": "Jetpack Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/jetpack.json"
         },
         "liveInternet": {
-            "$id": "/properties/liveInternet",
-            "description": "Define LiveInternet as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "domain": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "domain"
-                ]
-            },
-            "title": "LiveInternet Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/liveInternet.json"
         },
         "lotame": {
-            "$id": "/properties/lotame",
-            "description": "Define Lotame as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "account": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "account"
-                ]
-            },
-            "title": "Lotame Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/lotame.json"
         },
         "onthe": {
-            "$id": "/properties/onthe",
-            "description": "Define onthe as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "projectId": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "projectId"
-                ]
-            },
-            "title": "onthe Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/onthe.json"
         },
         "panmetrics": {
-            "$id": "/properties/panmetrics",
-            "description": "Define Panmetrics as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "siteId": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "siteId"
-                ]
-            },
-            "title": "Panmetrics Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/panmetrics.json"
         },
         "parsely": {
-            "$id": "/properties/parsely",
-            "description": "Define Parsely as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "apiKey": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "apiKey"
-                ]
-            },
-            "title": "Parsely Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/parsely.json"
         },
         "piwik": {
-            "$id": "/properties/piwik",
-            "description": "Define Piwik as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "piwikUrl": {
-                        "type": "string"
-                    },
-                    "siteId": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "piwikUrl",
-                    "siteId"
-                ]
-            },
-            "title": "AdobeNative Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/piwik.json"
         },
         "quantcast": {
-            "$id": "/properties/quantcast",
-            "description": "Define Quantcast as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "pcode": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "pcode"
-                ]
-            },
-            "title": "Quantcast Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/quantcast.json"
         },
         "statcounter": {
-            "$id": "/properties/statcounter",
-            "description": "Define statcounter as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "project": {
-                        "type": "string"
-                    },
-                    "security": {
-                        "type": "string"
-                    },
-                    "flags": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "project",
-                    "security",
-                    "flags"
-                ]
-            },
-            "title": "Statcounter Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/statcounter.json"
         },
         "xiti": {
-            "$id": "/properties/xiti",
-            "description": "Define Xiti as Metrics Provider",
-            "items": {
-                "additionalProperties": false,
-                "properties": {
-                    "name": {
-                        "description": "Name of the metrics provider",
-                        "title": "Metrics Provider Name",
-                        "type": "string"
-                    },
-                    "site": {
-                        "type": "string"
-                    },
-                    "logs": {
-                        "type": "string"
-                    },
-                    "domain": {
-                        "type": "string"
-                    },
-                    "level2": {
-                        "type": "string"
-                    },
-                    "host": {
-                        "type": "string"
-                    }
-                },
-                "required": [
-                    "name",
-                    "site",
-                    "logs",
-                    "domain",
-                    "level2",
-                    "host"
-                ]
-            },
-            "title": "Xiti Metrics Provider",
-            "type": "array"
+            "$ref" : "./providers/xiti.json"
         }
     }
 }

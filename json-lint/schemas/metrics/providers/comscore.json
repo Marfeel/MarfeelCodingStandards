@@ -1,0 +1,29 @@
+{
+    "$id": "/properties/comscore",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Comscore as Metrics Provider",
+    "title": "Comscore Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "c2Var": {
+                "type": "string"
+            },
+            "nsSite": {
+                "type": "string"
+            },"extraUrlParams": {
+                "type": "object"
+            }
+        },
+        "required": [
+            "name",
+            "c2Var"
+        ]
+    }
+}

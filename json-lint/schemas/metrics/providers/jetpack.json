@@ -1,0 +1,28 @@
+{
+    "$id": "/properties/jetpack",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Jetpack as Metrics Provider",
+    "title": "Jetpack Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "blog": {
+                "type": "string"
+            },
+            "tz": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "blog",
+            "tz"
+        ]
+    }
+}

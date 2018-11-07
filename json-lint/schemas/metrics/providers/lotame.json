@@ -1,0 +1,24 @@
+{
+    "$id": "/properties/lotame",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Lotame as Metrics Provider",
+    "title": "Lotame Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "account": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "account"
+        ]
+    }
+}

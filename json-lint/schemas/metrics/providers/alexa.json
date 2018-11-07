@@ -1,0 +1,28 @@
+{
+    "$id": "/properties/alexa",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define alexa as Metrics Provider",
+    "title": "alexa Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "acctNum": {
+                "type": "string"
+            },
+            "domain": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "name",
+            "acctNum",
+            "domain"
+        ]
+    }
+}
