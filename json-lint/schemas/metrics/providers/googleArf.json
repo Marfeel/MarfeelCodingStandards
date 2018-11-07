@@ -19,7 +19,7 @@
                 "type": "string"
             },
             "platforms": {
-                "$ref" : "../properties/platforms-all.json"
+                "$ref" : "../properties/platforms-amp.json"
             }
         },
         "required": [

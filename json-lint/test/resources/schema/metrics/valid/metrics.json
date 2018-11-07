@@ -2,6 +2,7 @@
     "custom": [{
             "type": "js",
             "file": "test file",
+            "platforms": ["TOUCH"],
             "params": {
                 "param1": "foo",
                 "param2": "bar"
@@ -9,22 +10,42 @@
         },
         {
             "type": "json",
+            "platforms": ["AMP"],
             "jsonContent": "{}",
             "typeAttribute": "type",
             "idAttribute": "id"
         },
         {
             "type": "jsp",
+            "platforms": ["AMP"],
             "srcPath": "path"
         }, {
             "type": "pixel",
+            "platforms": ["AMP"],
             "pixelSrc": "test src"
         }
     ],
     "googleAnalytics": [{
-        "name": "test",
-        "uaCode": "UA-123456-1"
-    }],
+            "name": "test",
+            "uaCode": "UA-123456-1"
+        },
+        {
+            "name": "test",
+            "uaCode": "UA-123456-1",
+            "platforms": ["AMP"]
+        },
+        {
+            "name": "test",
+            "uaCode": "UA-123456-1",
+            "platforms": ["TOUCH"]
+        },
+        {
+            "name": "test",
+            "uaCode": "UA-123456-1",
+            "platforms": ["AMP", "TOUCH"]
+        }
+
+    ],
     "googleArf": [{
         "name": "test",
         "uaCode": "UA-123456-1"

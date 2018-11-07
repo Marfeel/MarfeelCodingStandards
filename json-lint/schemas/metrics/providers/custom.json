@@ -16,9 +16,12 @@
                     },
                     "params": {
                         "type": "object"
+                    },
+                    "platforms": {
+                        "$ref" : "../properties/platforms-touch.json"
                     }
                 },
-                "required": ["type", "file", "params"]
+                "required": ["type", "file", "platforms"]
             },
             {
                 "additionalProperties": false,
@@ -34,9 +37,12 @@
                     },
                     "idAttribute": {
                         "type": "string"
+                    },
+                    "platforms": {
+                        "$ref" : "../properties/platforms-amp.json"
                     }
                 },
-                "required": ["type", "jsonContent", "typeAttribute", "idAttribute"]
+                "required": ["type", "jsonContent", "typeAttribute", "idAttribute", "platforms"]
             },
             {
                 "additionalProperties": false,
@@ -46,9 +52,12 @@
                     },
                     "srcPath": {
                         "type": "string"
+                    },
+                    "platforms": {
+                        "$ref" : "../properties/platforms-amp.json"
                     }
                 },
-                "required": ["type", "srcPath"]
+                "required": ["type", "srcPath", "platforms"]
             },
             {
                 "additionalProperties": false,
@@ -58,9 +67,12 @@
                     },
                     "pixelSrc": {
                         "type": "string"
+                    },
+                    "platforms": {
+                        "$ref" : "../properties/platforms-amp.json"
                     }
                 },
-                "required": ["type", "pixelSrc"]
+                "required": ["type", "pixelSrc", "platforms"]
             }
         ]
     },
