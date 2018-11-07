@@ -21,16 +21,14 @@
         },
         "required": [
             "name",
-            "uid",
-            "domain"
+            "uid"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
                 "name": "$1",
-                "uid": "$2",
-                "domain": "$3"
+                "uid": "$2"
             }]
         }
     ]
