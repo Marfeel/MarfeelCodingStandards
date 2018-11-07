@@ -20,5 +20,13 @@
             "name",
             "account"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "account": "$2"
+            }]
+        }
+    ]
 }

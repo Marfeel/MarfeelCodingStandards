@@ -20,5 +20,13 @@
             "name",
             "id"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "id": "$2"
+            }]
+        }
+    ]
 }

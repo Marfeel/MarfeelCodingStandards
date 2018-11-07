@@ -24,5 +24,14 @@
             "acctNum",
             "domain"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "acctNum": "$2",
+                "domain": "$3"
+            }]
+        }
+    ]
 }

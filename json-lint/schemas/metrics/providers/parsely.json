@@ -20,5 +20,13 @@
             "name",
             "apiKey"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "apiKey": "$2"
+            }]
+        }
+    ]
 }

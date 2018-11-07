@@ -20,5 +20,13 @@
             "name",
             "iframeMessage"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "iframeMessage": "$2"
+            }]
+        }
+    ]
 }

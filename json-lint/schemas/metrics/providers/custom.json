@@ -63,5 +63,12 @@
                 "required": ["type", "pixelSrc"]
             }
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "type": "$1"
+            }]
+        }
+    ]
 }

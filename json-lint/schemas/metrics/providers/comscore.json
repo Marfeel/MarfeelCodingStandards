@@ -25,5 +25,13 @@
             "name",
             "c2Var"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "c2Var": "$2"
+            }]
+        }
+    ]
 }

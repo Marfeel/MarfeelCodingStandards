@@ -20,5 +20,13 @@
             "name",
             "siteId"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "siteId": "$2"
+            }]
+        }
+    ]
 }

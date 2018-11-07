@@ -36,5 +36,17 @@
             "level2",
             "host"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "site": "$2",
+                "logs": "$3",
+                "domain": "$4",
+                "level2": "$2",
+                "host": "$3"
+            }]
+        }
+    ]
 }

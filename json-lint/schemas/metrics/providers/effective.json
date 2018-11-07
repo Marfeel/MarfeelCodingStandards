@@ -16,5 +16,12 @@
         "required": [
             "name"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1"
+            }]
+        }
+    ]
 }

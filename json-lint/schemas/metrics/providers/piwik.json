@@ -24,5 +24,14 @@
             "piwikUrl",
             "siteId"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "piwikUrl": "$2",
+                "siteId": "$3"
+            }]
+        }
+    ]
 }

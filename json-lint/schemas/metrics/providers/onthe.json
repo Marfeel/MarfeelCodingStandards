@@ -20,5 +20,13 @@
             "name",
             "projectId"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "projectId": "$2"
+            }]
+        }
+    ]
 }

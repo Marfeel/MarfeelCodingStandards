@@ -24,5 +24,14 @@
             "blog",
             "tz"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "blog": "$2",
+                "tz": "$3"
+            }]
+        }
+    ]
 }

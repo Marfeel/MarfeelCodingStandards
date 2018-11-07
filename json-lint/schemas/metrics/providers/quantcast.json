@@ -20,5 +20,13 @@
             "name",
             "pcode"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "pcode": "$2"
+            }]
+        }
+    ]
 }

@@ -20,5 +20,13 @@
             "name",
             "domain"
         ]
-    }
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "domain": "$2"
+            }]
+        }
+    ]
 }
