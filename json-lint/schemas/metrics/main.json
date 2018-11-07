@@ -100,12 +100,13 @@
                     },
                     "nsSite": {
                         "type": "string"
+                    },"extraUrlParams": {
+                        "type": "object"
                     }
                 },
                 "required": [
                     "name",
-                    "c2Var",
-                    "nsSite"
+                    "c2Var"
                 ]
             },
             "title": "Comscore Metrics Provider",
