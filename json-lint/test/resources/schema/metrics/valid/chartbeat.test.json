@@ -1,0 +1,29 @@
+{
+    "chartbeat": [
+        {
+            "name": "chartbeat",
+            "uid": "6248"
+        }
+    ],
+    "comscore": [
+        {
+            "name": "wapape",
+            "c2Var": "6906594"
+        },{
+            "name": "wapapetwo",
+            "c2Var": "13739933"
+        }
+    ],
+    "googleAnalytics": [
+        {
+            "name": "wapapeone",
+            "uaCode": "UA-6536106-9"
+        },{
+            "name": "wapatwo",
+            "uaCode": "UA-38174542-5"
+        },{
+            "name": "wapapethree",
+            "uaCode": "UA-61683267-1"
+        }
+    ]
+}
