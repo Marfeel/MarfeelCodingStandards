@@ -1,0 +1,23 @@
+{
+    "googleAnalytics": [
+      {
+        "name": "listindiario",
+        "uaCode": "UA-1683571-1"
+      }
+    ],
+  
+    "alexa": [
+      {
+        "name": "alexa",
+        "acctNum": "8cobl1asWhy3/9",
+        "domain": "listindiario.com"
+      }
+    ],
+  
+    "facebookMetric": [
+      {
+        "name": "facebook",
+        "id": "871551932912625"
+      }
+    ]
+  }

@@ -1,8 +1,8 @@
 {
-    "$id": "/properties/googleAnalytics",
+    "$id": "/properties/jetpack",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Define googleAnalytics as Metrics Provider",
-    "title": "GoogleAnalytics Metrics Provider",
+    "description": "Define Jetpack as Metrics Provider",
+    "title": "Jetpack Metrics Provider",
     "type": "array",
     "items": {
         "additionalProperties": false,
@@ -12,23 +12,25 @@
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
-            "uaCode": {
-                "description": "uaCode",
-                "pattern": "^(UA-[0-9]{6,}-[0-9]+)$",
-                "title": "uaCode",
+            "blog": {
+                "type": "string"
+            },
+            "tz": {
                 "type": "string"
             }
         },
         "required": [
             "name",
-            "uaCode"
+            "blog",
+            "tz"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
                 "name": "$1",
-                "uaCode": "UA-$2"
+                "blog": "$2",
+                "tz": "$3"
             }]
         }
     ]
