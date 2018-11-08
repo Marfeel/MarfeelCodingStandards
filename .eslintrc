@@ -1,6 +1,6 @@
 {
 	"extends": [
-		"../eslint/base/.eslintrc"
+		"./eslint/base/.eslintrc"
 	],
 	"env": {
 		"commonjs": true,

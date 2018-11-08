@@ -16,6 +16,7 @@
 	},
 	"homepage": "https://github.com/Marfeel/MarfeelCodingStandards#readme",
 	"dependencies": {
+		"babel-eslint": "^10.0.1",
 		"eslint": "^5.5.0",
 		"eslint-plugin-node": "^7.0.1",
 		"lerna": "^3.4.0"
