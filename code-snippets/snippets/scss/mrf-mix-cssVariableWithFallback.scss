@@ -1,0 +1,3 @@
+@include cssVariableWithFallback($property,
+		$variable,
+		$fallback: #000);
