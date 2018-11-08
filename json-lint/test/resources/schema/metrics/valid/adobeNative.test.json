@@ -1,0 +1,38 @@
+{
+    "googleAnalytics": [
+        {
+            "name": "arabicga",
+            "uaCode": "UA-29726267-1"
+        }
+    ],
+    "comscore": [
+        {
+            "name": "arabiccomscore",
+            "c2Var": "13739933"
+        }
+    ],
+    "facebookMetric": [
+        {
+            "name": "arabicfacebook",
+            "id": "1612819098956034"
+        }
+    ],
+    "quantcast": [
+        {
+            "name": "arabicquantcast",
+            "pcode": "p-8WySRT3MRSkuS"
+        }
+    ],
+    "lotame": [
+        {
+            "name": "arabiclotame",
+            "account": "6320"
+        }
+    ],
+    "adobeNative": [
+        {
+            "name": "arabicadobenative",
+            "iframeMessage": "//services.euronews.com/analytics/amp/euronews/ar/"
+        }
+    ]
+}

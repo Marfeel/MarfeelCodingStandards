@@ -1,0 +1,25 @@
+{
+    "comscore": [
+      {
+        "name": "comscore",
+        "c2Var": "14152907",
+        "extraUrlParams": {
+          "comscorekw" : "amp"
+        }
+      }
+    ],
+    "googleAnalytics": [
+      {
+        "name": "google",
+        "uaCode": "UA-5792089-1"
+      },
+      {
+        "name": "google",
+        "uaCode": "UA-5792089-14"
+      },
+      {
+        "name": "google",
+        "uaCode": "UA-5792089-12"
+      }
+    ]
+  }
