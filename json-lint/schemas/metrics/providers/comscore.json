@@ -19,6 +19,9 @@
                 "type": "string"
             },"extraUrlParams": {
                 "type": "object"
+            },
+            "platforms": {
+                "$ref" : "../properties/platforms-all.json"
             }
         },
         "required": [

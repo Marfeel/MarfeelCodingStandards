@@ -1,8 +1,8 @@
 {
-    "$id": "/properties/piwik",
+    "$id": "/properties/googleAnalytics",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Define Piwik as Metrics Provider",
-    "title": "AdobeNative Metrics Provider",
+    "description": "Define googleAnalytics as Metrics Provider",
+    "title": "GoogleAnalytics Metrics Provider",
     "type": "array",
     "items": {
         "additionalProperties": false,
@@ -12,28 +12,26 @@
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
-            "piwikUrl": {
-                "type": "string"
-            },
-            "siteId": {
+            "uaCode": {
+                "description": "uaCode",
+                "pattern": "^(UA-[0-9]{6,}-[0-9]+)$",
+                "title": "uaCode",
                 "type": "string"
             },
             "platforms": {
-                "$ref" : "../properties/platforms-all.json"
+                "$ref" : "../properties/platforms-amp.json"
             }
         },
         "required": [
             "name",
-            "piwikUrl",
-            "siteId"
+            "uaCode"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
                 "name": "$1",
-                "piwikUrl": "$2",
-                "siteId": "$3"
+                "uaCode": "UA-$2"
             }]
         }
     ]

@@ -14,6 +14,9 @@
             },
             "iframeMessage": {
                 "type": "string"
+            },
+            "platforms": {
+                "$ref" : "../properties/platforms-amp.json"
             }
         },
         "required": [

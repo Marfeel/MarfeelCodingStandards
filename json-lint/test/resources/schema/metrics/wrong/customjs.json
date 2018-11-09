@@ -1,0 +1,8 @@
+{
+    "custom": [{
+            "type": "js",
+            "file": "test file",
+            "platforms": ["AMP"]
+        }
+    ]
+}
