@@ -17,6 +17,9 @@
                 "pattern": "^(UA-[0-9]{6,}-[0-9]+)$",
                 "title": "uaCode",
                 "type": "string"
+            },
+            "platforms": {
+                "$ref" : "../properties/platforms-all.json"
             }
         },
         "required": [

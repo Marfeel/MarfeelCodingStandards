@@ -41,7 +41,7 @@
             "$ref": "./providers/googleAnalytics.json"
         },
         "googleArf": {
-            "$ref": "./providers/googleAnalytics.json"
+            "$ref": "./providers/googleArf.json"
         },
         "jetpack": {
             "$ref" : "./providers/jetpack.json"
