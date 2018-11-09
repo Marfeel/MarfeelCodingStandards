@@ -14,6 +14,9 @@
             },
             "pcode": {
                 "type": "string"
+            },
+            "platforms": {
+                "$ref" : "../properties/platforms-all.json"
             }
         },
         "required": [

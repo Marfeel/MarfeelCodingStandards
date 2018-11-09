@@ -11,6 +11,9 @@
                 "description": "Name of the metrics provider",
                 "title": "Metrics Provider Name",
                 "type": "string"
+            },
+            "platforms": {
+                "$ref" : "../properties/platforms-all.json"
             }
         },
         "required": [
