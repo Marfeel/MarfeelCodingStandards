@@ -11,12 +11,12 @@
         "placements",
         "adServers"
     ],
-    "default" : {
+    "default": {
         "placements": {},
         "adServers": {}
     },
     "properties": {
-        "extends" : {
+        "extends": {
             "$id": "/properties/extends",
             "type": "string",
             "title": "Extends Path:",
@@ -36,37 +36,96 @@
             "title": "Adservers Object",
             "description": "contain the adServers used in placements.",
             "properties": {
-                "marfeel" :     { "$ref" : "./adservers/marfeel/schema.json" },
-                "adsense" :     { "$ref" : "./adservers/adsense.json" },
-                "colombia" :    { "$ref" : "./adservers/colombia.json" },
-                "criteo" :      { "$ref" : "./adservers/criteo.json" },
-                "doubleclick" : { "$ref" : "./adservers/doubleclick.json" },
-                "ligatus" :     { "$ref" : "./adservers/ligatus.json" },
-                "outbrain" :    { "$ref" : "./adservers/outbrain.json" },
-                "postquare" :   { "$ref" : "./adservers/postquare.json" },
-                "revcontent" :  { "$ref" : "./adservers/revcontent.json" },
-                "smartadserver" :{"$ref" : "./adservers/smartadserver.json" },
-                "smartclip" :   { "$ref" : "./adservers/smartclip.json" },
-                "taboola" :     { "$ref" : "./adservers/taboola.json" },
-                "teads" :       { "$ref" : "./adservers/teads.json" },
-                "engageya":     { "$href": "./adservers/engageya.json" }
+                "adsense": {
+                    "$ref": "./adservers/adsense.json"
+                },
+                "colombia": {
+                    "$ref": "./adservers/colombia.json"
+                },
+                "criteo": {
+                    "$ref": "./adservers/criteo.json"
+                },
+                "custom": {
+                    "$ref": "./adservers/custom.json"
+                },
+                "doubleclick": {
+                    "$ref": "./adservers/doubleclick.json"
+                },
+                "engageya": {
+                    "$href": "./adservers/engageya.json"
+                },
+                "ligatus": {
+                    "$ref": "./adservers/ligatus.json"
+                },
+                "marfeel": {
+                    "$ref": "./adservers/marfeel/schema.json"
+                },
+                "outbrain": {
+                    "$ref": "./adservers/outbrain.json"
+                },
+                "postquare": {
+                    "$ref": "./adservers/postquare.json"
+                },
+                "revcontent": {
+                    "$ref": "./adservers/revcontent.json"
+                },
+                "smartadserver": {
+                    "$ref": "./adservers/smartadserver.json"
+                },
+                "smartclip": {
+                    "$ref": "./adservers/smartclip.json"
+                },
+                "taboola": {
+                    "$ref": "./adservers/taboola.json"
+                },
+                "teads": {
+                    "$ref": "./adservers/teads.json"
+                }
             },
             "patternProperties": {
                 "^(?!marfeel$).*$": {
-                    "anyOf": [
-                        {"$ref" : "./adservers/adsense.json"},
-                        {"$ref" : "./adservers/colombia.json"},
-                        {"$ref" : "./adservers/criteo.json"},
-                        {"$ref" : "./adservers/doubleclick.json"},
-                        {"$ref" : "./adservers/ligatus.json"},
-                        {"$ref" : "./adservers/outbrain.json"},
-                        {"$ref" : "./adservers/postquare.json"},
-                        {"$ref" : "./adservers/revcontent.json"},
-                        {"$ref" : "./adservers/smartadserver.json"},
-                        {"$ref" : "./adservers/smartclip.json"},
-                        {"$ref" : "./adservers/taboola.json"},
-                        {"$ref" : "./adservers/teads.json"},
-                        {"$ref" : "./adservers/engageya.json"}
+                    "anyOf": [{
+                            "$ref": "./adservers/adsense.json"
+                        },
+                        {
+                            "$ref": "./adservers/colombia.json"
+                        },
+                        {
+                            "$ref": "./adservers/criteo.json"
+                        },
+                        {
+                            "$ref": "./adservers/custom.json"
+                        },
+                        {
+                            "$ref": "./adservers/doubleclick.json"
+                        },
+                        {
+                            "$ref": "./adservers/ligatus.json"
+                        },
+                        {
+                            "$ref": "./adservers/outbrain.json"
+                        },
+                        {
+                            "$ref": "./adservers/postquare.json"
+                        },
+                        {
+                            "$ref": "./adservers/revcontent.json"
+                        },
+                        {
+                            "$ref": "./adservers/smartadserver.json"
+                        },
+                        {
+                            "$ref": "./adservers/smartclip.json"
+                        },
+                        {
+                            "$ref": "./adservers/taboola.json"
+                        },
+                        {
+                            "$ref": "./adservers/teads.json"
+                        },
+                        {
+                            "$ref": "./adservers/engageya.json"
+                        }
                     ]
                 }
             }
