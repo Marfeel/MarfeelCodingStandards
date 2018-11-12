@@ -23,9 +23,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "revcontent"
-      ]
+      "const": "revcontent"
     },
 
     "id": {

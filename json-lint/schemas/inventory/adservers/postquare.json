@@ -27,9 +27,7 @@
 
   "properties": {
     "type": {
-      "enum": [
-        "postquare"
-      ]
+      "const": "postquare"
     },
     "layout": {
       "enum": [

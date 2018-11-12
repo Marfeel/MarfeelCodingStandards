@@ -21,9 +21,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "teads"
-      ]
+      "const": "teads"
     },
     "pid": {
       "type": ["integer","string"],

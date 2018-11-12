@@ -27,9 +27,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "smartadserver"
-      ]
+      "const": "smartadserver"
     },
     "site": {
       "type": ["integer","string"],
