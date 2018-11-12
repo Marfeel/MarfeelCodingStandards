@@ -7,8 +7,9 @@
     "additionalProperties": false,
     "required": [
       "type",
-      "plc",
-      "sz"
+      "width",
+      "heigth",
+      "spotx_channel_id"
     ],
     "defaultSnippets": [
       {
@@ -27,16 +28,19 @@
         "const": "spotx"
       },
       "width": {
-        "type": ["integer","string"],
-        "pattern": "^(\\$\\{.+\\})$", 
+        "type": ["integer", "string"],
+        "pattern": "^(\\$\\{.+\\})$",
         "title": "integer",
-        "description": "Example: 68005"
+        "description": "example: 300"
       },
       "height": {
-        "type": "string"
+        "type": ["integer", "string"],
+        "pattern": "^(\\$\\{.+\\})$",
+        "title": "integer",
+        "description": "example: 250"
       },
       "spotx_channel_id": {
-        "type": "string"
+        "type": ["integer", "string"]
       },
       "spotx_ad_format": {
         "type": "string"
