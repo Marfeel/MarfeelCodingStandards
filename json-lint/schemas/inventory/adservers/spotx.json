@@ -6,56 +6,48 @@
     "description": "https://github.com/ampproject/amphtml/blob/master/ads/spotx.md",
     "additionalProperties": false,
     "required": [
-      "type",
-      "width",
-      "heigth",
-      "spotx_channel_id"
+        "type",
+        "width",
+        "heigth",
+        "spotx_channel_id"
     ],
-    "defaultSnippets": [
-      {
+    "defaultSnippets": [{
         "label": "Spotx template",
         "description": "contains required keys",
         "body": {
-          "type": "spotx",
-          "width": "$1",
-          "height": "$2",
-          "spotx_channel_id": "$3"
+            "type": "spotx",
+            "width": "$1",
+            "height": "$2",
+            "spotx_channel_id": "$3"
         }
-      }
-    ],
+    }],
     "properties": {
-      "type": {
-        "const": "spotx"
-      },
-      "width": {
-        "type": ["integer", "string"],
-        "pattern": "^(\\$\\{.+\\})$",
-        "title": "integer",
-        "description": "example: 300"
-      },
-      "height": {
-        "type": ["integer", "string"],
-        "pattern": "^(\\$\\{.+\\})$",
-        "title": "integer",
-        "description": "example: 250"
-      },
-      "spotx_channel_id": {
-        "type": ["integer", "string"]
-      },
-      "spotx_ad_format": {
-        "type": "string"
-      },
-      "spotx_content_width": {
-        "type": "string"
-      },
-      "spotx_content_height": {
-        "type": "string"
-      },
-      "spotx_unmute_on_mouse": {
-        "type": "string"
-      },
-      "spotx_ad_volume": {
-        "type": "string"
-      }
+        "type": {
+            "const": "spotx"
+        },
+        "width": {
+            "$ref": "./types/dimension.json"
+        },
+        "height": {
+            "$ref": "./types/dimension.json"
+        },
+        "spotx_channel_id": {
+            "type": ["integer", "string"]
+        },
+        "spotx_ad_format": {
+            "type": "string"
+        },
+        "spotx_content_width": {
+            "type": "string"
+        },
+        "spotx_content_height": {
+            "type": "string"
+        },
+        "spotx_unmute_on_mouse": {
+            "type": "string"
+        },
+        "spotx_ad_volume": {
+            "type": "string"
+        }
     }
-  }
+}
