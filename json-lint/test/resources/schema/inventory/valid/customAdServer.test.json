@@ -1,0 +1,16 @@
+{
+    "placements": {
+        "nativeAd": {
+            "adServer": "customAdServer"
+        }
+    },
+    "adServers": {
+        "customAdServer": {
+            "type": "custom",
+            "width": 385,
+            "height": 880,
+            "testArg": 90810,
+            "file": "customAdServer"
+        }
+    }
+}

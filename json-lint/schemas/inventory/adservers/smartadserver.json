@@ -27,9 +27,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "smartadserver"
-      ]
+      "const": "smartadserver"
     },
     "site": {
       "type": ["integer","string"],
@@ -53,14 +51,10 @@
       "description": "Your Smart AdServer call domain : https://<YourSmartAdServerDomain>"
     },
     "width": {
-      "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$", 
-      "title": "integer"
+      "$ref": "./types/dimension.json"
     },
     "height": {
-      "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$", 
-      "title": "integer"
+      "$ref": "./types/dimension.json"
     },
     "target": {
       "type": "string",

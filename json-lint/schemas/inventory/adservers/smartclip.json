@@ -23,9 +23,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "smartclip"
-      ]
+      "const": "smartclip"
     },
     "plc": {
       "type": ["integer","string"],
