@@ -1,8 +1,8 @@
 {
-    "$id": "/properties/googleAnalytics",
+    "$id": "/properties/effective",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Define googleAnalytics as Metrics Provider",
-    "title": "GoogleAnalytics Metrics Provider",
+    "description": "Define Effective as Metrics Provider",
+    "title": "Effective Metrics Provider",
     "type": "array",
     "items": {
         "additionalProperties": false,
@@ -12,26 +12,18 @@
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
-            "uaCode": {
-                "description": "uaCode",
-                "pattern": "^(UA-[0-9]{6,}-[0-9]+)$",
-                "title": "uaCode",
-                "type": "string"
-            },
             "platforms": {
                 "$ref" : "../properties/platforms-all.json"
             }
         },
         "required": [
-            "name",
-            "uaCode"
+            "name"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
-                "name": "$1",
-                "uaCode": "UA-$2"
+                "name": "$1"
             }]
         }
     ]

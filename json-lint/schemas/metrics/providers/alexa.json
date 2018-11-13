@@ -1,8 +1,8 @@
 {
-    "$id": "/properties/googleAnalytics",
+    "$id": "/properties/alexa",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Define googleAnalytics as Metrics Provider",
-    "title": "GoogleAnalytics Metrics Provider",
+    "description": "Define alexa as Metrics Provider",
+    "title": "alexa Metrics Provider",
     "type": "array",
     "items": {
         "additionalProperties": false,
@@ -12,10 +12,10 @@
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
-            "uaCode": {
-                "description": "uaCode",
-                "pattern": "^(UA-[0-9]{6,}-[0-9]+)$",
-                "title": "uaCode",
+            "acctNum": {
+                "type": "string"
+            },
+            "domain": {
                 "type": "string"
             },
             "platforms": {
@@ -24,14 +24,16 @@
         },
         "required": [
             "name",
-            "uaCode"
+            "acctNum",
+            "domain"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
                 "name": "$1",
-                "uaCode": "UA-$2"
+                "acctNum": "$2",
+                "domain": "$3"
             }]
         }
     ]

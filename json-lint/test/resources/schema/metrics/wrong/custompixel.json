@@ -1,0 +1,8 @@
+{
+    "custom": [{
+            "type": "pixel",
+            "pixelSrc": "test src",
+            "srcPath": "path"
+        }
+    ]
+}

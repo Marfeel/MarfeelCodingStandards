@@ -23,9 +23,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "revcontent"
-      ]
+      "const": "revcontent"
     },
 
     "id": {
@@ -40,16 +38,10 @@
       "type": "string"
     },
     "width": {
-      "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$",
-      "title": "integer",
-      "description": "example: 300 (not required, default in outbrain.tag (100))"
+      "$ref": "./types/dimension.json"
     },
     "height": {
-      "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$",
-      "title": "String of digits",
-      "description": "example: 250 (not required, default in outbrain.tag(100))"
+      "$ref": "./types/dimension.json"
     }
   }
 }

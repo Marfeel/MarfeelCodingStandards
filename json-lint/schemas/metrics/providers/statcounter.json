@@ -1,8 +1,8 @@
 {
-    "$id": "/properties/googleAnalytics",
+    "$id": "/properties/statcounter",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Define googleAnalytics as Metrics Provider",
-    "title": "GoogleAnalytics Metrics Provider",
+    "description": "Define statcounter as Metrics Provider",
+    "title": "Statcounter Metrics Provider",
     "type": "array",
     "items": {
         "additionalProperties": false,
@@ -12,10 +12,13 @@
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
-            "uaCode": {
-                "description": "uaCode",
-                "pattern": "^(UA-[0-9]{6,}-[0-9]+)$",
-                "title": "uaCode",
+            "project": {
+                "type": "string"
+            },
+            "security": {
+                "type": "string"
+            },
+            "flags": {
                 "type": "string"
             },
             "platforms": {
@@ -24,14 +27,18 @@
         },
         "required": [
             "name",
-            "uaCode"
+            "project",
+            "security",
+            "flags"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
                 "name": "$1",
-                "uaCode": "UA-$2"
+                "project": "$2",
+                "security": "$3",
+                "flags": "$4"
             }]
         }
     ]

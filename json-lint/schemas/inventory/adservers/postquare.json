@@ -27,9 +27,7 @@
 
   "properties": {
     "type": {
-      "enum": [
-        "postquare"
-      ]
+      "const": "postquare"
     },
     "layout": {
       "enum": [
@@ -57,16 +55,10 @@
       "description": "Example: https://bc.marfeelcache.com/statics/www.thesocialpost.it/index/resources/outbrain.css"
     },
     "width": {
-      "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$",
-      "title": "integer",
-      "description": "example: 300 (not required, default in outbrain.tag (100))"
+      "$ref": "./types/dimension.json"
     },
     "height": {
-      "type": ["integer","string"],
-      "pattern": "^(\\$\\{.+\\})$", 
-      "title": "integer",
-      "description": "example: 250 (not required, default in outbrain.tag(100))"
+      "$ref": "./types/dimension.json"
     }
   }
 }

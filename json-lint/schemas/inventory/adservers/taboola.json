@@ -27,9 +27,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "taboola"
-      ]
+      "const": "taboola"
     },
     "publisher": {
       "type": "string",
