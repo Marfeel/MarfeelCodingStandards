@@ -1,8 +1,8 @@
 {
-    "$id": "/properties/comscore",
+    "$id": "/properties/getClicky",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Define Comscore as Metrics Provider",
-    "title": "Comscore Metrics Provider",
+    "description": "Define getClicky as Metrics Provider",
+    "title": "getClicky Metrics Provider",
     "type": "array",
     "items": {
         "additionalProperties": false,
@@ -12,28 +12,23 @@
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
-            "c2var": {
+            "siteId": {
                 "type": "string"
-            },
-            "nsSite": {
-                "type": "string"
-            },"extraUrlParams": {
-                "type": "object"
             },
             "platforms": {
-                "$ref" : "../properties/platforms-all.json"
+                "$ref" : "../properties/platforms-touch.json"
             }
         },
         "required": [
             "name",
-            "c2var"
+            "siteId"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
                 "name": "$1",
-                "c2var": "$2"
+                "siteId": "$2"
             }]
         }
     ]

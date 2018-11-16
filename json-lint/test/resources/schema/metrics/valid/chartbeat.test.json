@@ -8,10 +8,10 @@
     "comscore": [
         {
             "name": "wapape",
-            "c2Var": "6906594"
+            "c2var": "6906594"
         },{
             "name": "wapapetwo",
-            "c2Var": "13739933"
+            "c2var": "13739933"
         }
     ],
     "googleAnalytics": [
