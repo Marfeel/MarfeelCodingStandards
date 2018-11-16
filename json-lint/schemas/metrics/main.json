@@ -34,8 +34,14 @@
             "title": "Extends Path",
             "type": "string"
         },
+        "facebookAudiences": {
+            "$ref" : "./providers/facebookAudiences.json"
+        },
         "facebookMetric": {
             "$ref" : "./providers/facebookMetric.json"
+        },
+        "getClicky": {
+            "$ref" : "./providers/getClicky.json"
         },
         "googleAnalytics": {
             "$ref": "./providers/googleAnalytics.json"

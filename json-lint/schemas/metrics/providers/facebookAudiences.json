@@ -1,0 +1,35 @@
+{
+    "$id": "/properties/facebookAudiences",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Facebook as Metrics Provider",
+    "title": "Facebook Audiences Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "pixelId": {
+                "type": "string"
+            },
+            "platforms": {
+                "$ref" : "../properties/platforms-touch.json"
+            }
+        },
+        "required": [
+            "name",
+            "pixelId"
+        ]
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "pixelId": "$2"
+            }]
+        }
+    ]
+}
