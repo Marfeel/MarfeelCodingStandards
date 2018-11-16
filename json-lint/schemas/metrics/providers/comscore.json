@@ -12,7 +12,7 @@
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
-            "c2Var": {
+            "c2var": {
                 "type": "string"
             },
             "nsSite": {
@@ -26,14 +26,14 @@
         },
         "required": [
             "name",
-            "c2Var"
+            "c2var"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
                 "name": "$1",
-                "c2Var": "$2"
+                "c2var": "$2"
             }]
         }
     ]

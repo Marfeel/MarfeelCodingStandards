@@ -2,7 +2,7 @@
     "comscore": [
       {
         "name": "comscore",
-        "c2Var": "14152907",
+        "c2var": "14152907",
         "extraUrlParams": {
           "comscorekw" : "amp"
         }
