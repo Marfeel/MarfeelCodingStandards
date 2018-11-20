@@ -1,0 +1,44 @@
+{
+  "$id": "#zergnet",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Zergnet adserver",
+  "description": "https://github.com/ampproject/amphtml/blob/master/ads/zergnet.md",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "data-zergid"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "Zergnet template",
+      "description": "contains required keys",
+      "body": {
+        "type": "zergnet",
+        "data-zergid": "$1"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "zergnet"
+      ]
+    },
+    "layout": {
+      "$ref": "./types/layout.json"
+    },
+    "width": {
+      "$ref": "./types/dimension.json"
+    },
+    "height": {
+      "$ref": "./types/dimension.json"
+    },
+    "heights": {
+      "type": "string"
+    },
+    "data-zergid": {
+      "type": "string"
+    }
+  }
+}

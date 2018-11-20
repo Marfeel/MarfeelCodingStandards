@@ -1,0 +1,15 @@
+{
+    "placements": {
+        "nativeAd": {
+            "adServer": "zergnet"
+        }
+    },
+    "adServers": {
+        "zergnet": {
+            "type": "zergnet",
+            "data-zergid": "34763",
+            "width": 300,
+            "height": 600
+        }
+    }
+}
