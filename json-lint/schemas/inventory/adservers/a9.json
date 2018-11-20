@@ -7,6 +7,7 @@
   "additionalProperties": false,
   "required": [
     "type",
+    "data-adinstanceid",
     "data-amzn_assoc_ad_mode"
   ],
   "defaultSnippets": [
