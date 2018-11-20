@@ -21,9 +21,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "a9"
-      ]
+      "const": "a9"
     },
     "width": {
       "$ref": "./types/dimension.json"
@@ -48,6 +46,42 @@
       "type": "string"
     },
     "data-divid": {
+      "type": "string"
+    },
+    "data-amzn_assoc_asins": {
+      "type": "string"
+    },
+    "data-amzn_assoc_placement": {
+      "type": "string"
+    },
+    "data-amzn_assoc_search_bar": {
+      "type": "boolean"
+    },
+    "data-amzn_assoc_tracking_id": {
+      "type": "string"
+    },
+    "data-amzn_assoc_search_bar_position": {
+      "type": "string"
+    },
+    "data-amzn_assoc_ad_type": {
+      "type": "string"
+    },
+    "data-amzn_assoc_marketplace": {
+      "type": "string"
+    },
+    "data-amzn_assoc_region": {
+      "type": "string"
+    },
+    "data-amzn_assoc_title": {
+      "type": "string"
+    },
+    "data-amzn_assoc_default_search_phrase": {
+      "type": "string"
+    },
+    "data-amzn_assoc_default_category": {
+      "type": "string"
+    },
+    "data-amzn_assoc_linkid": {
       "type": "string"
     }
   }

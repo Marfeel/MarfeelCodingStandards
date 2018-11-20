@@ -21,9 +21,7 @@
   ],
   "properties": {
     "type": {
-      "enum": [
-        "zergnet"
-      ]
+      "const": "zergnet"
     },
     "layout": {
       "$ref": "./types/layout.json"
