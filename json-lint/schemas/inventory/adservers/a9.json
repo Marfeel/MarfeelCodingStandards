@@ -1,0 +1,54 @@
+{
+  "$id": "#a9",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Amazon adserver",
+  "description": "https://github.com/ampproject/amphtml/blob/master/ads/a9.md",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "data-amzn_assoc_ad_mode"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "Amazon template",
+      "description": "contains required keys",
+      "body": {
+        "type": "a9",
+        "data-amzn_assoc_ad_mode": "$1"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "a9"
+      ]
+    },
+    "width": {
+      "$ref": "./types/dimension.json"
+    },
+    "height": {
+      "$ref": "./types/dimension.json"
+    },
+    "data-amzn_assoc_ad_mode": {
+      "enum": [
+        "search",
+        "manual",
+        "auto"
+      ]
+    },
+    "data-recomtype": {
+      "type": "string"
+    },
+    "data-adinstanceid": {
+      "type": "string"
+    },
+    "data-regionurl": {
+      "type": "string"
+    },
+    "data-divid": {
+      "type": "string"
+    }
+  }
+}
