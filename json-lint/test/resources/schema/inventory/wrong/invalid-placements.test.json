@@ -33,6 +33,9 @@
     "home_details_1": {
       "adServer": "someOtherDFP"
     },
+    "     bottom_mosaic_1": {
+      "adServer": "someDFP"
+    },
     "inline_details_requiredOneOfAdServerOrAdServers_1": {
       "adServer": "someDFP",
       "adServers": [ "someDFP", "someOtherDFP" ]
