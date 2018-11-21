@@ -47,6 +47,9 @@
             "title": "Adservers Object",
             "description": "contain the adServers used in placements.",
             "properties": {
+                "a9": {
+                    "$ref": "./adservers/a9.json"
+                },
                 "adsense": {
                     "$ref": "./adservers/adsense.json"
                 },
@@ -91,11 +94,18 @@
                 },
                 "teads": {
                     "$ref": "./adservers/teads.json"
+                },
+                "zergnet": {
+                    "$ref": "./adservers/zergnet.json"
                 }
             },
             "patternProperties": {
                 "^(?!marfeel$).*$": {
-                    "anyOf": [{
+                    "anyOf": [
+                        {
+                            "$ref": "./adservers/a9.json"
+                        },
+                        {
                             "$ref": "./adservers/adsense.json"
                         },
                         {
@@ -136,6 +146,9 @@
                         },
                         {
                             "$ref": "./adservers/engageya.json"
+                        },
+                        {
+                            "$ref": "./adservers/zergnet.json"
                         }
                     ]
                 }
