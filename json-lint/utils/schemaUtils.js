@@ -25,7 +25,7 @@ const getErrorMessage = (command, jsonPath, status, execPath) => `Error merging 
 function getMarfeelExtendedJson(jsonPath, command = JSON_MERGE_COMMAND ) {
 	const mrfJson = spawnSync(command , [ jsonPath ]);
 	
-	if(mrfJson.stderr.length > 0 ||!!mrfJson.status){
+	if((mrfJson.stderr && mrfJson.stderr.length > 0) ||!!mrfJson.status){
 		const execPath = spawnSync('command', ['-v', command]).stdout;
 		throw new Error(getErrorMessage(command, jsonPath, mrfJson.status, execPath))
 	}
