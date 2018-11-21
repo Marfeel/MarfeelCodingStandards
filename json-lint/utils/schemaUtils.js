@@ -20,12 +20,13 @@ const { spawnSync }  = require('child_process');
 const isNotPrivate = (fileName) => fileName[0] !== '.';
 const getErrorMessage = (command, jsonPath, status, execPath) => `Error merging extended JSON in schemaUtils: 
 	"${command} ${jsonPath}" >> return STATUS ${status}  
-	${command} executable path >> ${execPath}`
+	${command} executable path >> ${execPath}`;
 
 function getMarfeelExtendedJson(jsonPath, command = JSON_MERGE_COMMAND ) {
 	const mrfJson = spawnSync(command , [ jsonPath ]);
-	
-	if((mrfJson.stderr && mrfJson.stderr.length > 0) ||!!mrfJson.status){
+	const hasErrors = mrfJson.stderr && mrfJson.stderr.length > 0;
+
+	if(hasErrors ||!!mrfJson.status){
 		const execPath = spawnSync('command', ['-v', command]).stdout;
 		throw new Error(getErrorMessage(command, jsonPath, mrfJson.status, execPath))
 	}
