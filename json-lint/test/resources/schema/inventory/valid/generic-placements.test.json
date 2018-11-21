@@ -75,9 +75,6 @@
     "inter": {
       "adServer": "someDFP"
     },
-    "inter_1": {
-      "adServer": "someDFP"
-    },
     "inline_3": {
       "adServers": [
         "someDFP",

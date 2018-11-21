@@ -35,7 +35,7 @@
                 "^sticky$": {
                     "$ref": "./placements/schema.json"
                 },
-                "(inter)_*([1-2]+)*": {
+                "^inter$": {
                     "$ref": "./placements/schema.json"
                 }
             },
