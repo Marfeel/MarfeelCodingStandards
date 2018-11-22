@@ -1,8 +1,8 @@
 {
-    "$id": "/properties/panmetrics",
+    "$id": "/properties/yandex",
     "$schema": "http://json-schema.org/draft-07/schema#",
-    "description": "Define Panmetrics as Metrics Provider",
-    "title": "Panmetrics Metrics Provider",
+    "description": "Define Yandex as Metrics Provider",
+    "title": "Yandex Metrics Provider",
     "type": "array",
     "items": {
         "additionalProperties": false,
@@ -12,26 +12,28 @@
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
-            "siteId": {
+            "pixelId": {
                 "type": "string"
             },
-            "enableSATI": {
-                "type": "boolean"
+            "scriptSrc": {
+                "type": "string"
             },
             "platforms": {
-                "$ref" : "../properties/platforms-all.json"
+                "$ref" : "../properties/platforms-touch.json"
             }
         },
         "required": [
             "name",
-            "siteId"
+            "pixelId",
+            "scriptSrc"
         ]
     },
     "defaultSnippets": [
         {
             "body": [{
                 "name": "$1",
-                "siteId": "$2"
+                "pixelId": "$2",
+                "scriptSrc": "$3"
             }]
         }
     ]
