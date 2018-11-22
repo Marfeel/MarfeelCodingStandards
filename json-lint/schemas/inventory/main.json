@@ -42,6 +42,9 @@
                 "adsense": {
                     "$ref": "./adservers/adsense.json"
                 },
+                "adSenseSticky": {
+                    "$ref": "./adservers/adsense.json"
+                },
                 "colombia": {
                     "$ref": "./adservers/colombia.json"
                 },
