@@ -1,0 +1,89 @@
+{
+  "$id": "#a9",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "Amazon adserver",
+  "description": "https://github.com/ampproject/amphtml/blob/master/ads/a9.md",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "data-adinstanceid",
+    "data-amzn_assoc_ad_mode"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "Amazon template",
+      "description": "contains required keys",
+      "body": {
+        "type": "a9",
+        "data-amzn_assoc_ad_mode": "$1"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "a9"
+    },
+    "width": {
+      "$ref": "./types/dimension.json"
+    },
+    "height": {
+      "$ref": "./types/dimension.json"
+    },
+    "data-amzn_assoc_ad_mode": {
+      "enum": [
+        "search",
+        "manual",
+        "auto"
+      ]
+    },
+    "data-recomtype": {
+      "type": "string"
+    },
+    "data-adinstanceid": {
+      "type": "string"
+    },
+    "data-regionurl": {
+      "type": "string"
+    },
+    "data-divid": {
+      "type": "string"
+    },
+    "data-amzn_assoc_asins": {
+      "type": "string"
+    },
+    "data-amzn_assoc_placement": {
+      "type": "string"
+    },
+    "data-amzn_assoc_search_bar": {
+      "type": "boolean"
+    },
+    "data-amzn_assoc_tracking_id": {
+      "type": "string"
+    },
+    "data-amzn_assoc_search_bar_position": {
+      "type": "string"
+    },
+    "data-amzn_assoc_ad_type": {
+      "type": "string"
+    },
+    "data-amzn_assoc_marketplace": {
+      "type": "string"
+    },
+    "data-amzn_assoc_region": {
+      "type": "string"
+    },
+    "data-amzn_assoc_title": {
+      "type": "string"
+    },
+    "data-amzn_assoc_default_search_phrase": {
+      "type": "string"
+    },
+    "data-amzn_assoc_default_category": {
+      "type": "string"
+    },
+    "data-amzn_assoc_linkid": {
+      "type": "string"
+    }
+  }
+}
