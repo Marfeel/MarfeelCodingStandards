@@ -61,10 +61,23 @@
       },
       "auto-format": { "const" : "rspv" },
       "width": {
-        "type": ["integer","string"],
-        "title": "String of digits ( if not set, default is 300 )",
-        "description": "example: 300",
-        "pattern": "^(\\$\\{.+\\})$"
+        "oneOf": [
+          {
+            "type": "integer"
+          },
+          {
+            "type": "string",
+            "title": "String of digits ( if not set, default is 300 )",
+            "description": "example: 300",
+            "pattern": "^\\$\\{.+\\}$"
+          },
+          {
+            "type": "string",
+            "title": "window width",
+            "description": "example: 300vw",
+            "pattern": "^[0-9]+vw$"
+          }
+        ]
       },
       "height": {
         "type": ["integer","string"],
