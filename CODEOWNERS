@@ -2,4 +2,4 @@
 /CODEOWNERS @Marfeel/glutenbergteamleads
 
 # inventory.json schemas, main logic and tests
-/json-lint/schemas/inventory @Marfeel/glutenbergteamleads @Marfeel/alot
+/json-lint/schemas/inventory @Marfeel/glutenbergteamleads @Marfeel/alot @Marfeel/integrationsteamleads
