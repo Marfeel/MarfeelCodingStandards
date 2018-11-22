@@ -39,6 +39,9 @@
                 "adsense": {
                     "$ref": "./adservers/adsense.json"
                 },
+                "appnexus": {
+                    "$ref": "./adservers/appnexus.json"
+                },
                 "colombia": {
                     "$ref": "./adservers/colombia.json"
                 },
@@ -86,6 +89,9 @@
                 "^(?!marfeel$).*$": {
                     "anyOf": [{
                             "$ref": "./adservers/adsense.json"
+                        },
+                        {
+                            "$ref": "./adservers/appnexus.json"
                         },
                         {
                             "$ref": "./adservers/colombia.json"

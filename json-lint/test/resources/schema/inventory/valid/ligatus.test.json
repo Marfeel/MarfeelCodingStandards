@@ -7,7 +7,8 @@
   "adServers": {
     "ligatus": {
       "type": "ligatus",
-      "src": "http://a.ligatus.com/?ids=91606&t=js"
+      "src": "http://a.ligatus.com/?ids=91606&t=js",
+      "height": 360
     }
   }
 }
