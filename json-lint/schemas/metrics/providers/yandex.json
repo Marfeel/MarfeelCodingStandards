@@ -1,0 +1,40 @@
+{
+    "$id": "/properties/yandex",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Yandex as Metrics Provider",
+    "title": "Yandex Metrics Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "pixelId": {
+                "type": "string"
+            },
+            "scriptSrc": {
+                "type": "string"
+            },
+            "platforms": {
+                "$ref" : "../properties/platforms-touch.json"
+            }
+        },
+        "required": [
+            "name",
+            "pixelId",
+            "scriptSrc"
+        ]
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "pixelId": "$2",
+                "scriptSrc": "$3"
+            }]
+        }
+    ]
+}
