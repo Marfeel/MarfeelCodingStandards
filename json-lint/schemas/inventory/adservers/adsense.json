@@ -86,7 +86,8 @@
         "pattern": "^(\\$\\{.+\\})$"
       },
       "full-width": {
-        "type": ["boolean", "string"]
+        "type": ["boolean", "string"],
+        "pattern": "^(\\$\\{.+\\})$"
       }
     }
   }

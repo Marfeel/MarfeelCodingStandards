@@ -24,7 +24,7 @@
       "auto-format": "rspv",
       "width": "${WIDTH}",
       "height": "${HEIGHT}",
-      "full-width": "true"
+      "full-width": true
     },
     "adsense2": {
       "type": "adsense",
