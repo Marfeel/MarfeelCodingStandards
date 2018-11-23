@@ -8,7 +8,7 @@
 		"test": "test"
 	},
 	"scripts": {
-		"test": "jasmine JASMINE_CONFIG_PATH=./test/spec/support/jasmine.json JSONLINT_TEST=true",
+		"test": "../node_modules/.bin/jasmine JASMINE_CONFIG_PATH=./test/spec/support/jasmine.json JSONLINT_TEST=true",
 		"test:watch": "nodemon -w . --exec 'npm t'",
 		"lint": "eslint . "
 	},
@@ -21,8 +21,5 @@
 	"dependencies": {
 		"commander": "^2.18.0",
 		"jsonschema": "^1.2.4"
-	},
-	"devDependencies": {
-		"jasmine": "^3.3.0"
 	}
 }
