@@ -8,7 +8,7 @@
 # Steps to reproduce:
 1. first step
 2. second step
-3.  step
+3. third step
 
 # Observed Results:
 What happened? This could be a description, log output, etc.
