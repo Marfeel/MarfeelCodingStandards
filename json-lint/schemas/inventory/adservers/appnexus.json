@@ -13,8 +13,7 @@
             "label": "Appnexus template",
             "description": "contains required keys",
             "body": {
-                "type": "appnexus",
-                "member": "$1"
+                "type": "appnexus"
             }
         }
     ],
