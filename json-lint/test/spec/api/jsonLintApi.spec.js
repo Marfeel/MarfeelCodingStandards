@@ -13,11 +13,11 @@
  */
 
 const path = require('path');
-const jsonLint = require('../../../../json-lint/api');
+const jsonLint = require(`${__dirname}/../../../api`);
 const SCHEMA_NAME = 'example';
 
 describe('API json schemas:', () => {
-	const extenderPath = './test/resources/api/exampleExtends.json';
+	const extenderPath = path.resolve(__dirname, '../../resources/api/exampleExtends.json');
 	const exampleJsonPath = path.resolve(__dirname, '../../resources/api/example.json');
 	const invalidExampleJsonPath = path.resolve(__dirname, '../../resources/api/invalidExample.json');
 	const notExistentPath = path.resolve(__dirname, '../../resources/api/notExistent.json');
@@ -33,8 +33,6 @@ describe('API json schemas:', () => {
 		expect(() => jsonLint.loadJson(notExistentPath)).toThrow();
 		expect(() => jsonLint.loadJson(malformedPath)).toThrow();
 	});
-
-
 
 	it('get schema names available', () => {
 		const expectedSchemas = ['inventory', 'comments', 'metrics'];
@@ -55,14 +53,15 @@ describe('API json schemas:', () => {
 
 	describe(': extended JSON :', () => {
 		it('valid extension', () => {
-			const mockMrfJson = path.resolve('test/resources/api/mrf-json/valid')
+			const mockMrfJson = path.resolve(__dirname, '../../resources/api/mrf-json/valid')
 			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME, mockMrfJson);
 
 			expect(validation.errors.length).toEqual(0);
 		});
 
 		it('throwing on extension', () => {
-			const mockMrfJson = path.resolve('test/resources/api/mrf-json/throwing')
+			const mockMrfJson = path.resolve(__dirname, '../../resources/api/mrf-json/throwing');
+
 			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME, mockMrfJson);
 
 			expect(validation.errors.length).toEqual(1);
@@ -70,7 +69,7 @@ describe('API json schemas:', () => {
 		});
 
 		it('validation errors after extension', () => {
-			const mockMrfJson = path.resolve('test/resources/api/mrf-json/wrong')
+			const mockMrfJson = path.resolve(__dirname, '../../resources/api/mrf-json/wrong')
 			const validation = jsonLint.validateFromPath(extenderPath, SCHEMA_NAME, mockMrfJson);
 			
 			expect(validation.errors.length).toEqual(1);

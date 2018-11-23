@@ -12,12 +12,15 @@
  * from Marfeel Solutions SL.
  */
 
+/* eslint-disable max-len */
+
 const fs = require('fs');
-const jsonLint = require('../../../api');
-const util = require('../../../utils/schemaUtils');
+const jsonLint = require(`${__dirname}/../../../api`);
+const util = require(`${__dirname}/../../../utils/schemaUtils`);
 
 describe('Valid json schemas:', () => {
-	const testFolder = './test/resources/schema';
+	const testFolder = `${__dirname}/../../resources/schema`;
+
 	const tests = fs.readdirSync(testFolder).filter(util.isNotPrivate);
 
 	function schemaTest(schemaName) {
@@ -40,8 +43,7 @@ describe('Valid json schemas:', () => {
 					const obj = jsonLint.loadJson(_path);
 
 					const objectValidation = jsonLint.validate(obj, schemaName);
-					const objErrorMessage = !!objectValidation.errors.length &&
-						`Error validating "${file}" with schema "${schemaName}" :\n${objectValidation.errors.join('\n')}`;
+					const objErrorMessage = !!objectValidation.errors.length && `Error validating "${file}" with schema "${schemaName}" :\n${objectValidation.errors.join('\n')}`;
 
 					expect(objectValidation.errors.length).toBe(0, objErrorMessage);
 				});
@@ -67,15 +69,15 @@ describe('Valid json schemas:', () => {
 	}
 
 	it('malformed JSON file has validation errors', () => {
-		const path = `./test/resources/malformed.json`;
+		const path = `${__dirname}/../../resources/malformed.json`;
 		const { errors } = jsonLint.validateFromPath(path);
 
 		expect(errors.length).toBe(1);
-		expect(errors[0].message).toBe('JSON parse error:\tUnexpected token m in JSON at position 6\n\tin file: ./test/resources/malformed.json');
+		expect(/JSON parse error:\tUnexpected token m in JSON/.test(errors[0].message)).toBe(true);
 	});
 
 	it('wrong json file path has validation errors', () => {
-		const path = `./does/not/exists.json`;
+		const path = './does/not/exists.json';
 		const { errors } = jsonLint.validateFromPath(path);
 
 		expect(errors.length).toBe(1);

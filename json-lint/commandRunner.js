@@ -12,6 +12,8 @@
  * from Marfeel Solutions SL.
  */
 
+/* eslint-disable no-console */
+
 const jsonLintApi = require('./api');
 
 const VALIDATE = 'validate';
@@ -22,14 +24,14 @@ const SUCCESS_EXIT = 0;
 function _shortErrorPrint(args, errors) {
 	console.log(`-- json validation error : ${args.schema || args.file} ---`);
 	errors.forEach(e => {
-		!!e.property && console.log(`   ${e.property}`)
-		!!e.message && console.log(`   ${e.message}`)
-		console.log(`-----`)
+		!!e.property && console.log(`   ${e.property}`);
+		!!e.message && console.log(`   ${e.message}`);
+		console.log('-----');
 	});
-};
+}
 
 function _successPrint(args) {
-	console.log(`JSON validation -> ${args.schema || args.file}`)
+	console.log(`JSON validation -> ${args.schema || args.file}`);
 	console.log('   Success');
 }
 
@@ -67,10 +69,10 @@ function run(args) {
 				_successPrint(args);
 				process.exit(SUCCESS_EXIT);
 			} else {
-				if(args.verbose) {
+				if (args.verbose) {
 					console.log(errors);
 				} else {
-					_shortErrorPrint(args, errors)
+					_shortErrorPrint(args, errors);
 				}
 				process.exit(ERROR_EXIT);
 			}
