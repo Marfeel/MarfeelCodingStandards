@@ -1,0 +1,49 @@
+{
+    "$id": "#appnexus",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Appnexus adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/appnexus.md",
+    "additionalProperties": false,
+    "required": [
+        "type"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "Appnexus template",
+            "description": "contains required keys",
+            "body": {
+                "type": "appnexus"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "appnexus"
+        },
+        "tagid": {
+            "type": [
+                "integer",
+                "string"
+            ],
+            "title": "Integer or parameter",
+            "description": "example: 6063968",
+            "pattern": "^(\\$\\{.+\\})$"
+        },
+        "member": {
+            "type": [
+                "integer",
+                "string"
+            ],
+            "title": "Integer or parameter",
+            "description": "example: 958",
+            "pattern": "^(\\$\\{.+\\})$"
+        },
+        "width": {
+            "$ref": "./types/dimension.json"
+        },
+        "height": {
+            "$ref": "./types/dimension.json"
+        }
+    }
+}
