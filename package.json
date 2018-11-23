@@ -27,7 +27,7 @@
 		"nodemon": "^1.18.5"
 	},
 	"scripts": {
-		"install": "lerna bootstrap",
-		"test": "lerna run test"
+		"install": "cd json-lint; npm install",
+		"test": "cd json-lint; npm test"
 	}
 }
