@@ -1,0 +1,18 @@
+{
+    "placements": {
+      "inline_mosaic_1" : {
+        "adServer" : "adocean"
+      }
+    },
+    "adServers": {
+      "adocean": {
+        "type": "adocean",
+        "ao_id": "ado-HG0MvX.47Y66_8SXuUFWpk4lQbYB4Ib0QHuaV0Zzy3D.Q7",
+        "ao_emitter": "ro.adocean.pl",
+        "ao_mode": "sync",
+        "ao_preview":"9o_nnmMOl7DVtYDXaZt4a6fiYvE4HBI1Yn6GfTZu5v3.E7",
+        "width": 300,
+        "height": 250
+      }
+    }
+}
