@@ -8,7 +8,7 @@
         "WIDTH": 300,
         "HEIGHT": 250
       }
-    },    
+    },
     "inline_mosaic_2": {
       "adServer": "adsense2"
     },
@@ -23,7 +23,8 @@
       "ad-slot": "${SLOT}",
       "auto-format": "rspv",
       "width": "${WIDTH}",
-      "height": "${HEIGHT}"
+      "height": "${HEIGHT}",
+      "full-width": true
     },
     "adsense2": {
       "type": "adsense",
