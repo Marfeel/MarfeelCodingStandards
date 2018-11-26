@@ -8,6 +8,23 @@
     "required": [
         "type"
     ],
+    "oneOf": [
+        {
+            "required": [
+                "tagid"
+            ]
+        },
+        {
+            "required": [
+                "member"
+            ]
+        },
+        {
+            "required": [
+                "target"
+            ]
+        }
+    ],
     "defaultSnippets": [
         {
             "label": "Appnexus template",
@@ -38,6 +55,25 @@
             "title": "Integer or parameter",
             "description": "example: 958",
             "pattern": "^(\\$\\{.+\\})$"
+        },
+        "target": {
+            "type": [
+                "string"
+            ],
+            "title": "Integer or parameter",
+            "description": "example: apn_ad_1234"
+        },
+        "code": {
+            "type": [
+                "string"
+            ],
+            "description": "example: inv_code_test"
+        },
+        "debug": {
+            "type": [
+                "boolean"
+            ],
+            "description": "example: true | false"
         },
         "width": {
             "$ref": "./types/dimension.json"
