@@ -27,7 +27,7 @@
 		"nodemon": "^1.18.5"
 	},
 	"scripts": {
-		"install": "lerna bootstrap",
+		"install": "lerna bootstrap --no-ci",
 		"test": "lerna run test"
 	}
 }
