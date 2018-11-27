@@ -50,6 +50,9 @@
                 "a9": {
                     "$ref": "./adservers/a9.json"
                 },
+                "adocean": {
+                    "$ref": "./adservers/adocean.json"
+                },
                 "adsense": {
                     "$ref": "./adservers/adsense.json"
                 },
@@ -107,6 +110,9 @@
                     "anyOf": [
                         {
                             "$ref": "./adservers/a9.json"
+                        },
+                        {
+                            "$ref": "./adservers/adocean.json"
                         },
                         {
                             "$ref": "./adservers/adsense.json"
