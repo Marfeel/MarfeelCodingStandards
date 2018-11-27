@@ -1,6 +1,6 @@
 {
   "placements": {
-    "s320": {
+    "sticky": {
       "adServer": "adSenseSticky"
     }
   },
