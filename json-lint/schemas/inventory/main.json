@@ -107,6 +107,9 @@
                 "teads": {
                     "$ref": "./adservers/teads.json"
                 },
+                "zedo": {
+                    "$ref": "./adservers/zedo.json"
+                },
                 "zergnet": {
                     "$ref": "./adservers/zergnet.json"
                 }
@@ -170,6 +173,9 @@
                         },
                         {
                             "$ref": "./adservers/engageya.json"
+                        },
+                        {
+                            "$ref": "./adservers/zedo.json"
                         },
                         {
                             "$ref": "./adservers/zergnet.json"
