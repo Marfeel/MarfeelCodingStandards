@@ -53,6 +53,9 @@
                 "adsense": {
                     "$ref": "./adservers/adsense.json"
                 },
+                "appnexus": {
+                    "$ref": "./adservers/appnexus.json"
+                },
                 "colombia": {
                     "$ref": "./adservers/colombia.json"
                 },
@@ -107,6 +110,9 @@
                         },
                         {
                             "$ref": "./adservers/adsense.json"
+                        },
+                        {
+                            "$ref": "./adservers/appnexus.json"
                         },
                         {
                             "$ref": "./adservers/colombia.json"

@@ -78,6 +78,9 @@
         },
         "xiti": {
             "$ref" : "./providers/xiti.json"
+        },
+        "yandex": {
+            "$ref" : "./providers/yandex.json"
         }
     }
 }

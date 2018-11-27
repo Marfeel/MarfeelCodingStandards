@@ -17,7 +17,8 @@
       "body": {
         "type": "revcontent",
         "id": "$1",
-        "wrapper": "$2"
+        "wrapper": "$2",
+        "layout": "responsive"
       }
     }
   ],
@@ -42,6 +43,9 @@
     },
     "height": {
       "$ref": "./types/dimension.json"
+    },
+    "layout": {
+      "$ref": "./types/layout.json"
     }
   }
 }
