@@ -1,0 +1,66 @@
+{
+    "$id": "#medianet",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Appnexus adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/medianet.md",
+    "additionalProperties": false,
+    "required": [
+        "type",
+        "tagtype",
+        "cid"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "Medianet template",
+            "description": "contains required keys",
+            "body": {
+                "type": "appnexus",
+                "tagtype": "$1",
+                "cid": "$2"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "medianet"
+        },
+        "tagtype": {
+            "enum": [
+                "cm",
+                "headerbidder"
+              ]
+        },
+        "cid": {
+            "type": "string"
+        },
+        "crid": {
+            "type": "string"
+        },
+        "misc": {
+            "type":"object",
+            "description": "Accepts a json value & used to send additional data"
+        },
+        "slot": {
+            "type": "string"
+        },
+        "multi-size": {
+            "type": "string"
+        },
+        "multi-size-validation": {
+            "type": "string"
+        },
+        "json": {
+            "type": [
+                "object"
+            ],
+            "description": "Supported in json: targeting, categoryExclusions, cookieOptions, tagForChildDirectedTreatment"
+        },
+        "width": {
+            "$ref": "./types/dimension.json"
+        },
+        "height": {
+            "$ref": "./types/dimension.json"
+        }
+    }
+}
