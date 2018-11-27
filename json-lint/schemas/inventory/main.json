@@ -66,6 +66,9 @@
                 "marfeel": {
                     "$ref": "./adservers/marfeel/schema.json"
                 },
+                "medianet": {
+                    "$ref": "./adservers/medianet.json"
+                },
                 "outbrain": {
                     "$ref": "./adservers/outbrain.json"
                 },
@@ -117,6 +120,9 @@
                         },
                         {
                             "$ref": "./adservers/ligatus.json"
+                        },
+                        {
+                            "$ref": "./adservers/medianet.json"
                         },
                         {
                             "$ref": "./adservers/outbrain.json"
