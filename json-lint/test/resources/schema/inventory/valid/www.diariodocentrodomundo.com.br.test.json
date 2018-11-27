@@ -1,9 +1,9 @@
 {
   "placements": {
-    "nativeAd": {
+    "bottom_details_2": {
       "adServer": "taboola"
     },
-    "nativeAd_mosaic_home": {
+    "bottom_mosaic_home_1": {
       "adServer": "taboolaHome"
     }
   },
