@@ -6,7 +6,7 @@
         "END_SLOT": "${VIRTUAL_PAGE}"
       }
     },
-    "bottomDetailsAd": {
+    "bottom_details_3": {
       "adServer": "dfp",
       "params": {
         "END_SLOT": "_EndOfArticle"

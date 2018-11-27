@@ -27,8 +27,19 @@
             "$id": "/properties/placements",
             "type": "object",
             "title": "Placements Object",
-            "description": "contain the placements with keys like : \n - nativeAd \n - adsBelowTopMedia \n - topMosaicAd \n - inline \n - inline_5",
-            "additionalProperties": true
+            "description": "contain the placements with keys like: \n - sticky \n - inter \n - top \n - top_mosaic \n - top_details \n - bottom_mosaic \n - bottom_details_2 \n - inline \n - inline_5 \n ...",
+            "patternProperties": {
+                "^(top|inline|bottom)(.*)*": {
+                    "$ref": "./placements/schema.json"
+                },
+                "^sticky$": {
+                    "$ref": "./placements/schema.json"
+                },
+                "^inter$": {
+                    "$ref": "./placements/schema.json"
+                }
+            },
+            "additionalProperties": false
         },
         "adServers": {
             "$id": "/properties/adServers",
@@ -61,7 +72,7 @@
                     "$ref": "./adservers/doubleclick.json"
                 },
                 "engageya": {
-                    "$href": "./adservers/engageya.json"
+                    "$ref": "./adservers/engageya.json"
                 },
                 "ligatus": {
                     "$ref": "./adservers/ligatus.json"

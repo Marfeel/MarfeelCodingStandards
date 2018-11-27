@@ -1,6 +1,6 @@
 {
   "placements": {
-    "s320": {
+    "sticky": {
       "adServer": "criteoSticky"
     },
     "inline_1": {
@@ -53,11 +53,11 @@
         "CUSTOM_VIRTUAL_PAGE": "${VIRTUAL_PAGE}"
       }
     },
-    "nativeAd": {
-      "adServer": "criteoNative"
-    },
-    "extraNativeAdvInDetails": {
-      "adServer": "taboola"
+    "bottom_details_2": {
+      "adServers": [
+        "criteoNative",
+        "taboola"
+      ]
     }
   },
   "adServers": {
