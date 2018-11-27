@@ -1,0 +1,19 @@
+{
+    "placements": {
+        "nativeAd": {
+            "adServer": "sharethrough",
+            "params": {
+                "PKEY": "usoEWeeGLNGjz4i9JdW6maf1"
+            }
+        }
+    },
+    "adServers": {
+        "sharethrough": {
+            "type": "sharethrough",
+            "layout": "responsive",
+            "width": 300, 
+            "height": 250,
+            "pkey": "${PKEY}"
+        }
+    }
+}

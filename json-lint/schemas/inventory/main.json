@@ -92,6 +92,9 @@
                 "revcontent": {
                     "$ref": "./adservers/revcontent.json"
                 },
+                "sharethrough": {
+                    "$ref": "./adservers/sharethrough.json"
+                },
                 "smartadserver": {
                     "$ref": "./adservers/smartadserver.json"
                 },
@@ -149,6 +152,9 @@
                         },
                         {
                             "$ref": "./adservers/revcontent.json"
+                        },
+                        {
+                            "$ref": "./adservers/sharethrough.json"
                         },
                         {
                             "$ref": "./adservers/smartadserver.json"
