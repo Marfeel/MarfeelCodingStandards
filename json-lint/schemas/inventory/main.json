@@ -51,6 +51,9 @@
                 "colombia": {
                     "$ref": "./adservers/colombia.json"
                 },
+                "contentad": {
+                    "$ref": "./adservers/contentad.json"
+                },
                 "criteo": {
                     "$ref": "./adservers/criteo.json"
                 },
@@ -117,6 +120,9 @@
                         },
                         {
                             "$ref": "./adservers/colombia.json"
+                        },
+                        {
+                            "$ref": "./adservers/contentad.json"
                         },
                         {
                             "$ref": "./adservers/criteo.json"
