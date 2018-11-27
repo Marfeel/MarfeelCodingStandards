@@ -8,7 +8,8 @@
     "revcontent": {
       "type": "revcontent",
       "id": 9709,
-      "wrapper": "rcjsload_cba4dc"
+      "wrapper": "rcjsload_cba4dc",
+      "layout": "responsive"
     }
   }
 }
