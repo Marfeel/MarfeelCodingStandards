@@ -1,0 +1,53 @@
+{
+    "$id": "#contentad",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "ContentAd adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/contentad.md",
+    "additionalProperties": false,
+    "required": [
+        "type",
+        "id",
+        "d",
+        "wid",
+        "width",
+        "height"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "ContentAd template",
+            "description": "contains required keys",
+            "body": {
+                "type": "contentad",
+                "id": "$1",
+                "d": "$2",
+                "wid": "$3",
+                "width": "$4",
+                "height": "$5"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "contentad"
+        },
+        "id": {
+            "type": "string",
+            "description": "The unique identifier for your account (API Key)."
+        },
+        "d": {
+            "type": "string",
+            "description": "The unique identifier for your domain."
+        },
+        "wid": {
+            "type": "string",
+            "description": "The unique identifier for your widget."
+        },
+        "width": {
+            "$ref": "./types/dimension.json"
+        },
+        "height": {
+            "$ref": "./types/dimension.json"
+        }
+    }
+}
