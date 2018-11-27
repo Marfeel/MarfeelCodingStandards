@@ -24,9 +24,8 @@
             "const": "sharethrough"
         },
         "pkey": {
-            "type": 
-                "string",
-            "description": " (String, non-empty) The unique identifier for your placement"
+            "type": "string",
+            "description": "(String, non-empty) The unique identifier for your placement"
         },
         "width": {
             "$ref": "./types/dimension.json"
