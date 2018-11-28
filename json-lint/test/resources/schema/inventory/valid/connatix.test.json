@@ -1,0 +1,13 @@
+{
+    "placements": {
+      "inline_1" : {
+        "adServer" : "connatix"
+      }
+    },
+    "adServers": {
+        "connatix" : {
+            "type" : "connatix",
+            "connatix" : "{data-connatix-token:2cb56208-27cc-43d6-82b8-a91a18bcddd9}"
+          }
+    }
+}
