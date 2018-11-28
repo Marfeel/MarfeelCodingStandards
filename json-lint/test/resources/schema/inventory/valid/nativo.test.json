@@ -5,7 +5,7 @@
         }
     },
     "adServers": {
-        "gumgum" : {
+        "nativo" : {
             "type": "nativo",
             "request-url":"https://amp.yoursite.com/amp/nativo",
             "layout": "responsive",
