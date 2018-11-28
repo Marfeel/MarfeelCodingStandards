@@ -62,6 +62,9 @@
                 "colombia": {
                     "$ref": "./adservers/colombia.json"
                 },
+                "connatix": {
+                    "$ref": "./adservers/connatix.json"
+                },
                 "contentad": {
                     "$ref": "./adservers/contentad.json"
                 },
@@ -76,6 +79,9 @@
                 },
                 "engageya": {
                     "$ref": "./adservers/engageya.json"
+                },
+                "gumgum": {
+                    "$ref": "./adservers/gumgum.json"
                 },
                 "ligatus": {
                     "$ref": "./adservers/ligatus.json"
@@ -142,6 +148,9 @@
                             "$ref": "./adservers/colombia.json"
                         },
                         {
+                            "$ref": "./adservers/connatix.json"
+                        },
+                        {
                             "$ref": "./adservers/contentad.json"
                         },
                         {
@@ -152,6 +161,9 @@
                         },
                         {
                             "$ref": "./adservers/doubleclick.json"
+                        },
+                        {
+                            "$ref": "./adservers/gumgum.json"
                         },
                         {
                             "$ref": "./adservers/ligatus.json"
