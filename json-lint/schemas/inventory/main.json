@@ -62,6 +62,9 @@
                 "colombia": {
                     "$ref": "./adservers/colombia.json"
                 },
+                "connatix": {
+                    "$ref": "./adservers/connatix.json"
+                },
                 "contentad": {
                     "$ref": "./adservers/contentad.json"
                 },
@@ -140,6 +143,9 @@
                         },
                         {
                             "$ref": "./adservers/colombia.json"
+                        },
+                        {
+                            "$ref": "./adservers/connatix.json"
                         },
                         {
                             "$ref": "./adservers/contentad.json"
