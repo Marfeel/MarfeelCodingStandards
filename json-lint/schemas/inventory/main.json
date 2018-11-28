@@ -86,6 +86,9 @@
                 "medianet": {
                     "$ref": "./adservers/medianet.json"
                 },
+                "nativo": {
+                    "$ref": "./adservers/nativo.json"
+                },
                 "outbrain": {
                     "$ref": "./adservers/outbrain.json"
                 },
@@ -155,6 +158,9 @@
                         },
                         {
                             "$ref": "./adservers/medianet.json"
+                        },
+                        {
+                            "$ref": "./adservers/nativo.json"
                         },
                         {
                             "$ref": "./adservers/outbrain.json"

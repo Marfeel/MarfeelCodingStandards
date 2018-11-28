@@ -1,0 +1,16 @@
+{
+    "placements": {
+        "inline_1" : {
+            "adServer" : "nativo"
+        }
+    },
+    "adServers": {
+        "gumgum" : {
+            "type": "nativo",
+            "request-url":"https://amp.yoursite.com/amp/nativo",
+            "layout": "responsive",
+            "width": 350,
+            "height": 400
+        }
+    }
+}
