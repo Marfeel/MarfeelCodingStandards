@@ -95,6 +95,9 @@
                 "revcontent": {
                     "$ref": "./adservers/revcontent.json"
                 },
+                "rubicon": {
+                    "$ref": "./adservers/rubicon.json"
+                },
                 "sharethrough": {
                     "$ref": "./adservers/sharethrough.json"
                 },
@@ -161,6 +164,9 @@
                         },
                         {
                             "$ref": "./adservers/revcontent.json"
+                        },
+                        {
+                            "$ref": "./adservers/rubicon.json"
                         },
                         {
                             "$ref": "./adservers/sharethrough.json"
