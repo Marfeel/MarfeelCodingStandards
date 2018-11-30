@@ -7,7 +7,7 @@
     "adServers": {
         "zergnet": {
             "type": "zergnet",
-            "data-zergid": "34763",
+            "zergid": "34763",
             "width": 300,
             "height": 600
         }

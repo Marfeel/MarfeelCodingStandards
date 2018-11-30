@@ -7,7 +7,7 @@
   "additionalProperties": false,
   "required": [
     "type",
-    "data-zergid"
+    "zergid"
   ],
   "defaultSnippets": [
     {
@@ -15,7 +15,7 @@
       "description": "contains required keys",
       "body": {
         "type": "zergnet",
-        "data-zergid": "$1"
+        "zergid": "$1"
       }
     }
   ],
@@ -35,7 +35,7 @@
     "heights": {
       "type": "string"
     },
-    "data-zergid": {
+    "zergid": {
       "type": "string"
     }
   }
