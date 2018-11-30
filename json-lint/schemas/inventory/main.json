@@ -27,8 +27,19 @@
             "$id": "/properties/placements",
             "type": "object",
             "title": "Placements Object",
-            "description": "contain the placements with keys like : \n - nativeAd \n - adsBelowTopMedia \n - topMosaicAd \n - inline \n - inline_5",
-            "additionalProperties": true
+            "description": "contain the placements with keys like: \n - sticky \n - inter \n - top \n - top_mosaic \n - top_details \n - bottom_mosaic \n - bottom_details_2 \n - inline \n - inline_5 \n ...",
+            "patternProperties": {
+                "^(top|inline|bottom)(.*)*": {
+                    "$ref": "./placements/schema.json"
+                },
+                "^sticky$": {
+                    "$ref": "./placements/schema.json"
+                },
+                "^inter$": {
+                    "$ref": "./placements/schema.json"
+                }
+            },
+            "additionalProperties": false
         },
         "adServers": {
             "$id": "/properties/adServers",
@@ -39,11 +50,23 @@
                 "a9": {
                     "$ref": "./adservers/a9.json"
                 },
+                "adocean": {
+                    "$ref": "./adservers/adocean.json"
+                },
                 "adsense": {
                     "$ref": "./adservers/adsense.json"
                 },
+                "appnexus": {
+                    "$ref": "./adservers/appnexus.json"
+                },
                 "colombia": {
                     "$ref": "./adservers/colombia.json"
+                },
+                "connatix": {
+                    "$ref": "./adservers/connatix.json"
+                },
+                "contentad": {
+                    "$ref": "./adservers/contentad.json"
                 },
                 "criteo": {
                     "$ref": "./adservers/criteo.json"
@@ -55,13 +78,22 @@
                     "$ref": "./adservers/doubleclick.json"
                 },
                 "engageya": {
-                    "$href": "./adservers/engageya.json"
+                    "$ref": "./adservers/engageya.json"
+                },
+                "gumgum": {
+                    "$ref": "./adservers/gumgum.json"
                 },
                 "ligatus": {
                     "$ref": "./adservers/ligatus.json"
                 },
                 "marfeel": {
                     "$ref": "./adservers/marfeel/schema.json"
+                },
+                "medianet": {
+                    "$ref": "./adservers/medianet.json"
+                },
+                "nativo": {
+                    "$ref": "./adservers/nativo.json"
                 },
                 "outbrain": {
                     "$ref": "./adservers/outbrain.json"
@@ -71,6 +103,12 @@
                 },
                 "revcontent": {
                     "$ref": "./adservers/revcontent.json"
+                },
+                "rubicon": {
+                    "$ref": "./adservers/rubicon.json"
+                },
+                "sharethrough": {
+                    "$ref": "./adservers/sharethrough.json"
                 },
                 "smartadserver": {
                     "$ref": "./adservers/smartadserver.json"
@@ -84,6 +122,9 @@
                 "teads": {
                     "$ref": "./adservers/teads.json"
                 },
+                "zedo": {
+                    "$ref": "./adservers/zedo.json"
+                },
                 "zergnet": {
                     "$ref": "./adservers/zergnet.json"
                 }
@@ -95,10 +136,22 @@
                             "$ref": "./adservers/a9.json"
                         },
                         {
+                            "$ref": "./adservers/adocean.json"
+                        },
+                        {
                             "$ref": "./adservers/adsense.json"
                         },
                         {
+                            "$ref": "./adservers/appnexus.json"
+                        },
+                        {
                             "$ref": "./adservers/colombia.json"
+                        },
+                        {
+                            "$ref": "./adservers/connatix.json"
+                        },
+                        {
+                            "$ref": "./adservers/contentad.json"
                         },
                         {
                             "$ref": "./adservers/criteo.json"
@@ -110,7 +163,16 @@
                             "$ref": "./adservers/doubleclick.json"
                         },
                         {
+                            "$ref": "./adservers/gumgum.json"
+                        },
+                        {
                             "$ref": "./adservers/ligatus.json"
+                        },
+                        {
+                            "$ref": "./adservers/medianet.json"
+                        },
+                        {
+                            "$ref": "./adservers/nativo.json"
                         },
                         {
                             "$ref": "./adservers/outbrain.json"
@@ -120,6 +182,12 @@
                         },
                         {
                             "$ref": "./adservers/revcontent.json"
+                        },
+                        {
+                            "$ref": "./adservers/rubicon.json"
+                        },
+                        {
+                            "$ref": "./adservers/sharethrough.json"
                         },
                         {
                             "$ref": "./adservers/smartadserver.json"
@@ -135,6 +203,9 @@
                         },
                         {
                             "$ref": "./adservers/engageya.json"
+                        },
+                        {
+                            "$ref": "./adservers/zedo.json"
                         },
                         {
                             "$ref": "./adservers/zergnet.json"

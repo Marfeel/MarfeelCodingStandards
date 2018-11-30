@@ -1,6 +1,6 @@
 {
   "placements": {
-    "topMosaicAd": {
+    "top_mosaic_1": {
       "adServer": "dfp",
       "params": {
         "WIDTH": "320",
@@ -32,7 +32,7 @@
         "END_SLOT": "Footballleagueworld-Unit7_0"
       }
     },
-    "belowTopMedia": {
+    "top_1": {
       "adServer": "dfp",
       "params": {
         "WIDTH": "320",
@@ -40,7 +40,7 @@
         "END_SLOT": "Footballleagueworld-Unit5_0__container__"
       }
     },
-    "nativeAd": {
+    "bottom_details_2": {
       "adServer": "revcontent"
     }
   },

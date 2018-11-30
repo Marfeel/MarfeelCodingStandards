@@ -1,0 +1,56 @@
+{
+    "$id": "#rubicon",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Rubicon adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/rubicon.md",
+    "additionalProperties": false,
+    "required": [
+        "type",
+        "method",
+        "account",
+        "site",
+        "zone",
+        "size"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "Rubicon template",
+            "description": "contains required keys",
+            "body": {
+                "type": "rubicon",
+                "method": "$1",
+                "account": "$2",
+                "site": "$3",
+                "zone": "$4",
+                "size": "$5"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "rubicon"
+        },
+        "method": {
+            "type": "string"
+        },
+        "account": {
+            "type": "string"
+        },
+        "site": {
+            "type": "string"
+        },
+        "zone": {
+            "type": "string"
+        },
+        "size": {
+            "type": "string"
+        },
+        "kw": {
+            "type": "string"
+        },
+        "json": {
+            "type": "object"
+        }
+    }
+} 

@@ -1,0 +1,17 @@
+{
+    "placements": {
+        "inline": {
+            "adServer": "rubicon"
+        }
+    },
+    "adServers": {
+        "rubicon": {
+            "type": "rubicon",
+            "method": "smartTag",
+            "account": "9585",
+            "site": "213238",
+            "zone": "1086308",
+            "size": "15"
+        }
+    }
+}

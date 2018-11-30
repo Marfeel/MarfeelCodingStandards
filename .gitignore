@@ -16,6 +16,7 @@ npm-debug.log
 .history
 wepback-report.html
 **/yarn-error.log
+yarn.lock
 .gradle
 **.log
 

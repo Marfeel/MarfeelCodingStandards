@@ -24,10 +24,10 @@
 		"eslint": "^5.5.0",
 		"eslint-plugin-node": "^7.0.1",
 		"jasmine": "^3.1.0",
-		"nodemon": "^1.18.5"
+		"nodemon": "^1.18.7"
 	},
 	"scripts": {
-		"install": "lerna bootstrap",
+		"install": "lerna bootstrap --no-ci",
 		"test": "lerna run test"
 	}
 }

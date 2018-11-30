@@ -1,0 +1,32 @@
+{
+    "placements": {
+      "inline_mosaic_1" : {
+        "adServer" : "medianet"
+      },
+      "inline_details_1" : {
+        "adServer" : "medianet1"
+      }
+    },
+    "adServers": {
+        "medianet": {
+            "type": "medianet",
+            "tagtype": "cm",
+            "cid": "8CU3C25G1",
+            "crid": "790473691",
+            "width": 600,
+            "height": 250
+        },
+        "medianet1": {
+            "type": "medianet",
+            "tagtype": "headerbidder",
+            "cid": "8CU3C25G1",
+            "slot": "/45361917/AMP_Header_Bidder",
+            "json" : {
+                "targeting": {
+                    "mnetAmpTest":"1",
+                    "pos":"mnetSlot1"
+                }
+            }
+        }
+    }
+} 
