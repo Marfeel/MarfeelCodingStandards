@@ -1,0 +1,18 @@
+{
+    "placements": {
+        "inline_3": {
+            "adServer": "zedo"
+        }
+    },
+    "adServers": {
+        "zedo": {
+            "type": "zedo",
+            "super-id": "150",
+            "network": "2221",
+            "placement-id":"150_3",
+            "channel":"992",
+            "publisher":"0",
+            "dim":"9"
+        }
+    }
+}

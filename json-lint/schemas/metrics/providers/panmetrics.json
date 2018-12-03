@@ -15,6 +15,9 @@
             "siteId": {
                 "type": "string"
             },
+            "enableSATI": {
+                "type": "boolean"
+            },
             "platforms": {
                 "$ref" : "../properties/platforms-all.json"
             }

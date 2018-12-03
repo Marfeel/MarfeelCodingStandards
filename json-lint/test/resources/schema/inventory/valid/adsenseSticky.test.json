@@ -1,0 +1,16 @@
+{
+  "placements": {
+    "sticky": {
+      "adServer": "adSenseSticky"
+    }
+  },
+  "adServers": {
+    "adSenseSticky": {
+      "type": "adsense",
+      "ad-client": "ca-pub-9893287837991276",
+      "ad-slot": 9277718287,
+      "width": "100vw",
+      "height": 320
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "$id": "#connatix",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Connatix adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/connatix.md",
+    "additionalProperties": false,
+    "required": [
+        "type",
+        "connatix"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "Connatix template",
+            "description": "contains required keys",
+            "body": {
+                "type": "connatix",
+                "connatix": "$1",
+                "layout": "responsive"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "connatix"
+        },
+        "connatix": {
+            "type": "string"
+        },
+        "layout": {
+            "$ref": "./types/layout.json"
+        }
+    }
+} 

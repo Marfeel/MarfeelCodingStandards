@@ -1,6 +1,6 @@
 {
 	"placements": {
-		"adsBelowTopMedia320": {
+		"top_details_1": {
 			"adServer": "smart",
 			"params": {
 				"FORMAT_ID": "49842"
