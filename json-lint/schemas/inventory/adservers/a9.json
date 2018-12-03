@@ -7,8 +7,8 @@
   "additionalProperties": false,
   "required": [
     "type",
-    "data-adinstanceid",
-    "data-amzn_assoc_ad_mode"
+    "adinstanceid",
+    "amzn_assoc_ad_mode"
   ],
   "defaultSnippets": [
     {
@@ -16,7 +16,7 @@
       "description": "contains required keys",
       "body": {
         "type": "a9",
-        "data-amzn_assoc_ad_mode": "$1"
+        "amzn_assoc_ad_mode": "$1"
       }
     }
   ],
@@ -30,59 +30,59 @@
     "height": {
       "$ref": "./types/dimension.json"
     },
-    "data-amzn_assoc_ad_mode": {
+    "amzn_assoc_ad_mode": {
       "enum": [
         "search",
         "manual",
         "auto"
       ]
     },
-    "data-recomtype": {
+    "recomtype": {
       "type": "string"
     },
-    "data-adinstanceid": {
+    "adinstanceid": {
       "type": "string"
     },
-    "data-regionurl": {
+    "regionurl": {
       "type": "string"
     },
-    "data-divid": {
+    "divid": {
       "type": "string"
     },
-    "data-amzn_assoc_asins": {
+    "amzn_assoc_asins": {
       "type": "string"
     },
-    "data-amzn_assoc_placement": {
+    "amzn_assoc_placement": {
       "type": "string"
     },
-    "data-amzn_assoc_search_bar": {
+    "amzn_assoc_search_bar": {
       "type": "boolean"
     },
-    "data-amzn_assoc_tracking_id": {
+    "amzn_assoc_tracking_id": {
       "type": "string"
     },
-    "data-amzn_assoc_search_bar_position": {
+    "amzn_assoc_search_bar_position": {
       "type": "string"
     },
-    "data-amzn_assoc_ad_type": {
+    "amzn_assoc_ad_type": {
       "type": "string"
     },
-    "data-amzn_assoc_marketplace": {
+    "amzn_assoc_marketplace": {
       "type": "string"
     },
-    "data-amzn_assoc_region": {
+    "amzn_assoc_region": {
       "type": "string"
     },
-    "data-amzn_assoc_title": {
+    "amzn_assoc_title": {
       "type": "string"
     },
-    "data-amzn_assoc_default_search_phrase": {
+    "amzn_assoc_default_search_phrase": {
       "type": "string"
     },
-    "data-amzn_assoc_default_category": {
+    "amzn_assoc_default_category": {
       "type": "string"
     },
-    "data-amzn_assoc_linkid": {
+    "amzn_assoc_linkid": {
       "type": "string"
     }
   }
