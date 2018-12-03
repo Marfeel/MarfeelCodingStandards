@@ -9,10 +9,10 @@
             "width": 300,
             "height": 250,
             "type": "a9",
-            "data-amzn_assoc_ad_mode": "auto",
-            "data-recomtype": "sync",
-            "data-adinstanceid": "fe746097-f142-4f8d-8dfb-45ec747632e5",
-            "data-regionurl": "https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"
+            "amzn_assoc_ad_mode": "auto",
+            "recomtype": "sync",
+            "adinstanceid": "fe746097-f142-4f8d-8dfb-45ec747632e5",
+            "regionurl": "https://z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"
         }
     }
 }
