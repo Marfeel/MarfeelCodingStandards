@@ -1,0 +1,40 @@
+{
+    "$id": "#font",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Font",
+    "additionalProperties": false,
+    "required": [
+        "fontFamily",
+        "fontSize",
+        "fontWeight"
+    ],
+    "properties": {
+        "fontFamily": {
+            "type": "string",
+            "title": "Font family",
+            "description": "Define the font family",
+            "pattern": "^(?!\\s*$).+"
+        },
+        "fontSize": {
+            "type": "string",
+            "title": "Font size",
+            "description": "Define the size of the font",
+            "enum": [
+                "SMALL",
+                "MEDIUM",
+                "LARGE"
+            ]
+        },
+        "fontWeight": {
+            "type": "string",
+            "title": "Font weight",
+            "description": "Define the weight of the font",
+            "enum": [
+                "LIGHTER",
+                "NORMAL",
+                "BOLD"
+            ]
+        }
+    }
+}

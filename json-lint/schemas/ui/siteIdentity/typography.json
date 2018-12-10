@@ -1,0 +1,26 @@
+{
+    "$id": "#typography",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Typography",
+    "description": "Configure the fonts to be used in a tenants PWA",
+    "additionalProperties": false,
+    "required": [
+        "headings",
+        "body"
+    ],
+    "properties": {
+        "headings": {
+            "type": "object",
+            "title": "Headings",
+            "$ref": "./font.json",
+            "description": "Define the font family, font size and font weight used for heading text"
+        },
+        "body": {
+            "type": "object",
+            "title": "Body",
+            "$ref": "./font.json",
+            "description": "Define the font family, font size and font weight used for body text"
+        }
+    }
+}

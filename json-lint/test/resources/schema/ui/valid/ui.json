@@ -1,0 +1,23 @@
+{
+    "siteIdentity" : {
+        "colors" : {
+            "scheme" : "LIGHT",
+            "main" : "#FaFAFa",
+            "secondary" : "#C60017"
+        },
+        "typography" : {
+        "headings" : {
+        "fontFamily" : "HelveticaNeue",
+        "fontSize" : "MEDIUM",
+        "fontWeight" : "NORMAL"
+        },
+        "body" : {
+            "fontFamily" : "HelveticaNeue",
+            "fontSize" : "MEDIUM",
+            "fontWeight" : "NORMAL"
+            }
+        },
+        "mainLogoRatio" : 0,
+        "SomeNewProperty" : "Look mum! I can code!"
+    }
+}
