@@ -39,6 +39,14 @@
       "widgetIds": {
         "type": "string"
       },
+      "obTemplate": {
+        "type": "string",
+        "title": "Parameter for Web config"
+      },
+      "customStyles": {
+        "type": "string",
+        "title": "Option to pass custom CSS, parameter for Web config"
+      },
       "width": {
         "type": ["integer","string"],
         "pattern": "^(\\$\\{.+\\})$",
