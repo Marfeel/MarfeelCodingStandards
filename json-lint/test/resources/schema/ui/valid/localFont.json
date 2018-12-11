@@ -2,18 +2,19 @@
     "siteIdentity": {
         "colors": {
             "scheme": "DARK",
-            "main": "#FAFAFA",
+            "main": "#FaF",
             "secondary": "#C60017"
         },
         "typography": {
             "headings": {
-                "fontFamily": "HelveticaNeue",
-                "fontSize": "MEDIUM",
+                "fontFamily": "Palatino-Roman",
+                "fontSize": "SMALL",
                 "fontWeight": "NORMAL"
             },
             "body": {
-                "fontSize": "MEDIUM",
-                "fontWeight": "NORMAL"
+                "fontFamily": "Georgia",
+                "fontSize": "SMALL",
+                "fontWeight": "BOLD"
             }
         }
     }
