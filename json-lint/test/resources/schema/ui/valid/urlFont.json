@@ -1,0 +1,21 @@
+{
+    "siteIdentity": {
+        "colors": {
+            "scheme": "DARK",
+            "main": "#FaF",
+            "secondary": "#C60017"
+        },
+        "typography": {
+            "headings": {
+                "fontFamily": "/statics/f/ps/fonts.gstatic.com/s/droidsans/v6/EFpQQyG9GqCrobXxL-KRMcBaWKZ57bY3RXgXH6dOjZ0.ttf",
+                "fontSize": "SMALL",
+                "fontWeight": "NORMAL"
+            },
+            "body": {
+                "fontFamily": "https://bc.marfeelcache.com/statics/f/ps/fonts.gstatic.com/s/roboto/v18/RxZJdnzeo3R5zSexge8UUT8E0i7KZn-EPnyo3HZu7kw.woff",
+                "fontSize": "SMALL",
+                "fontWeight": "BOLD"
+            }
+        }
+    }
+}

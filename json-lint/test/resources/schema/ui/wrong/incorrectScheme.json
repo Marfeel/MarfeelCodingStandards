@@ -1,0 +1,21 @@
+{
+    "siteIdentity": {
+        "colors": {
+            "scheme": "REALLY DARK",
+            "main": "#FAFAFA",
+            "secondary": "#C60017"
+        },
+        "typography": {
+            "headings": {
+                "fontFamily": "HelveticaNeue",
+                "fontSize": "MEDIUM",
+                "fontWeight": "NORMAL"
+            },
+            "body": {
+                "fontFamily": "HelveticaNeue",
+                "fontSize": "MEDIUM",
+                "fontWeight": "NORMAL"
+            }
+        }
+    }
+}
