@@ -11,14 +11,6 @@
       "params": {
         "END_SLOT": "_EndOfArticle"
       }
-    },
-    "sticky": {
-      "adServer": "dfpSticky",
-      "params": {
-        "END_SLOT": "DN_320x50_STICKY",
-        "WIDTH": 320,
-        "HEIGHT": 50
-      }
     }
   },
   "adServers": {
@@ -33,15 +25,6 @@
         "targeting": {
           "marfeeltype": "M"
         }
-      }
-    },
-    "dfpSticky": {
-      "type": "doubleclick",
-      "slot": "/1010816/${END_SLOT}",
-      "height": "${HEIGHT}",
-      "width": "${WIDTH}",
-      "options": {
-        "enableSingleRequest": false
       }
     }
   }
