@@ -61,14 +61,6 @@
             "type": "object"
           }
         }
-      },
-      "options": {
-        "type": "object",
-        "properties": {
-          "enableSingleRequest": {
-            "type": "boolean"
-          }
-        }
       }
     }
   }
