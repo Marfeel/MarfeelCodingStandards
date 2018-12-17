@@ -122,6 +122,9 @@
                 "teads": {
                     "$ref": "./adservers/teads.json"
                 },
+                "widget-eurweb": {
+                    "$ref": "./adservers/widget-eurweb.json"
+                },
                 "zedo": {
                     "$ref": "./adservers/zedo.json"
                 },
@@ -203,6 +206,9 @@
                         },
                         {
                             "$ref": "./adservers/engageya.json"
+                        },
+                        {
+                            "$ref": "./adservers/widget-eurweb.json"
                         },
                         {
                             "$ref": "./adservers/zedo.json"
