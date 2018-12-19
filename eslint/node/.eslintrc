@@ -7,6 +7,6 @@
         "no-new-require": "error",
         "no-path-concat": "error",
 		"no-process-exit": "warn",
-		"no-unpublished-require": "off"
+		"node/no-unpublished-require": "off"
     }
 }
