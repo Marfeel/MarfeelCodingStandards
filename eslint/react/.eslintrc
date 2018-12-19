@@ -10,5 +10,8 @@
 		"parser": "babel-eslint",
 		"ecmaVersion": 8,
 		"sourceType": "module"
+	},
+	"rules": {
+		"class-methods-use-this": "off"
 	}
 }
