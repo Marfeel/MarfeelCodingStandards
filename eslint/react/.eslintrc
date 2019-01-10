@@ -11,6 +11,11 @@
 		"ecmaVersion": 8,
 		"sourceType": "module"
 	},
+	"settings": {
+		"react": {
+			"version": "^16.6.3"
+		}
+	},
 	"rules": {
 		"class-methods-use-this": "off"
 	}
