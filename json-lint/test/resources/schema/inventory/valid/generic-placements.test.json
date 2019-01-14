@@ -72,7 +72,10 @@
     "sticky": {
       "adServer": "someDFP"
     },
-    "sticky_sectionName": {
+    "s320": {
+      "adServer": "someDFP"
+    },
+    "s320_sectionName": {
       "adServer": "someDFP"
     },
     "inter": {

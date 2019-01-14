@@ -3,9 +3,6 @@
     "nativeAd": {
       "adServer": "someDFP"
     },
-    "s320": {
-      "adServer": "someDFP"
-    },
     "extraNativeAdvInDetails": {
       "adServer": "someDFP"
     },
