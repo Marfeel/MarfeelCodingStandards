@@ -72,6 +72,9 @@
     "sticky": {
       "adServer": "someDFP"
     },
+    "sticky_sectionName": {
+      "adServer": "someDFP"
+    },
     "inter": {
       "adServer": "someDFP"
     },
