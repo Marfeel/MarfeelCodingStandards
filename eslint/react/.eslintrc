@@ -17,6 +17,14 @@
 		}
 	},
 	"rules": {
-		"class-methods-use-this": "off"
+		"class-methods-use-this": "off",
+		"react/prefer-stateless-function": ["error", { "ignorePureComponents": true }],
+		"react/prefer-es6-class": ["error", "always"],
+		"react/jsx-closing-bracket-location": "error",
+		"react/self-closing-comp": ["error", {
+			"component": true,
+			"html": true
+		}],
+		"react/jsx-pascal-case": "error"
 	}
 }
