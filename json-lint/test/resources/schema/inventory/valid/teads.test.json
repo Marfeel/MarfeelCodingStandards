@@ -2,6 +2,9 @@
     "placements": {
         "bottom_details_3": {
             "adServer": "teads"
+        },
+        "teads": {
+            "adServer": "teads"
         }
     },
     "adServers": {
