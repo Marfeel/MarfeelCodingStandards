@@ -68,6 +68,10 @@
       "enum": [
         "auto"
       ]
+    },
+    "disableMarfeelStyles": {
+      "type": "boolean",
+      "description": "Whether the marfeel styles should be disabled or not. Default is false, only for Touch."
     }
   }
 }
