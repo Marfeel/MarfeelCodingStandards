@@ -105,7 +105,8 @@
 		"eol-last": "error",
 		"func-call-spacing": "error",
 		"indent": ["error", "tab", {
-			"SwitchCase": 1
+			"SwitchCase": 1,
+			"VariableDeclarator": "first"
 		}],
 		"key-spacing": "error",
 		"keyword-spacing": "error",
@@ -152,12 +153,15 @@
 			"enforceConst": true,
 			"detectObjects": true,
 			"ignore": [0]
-		}]
+		}],
+		"arrow-spacing": "error",
+		"template-curly-spacing": "error"
 	},
 	"overrides": [{
 		"files": ["*test.js", "*.spec.js"],
 		"rules": {
-			"max-nested-callbacks": "off"
+			"max-nested-callbacks": "off",
+			"max-len": "off"
 		}
 	}]
 }
