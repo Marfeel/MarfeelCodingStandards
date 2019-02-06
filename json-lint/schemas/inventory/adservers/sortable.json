@@ -1,0 +1,50 @@
+{
+    "$id": "#sortable",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Sortable adserver",
+    "description": "https://github.com/ampproject/amphtml/blob/master/ads/sortable.md",
+    "additionalProperties": false,
+
+    "required": [
+      "type",
+      "name",
+      "site"
+    ],
+
+    "defaultSnippets": [
+      {
+        "label": "Sortable template",
+        "description": "contains required keys",
+        "body": {
+          "type": "sortable",
+          "name": "$1",
+          "site": "$2",
+          "width": "$3",
+          "height": "$4"
+        }
+      }
+    ],
+
+    "properties": {
+      "type": { "const" : "sortable" },
+      "name": {
+        "type": "string"
+      },
+      "site": {
+        "type": "string"
+      },
+      "responsive": {
+        "type": "string",
+        "title": "Responsive",
+        "description": "When set to true indicates that the ad slot has multiple potential sizes.",
+        "pattern": "true"
+      },
+      "width": {
+        "$ref": "./types/dimension.json"
+      },
+      "height": {
+        "$ref": "./types/dimension.json"
+      }
+    }
+  }

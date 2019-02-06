@@ -1,0 +1,15 @@
+{
+	"placements": {
+		"inline": {
+			"adServer": "sortable"
+		}
+	},
+	"adServers": {
+		"sortable": {
+			"type": "sortable",
+			"name": "BTF_Leaderboard Responsive",
+			"site": "mmaweekly.com",
+			"responsive": "true"
+		}
+	}
+}
