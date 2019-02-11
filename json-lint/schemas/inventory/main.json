@@ -113,6 +113,9 @@
                 "smartclip": {
                     "$ref": "./adservers/smartclip.json"
                 },
+                "sortable": {
+                    "$ref": "./adservers/sortable.json"
+                },
                 "taboola": {
                     "$ref": "./adservers/taboola.json"
                 },
@@ -194,6 +197,9 @@
                         },
                         {
                             "$ref": "./adservers/smartclip.json"
+                        },
+                        {
+                            "$ref": "./adservers/sortable.json"
                         },
                         {
                             "$ref": "./adservers/taboola.json"
