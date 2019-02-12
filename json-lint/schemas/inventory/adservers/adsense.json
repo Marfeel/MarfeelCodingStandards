@@ -69,6 +69,13 @@
       "full-width": {
         "type": ["boolean", "string"],
         "pattern": "^(\\$\\{.+\\})$"
+      },
+      "ad-format": {
+        "enum": [
+          "auto",
+          "fluid",
+          "autorelaxed"
+        ]
       }
     }
   }
