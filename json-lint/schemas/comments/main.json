@@ -111,6 +111,21 @@
                         "type": "string",
                         "title": "Recirculation",
                         "description": "recirculation attribute"
+                    },
+                    "community_promo": {
+                        "type": "string",
+                        "title": "Community Promo",
+                        "description": "Enables community promo widget"
+                    },
+                    "related_position": {
+                        "type": "string",
+                        "title": "Related Position",
+                        "description": "Enables de option to move the related widgets [recirculation, community_promo] outside of the dropdown"
+                    },
+                    "launcher": {
+                        "type": "string",
+                        "title": "Launcher",
+                        "description": "Custom js launcher"
                     }
                 },
                 "required": [
