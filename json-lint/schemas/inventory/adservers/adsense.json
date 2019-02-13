@@ -71,11 +71,7 @@
         "pattern": "^(\\$\\{.+\\})$"
       },
       "ad-format": {
-        "enum": [
-          "auto",
-          "fluid",
-          "autorelaxed"
-        ]
+        "type": "string"
       }
     }
   }
