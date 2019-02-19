@@ -117,8 +117,14 @@
 			"max": 4
 		}],
 		"new-cap": "error",
-		"newline-after-var": "error",
-		"newline-before-return": "error",
+		"padding-line-between-statements": [
+			"error",
+			{ "blankLine": "always", "prev": ["const", "let", "var"], "next": "*"},
+			{ "blankLine": "any",    "prev": ["const", "let", "var"], "next": ["const", "let", "var"]},
+			{ "blankLine": "always", "prev": "*", "next": "return"},
+			{ "blankLine": "always", "prev": "import", "next": "*"},
+			{ "blankLine": "any", "prev": "import", "next": "import"}
+		],
 		"no-lonely-if": "error",
 		"no-mixed-operators": "error",
 		"no-mixed-spaces-and-tabs": "error",
