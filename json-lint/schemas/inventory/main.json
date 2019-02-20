@@ -29,10 +29,7 @@
             "title": "Placements Object",
             "description": "contain the placements with keys like: \n - sticky \n - inter \n - top \n - top_mosaic \n - top_details \n - bottom_mosaic \n - bottom_details_2 \n - inline \n - inline_5 \n ...",
             "patternProperties": {
-                "^(top|inline|bottom)(.*)*": {
-                    "$ref": "./placements/schema.json"
-                },
-                "^sticky$": {
+                "^(top|inline|bottom|sticky)(.*)*": {
                     "$ref": "./placements/schema.json"
                 },
                 "^inter$": {
@@ -116,6 +113,9 @@
                 "smartclip": {
                     "$ref": "./adservers/smartclip.json"
                 },
+                "sortable": {
+                    "$ref": "./adservers/sortable.json"
+                },
                 "taboola": {
                     "$ref": "./adservers/taboola.json"
                 },
@@ -197,6 +197,9 @@
                         },
                         {
                             "$ref": "./adservers/smartclip.json"
+                        },
+                        {
+                            "$ref": "./adservers/sortable.json"
                         },
                         {
                             "$ref": "./adservers/taboola.json"
