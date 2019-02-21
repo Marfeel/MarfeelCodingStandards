@@ -18,6 +18,11 @@
                 "title": "uaCode",
                 "type": "string"
             },
+            "dimensions": {
+                "description": "Custom static dimensions",
+                "type": "object",
+                "title": "dimensions"
+            },
             "platforms": {
                 "$ref" : "../properties/platforms-all.json"
             }
