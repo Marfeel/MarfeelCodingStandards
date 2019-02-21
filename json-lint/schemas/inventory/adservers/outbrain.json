@@ -58,6 +58,10 @@
         "pattern": "^(\\$\\{.+\\})$",
         "title": "integer",
         "description": "example: 250 (not required, default in outbrain.tag(100))"
+      },
+      "disableCustomStyles": {
+        "type": "boolean",
+        "title": "Option to deactivate Marfeel CSS, false by default"
       }
     }
   }

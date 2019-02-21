@@ -17,6 +17,12 @@
       "params": {
         "WIDGET_ID": "MB_1"
       }
+    },
+    "bottom_details_1": {
+      "adServer": "outbrain1",
+      "params": {
+        "WIDGET_ID": "MB_2"
+      }
     }
   },
   "adServers": {
@@ -24,6 +30,12 @@
       "type": "outbrain",
       "layout": "responsive",
       "widgetIds": "${WIDGET_ID}"
+    },
+    "outbrain1": {
+      "type": "outbrain",
+      "layout": "responsive",
+      "widgetIds": "${WIDGET_ID}",
+      "disableCustomStyles": true
     }
   }
 }
