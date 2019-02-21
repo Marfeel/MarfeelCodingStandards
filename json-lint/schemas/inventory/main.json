@@ -101,6 +101,9 @@
                 "revcontent": {
                     "$ref": "./adservers/revcontent.json"
                 },
+                "richaudience": {
+                    "$ref": "./adservers/richaudience.json"
+                },
                 "rubicon": {
                     "$ref": "./adservers/rubicon.json"
                 },
@@ -185,6 +188,9 @@
                         },
                         {
                             "$ref": "./adservers/revcontent.json"
+                        },
+                        {
+                            "$ref": "./adservers/richaudience.json"
                         },
                         {
                             "$ref": "./adservers/rubicon.json"
