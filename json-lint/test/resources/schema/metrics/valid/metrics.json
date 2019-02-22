@@ -43,6 +43,15 @@
             "name": "test",
             "uaCode": "UA-123456-1",
             "platforms": ["AMP", "TOUCH"]
+        },
+        {
+            "name": "test",
+            "uaCode": "UA-123456-1",
+            "dimensions": {
+                "dimension1": "dimension1",
+                "dimension2": "dimension2"
+            },
+            "platforms": ["AMP", "TOUCH"]
         }
 
     ],
