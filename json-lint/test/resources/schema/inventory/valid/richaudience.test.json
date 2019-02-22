@@ -1,0 +1,17 @@
+{
+    "placements": {
+        "inline": {
+            "adServer": "richaudience"
+        }
+    },
+    "adServers": {
+        "richaudience": {
+            "type": "richaudience",
+            "id": "stuff1231",
+            "options": {
+                "type": "type",
+                "end" : "open"
+            }
+        }
+    }
+}
