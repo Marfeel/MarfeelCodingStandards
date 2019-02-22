@@ -47,6 +47,9 @@
                 "a9": {
                     "$ref": "./adservers/a9.json"
                 },
+                "adincube": {
+                    "$ref": "./adservers/adincube.json"
+                },
                 "adocean": {
                     "$ref": "./adservers/adocean.json"
                 },
@@ -140,6 +143,9 @@
                     "anyOf": [
                         {
                             "$ref": "./adservers/a9.json"
+                        },
+                        {
+                            "$ref": "./adservers/adincube.json"
                         },
                         {
                             "$ref": "./adservers/adocean.json"

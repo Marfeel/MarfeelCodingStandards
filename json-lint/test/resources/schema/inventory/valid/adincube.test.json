@@ -1,0 +1,16 @@
+{
+    "placements": {
+        "inline": {
+            "adServer": "adincube"
+        }
+    },
+    "adServers": {
+        "adincube": {
+            "type": "adincube",
+            "ad-type": "in_content",
+            "site-key": "www.realite-virtuelle.com",
+            "width": 300,
+            "height": 250
+        }
+    }
+}
