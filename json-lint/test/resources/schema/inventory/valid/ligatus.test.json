@@ -15,7 +15,7 @@
     },
     "ligatusTouch": {
       "type": "ligatus",
-      "src": "https://a.ligatus.com/?ids=110177&t=js",
+      "src": "https://a.ligatus.com/tenantScript",
       "json": {
           "containerId": "lig_ubitennis_articllend_2x3"
       }
