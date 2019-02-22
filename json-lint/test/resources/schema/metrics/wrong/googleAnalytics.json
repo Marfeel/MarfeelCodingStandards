@@ -4,6 +4,20 @@
         "uaCode": "UA-12345-1"
     },
     {
+        "name": "testDimensions",
+        "uaCode": "UA-123456-1",
+        "dimension": {
+            "dimension1": "test1"
+        }
+    },
+    {
+        "name": "testDimension",
+        "uaCode": "UA-123456-1",
+        "dimensions": {
+            "dimension1a": "test1"
+        }
+    },
+    {
         "name": "test"
     }],
     "googleArf": [{
