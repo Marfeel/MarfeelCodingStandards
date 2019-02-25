@@ -13,7 +13,7 @@
       }
     },
     "bottom_details_2": {
-      "adServer": "outbrain",
+      "adServer": "outbrainWithStyles",
       "params": {
         "WIDGET_ID": "MB_1"
       }
@@ -37,6 +37,14 @@
       "widgetIds": "${WIDGET_ID}",
       "json": {
         "disableCustomStyles": true
+      }
+    },
+    "outbrainWithStyles": {
+      "type": "outbrain",
+      "layout": "responsive",
+      "widgetIds": "${WIDGET_ID}",
+      "json": {
+        "customStyles": "CSS STRING WITH STYLES"
       }
     }
   }
