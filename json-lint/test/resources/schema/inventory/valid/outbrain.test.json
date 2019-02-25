@@ -19,9 +19,9 @@
       }
     },
     "bottom_details_1": {
-      "adServer": "outbrain1",
+      "adServer": "outbrainNoStyles",
       "params": {
-        "WIDGET_ID": "MB_2"
+        "WIDGET_ID": "MB_5"
       }
     }
   },
@@ -31,11 +31,13 @@
       "layout": "responsive",
       "widgetIds": "${WIDGET_ID}"
     },
-    "outbrain1": {
+    "outbrainNoStyles": {
       "type": "outbrain",
       "layout": "responsive",
       "widgetIds": "${WIDGET_ID}",
-      "disableCustomStyles": true
+      "json": {
+        "disableCustomStyles": true
+      }
     }
   }
 }
