@@ -80,6 +80,9 @@
                 "gumgum": {
                     "$ref": "./adservers/gumgum.json"
                 },
+                "insticator": {
+                    "$ref": "./adservers/insticator.json"
+                },
                 "ligatus": {
                     "$ref": "./adservers/ligatus.json"
                 },
@@ -97,6 +100,9 @@
                 },
                 "postquare": {
                     "$ref": "./adservers/postquare.json"
+                },
+                "pubgenius": {
+                    "$ref": "./adservers/pubgenius.json"
                 },
                 "revcontent": {
                     "$ref": "./adservers/revcontent.json"
@@ -169,6 +175,9 @@
                             "$ref": "./adservers/gumgum.json"
                         },
                         {
+                            "$ref": "./adservers/insticator.json"
+                        },
+                        {
                             "$ref": "./adservers/ligatus.json"
                         },
                         {
@@ -182,6 +191,9 @@
                         },
                         {
                             "$ref": "./adservers/postquare.json"
+                        },
+                        {
+                            "$ref": "./adservers/pubgenius.json"
                         },
                         {
                             "$ref": "./adservers/revcontent.json"
