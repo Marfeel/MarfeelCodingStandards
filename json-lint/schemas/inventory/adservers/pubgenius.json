@@ -1,0 +1,38 @@
+{
+  "$id": "#pubGenius",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "PubGenius adserver",
+  "description": "Ad server not supported by amp. Only Web",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "id",
+    "src"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "PubGenius template",
+      "description": "contains required keys",
+      "body": {
+        "type": "pubgenius",
+        "id": "$1",
+        "src": "$2"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "pubgenius"
+    },
+
+    "id": {
+      "type": "string",
+      "pattern": "^pubg-.{3}-.{3}$",
+      "title": "string"
+    },
+    "src": {
+      "type": "string"
+    }
+  }
+}
