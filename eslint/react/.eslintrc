@@ -44,7 +44,6 @@
 		"react/jsx-props-no-multi-spaces": "error",
 		"react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
 		"react/jsx-pascal-case": "error",
-		"react/jsx-space-before-closing": "error",
 		"react/jsx-tag-spacing": ["error", {
 			"closingSlash": "never",
 			"beforeSelfClosing": "always",

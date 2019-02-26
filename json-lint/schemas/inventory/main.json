@@ -47,6 +47,9 @@
                 "a9": {
                     "$ref": "./adservers/a9.json"
                 },
+                "adincube": {
+                    "$ref": "./adservers/adincube.json"
+                },
                 "adocean": {
                     "$ref": "./adservers/adocean.json"
                 },
@@ -107,6 +110,9 @@
                 "revcontent": {
                     "$ref": "./adservers/revcontent.json"
                 },
+                "richaudience": {
+                    "$ref": "./adservers/richaudience.json"
+                },
                 "rubicon": {
                     "$ref": "./adservers/rubicon.json"
                 },
@@ -143,6 +149,9 @@
                     "anyOf": [
                         {
                             "$ref": "./adservers/a9.json"
+                        },
+                        {
+                            "$ref": "./adservers/adincube.json"
                         },
                         {
                             "$ref": "./adservers/adocean.json"
@@ -197,6 +206,9 @@
                         },
                         {
                             "$ref": "./adservers/revcontent.json"
+                        },
+                        {
+                            "$ref": "./adservers/richaudience.json"
                         },
                         {
                             "$ref": "./adservers/rubicon.json"
