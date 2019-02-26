@@ -25,11 +25,9 @@
     "type": {
       "const": "pubgenius"
     },
-
+    
     "id": {
-      "type": "string",
-      "pattern": "^pubg-.{3}-.{3}$",
-      "title": "string"
+      "type": "string"
     },
     "src": {
       "type": "string"
