@@ -69,7 +69,7 @@
           "type": ["integer","string"],
           "description": "network id, only used in Smart for Touch"
         },
-        "src": {
+        "scriptSrc": {
           "type": "string",
           "description": "Full source of the script, for old implementations of SmartAdServer"
         }
