@@ -98,6 +98,9 @@
                 "postquare": {
                     "$ref": "./adservers/postquare.json"
                 },
+                "quantum": {
+                    "$ref": "./adservers/quantum.json"
+                },
                 "revcontent": {
                     "$ref": "./adservers/revcontent.json"
                 },
@@ -188,6 +191,9 @@
                         },
                         {
                             "$ref": "./adservers/outbrain.json"
+                        },
+                        {
+                            "$ref": "./adservers/quantum.json"
                         },
                         {
                             "$ref": "./adservers/postquare.json"
