@@ -43,7 +43,7 @@
         },
         "json": {
             "type": "object",
-            "description": "This is a pocket value for the TOUCH version of sunmedia",
+            "description": "This is a object value for the TOUCH version of sunmedia",
             "properties": {
                 "script": {
                     "type": "string"

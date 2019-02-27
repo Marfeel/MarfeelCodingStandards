@@ -26,6 +26,18 @@
 			"format": 38952,
 			"domain": "https://www.smartadserver.com",
 			"target" : "foo=bar"
+		},
+		"smart3": {
+			"type": "smartadserver",
+			"site": 134720,
+			"page": 714388,
+			"format": 38952,
+			"domain": "https://www.smartadserver.com",
+			"target" : "foo=bar",
+			"json": {
+				"nwid": "200",
+				"src": "full source"
+			}
 		}
 	}
 }

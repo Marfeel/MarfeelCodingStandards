@@ -62,6 +62,19 @@
     },
     "tag": {
       "description": "An ID for the tag containing the ad"
+    },
+    "json": {
+      "properties": {
+        "nwid": {
+          "type": ["integer","string"],
+          "description": "network id, only used in Smart for Touch"
+        },
+        "src": {
+          "type": "string",
+          "description": "Full source of the script, for old implementations of SmartAdServer"
+        }
+      },
+      "description": "Json object for touch parameters"
     }
   }
 }
