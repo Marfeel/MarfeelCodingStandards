@@ -119,6 +119,12 @@
                 "sortable": {
                     "$ref": "./adservers/sortable.json"
                 },
+                "sunmedia": {
+                    "$ref": "./adservers/sunmedia.json"
+                },
+                "sunmediaVideo": {
+                    "$ref": "./adservers/sunmediaVideo.json"
+                },
                 "taboola": {
                     "$ref": "./adservers/taboola.json"
                 },
@@ -206,6 +212,12 @@
                         },
                         {
                             "$ref": "./adservers/sortable.json"
+                        },
+                        {
+                            "$ref": "./adservers/sunmediaVideo.json"
+                        },
+                        {
+                            "$ref": "./adservers/sunmedia.json"
                         },
                         {
                             "$ref": "./adservers/taboola.json"
