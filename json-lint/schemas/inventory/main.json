@@ -47,6 +47,9 @@
                 "a9": {
                     "$ref": "./adservers/a9.json"
                 },
+                "adincube": {
+                    "$ref": "./adservers/adincube.json"
+                },
                 "adocean": {
                     "$ref": "./adservers/adocean.json"
                 },
@@ -80,6 +83,9 @@
                 "gumgum": {
                     "$ref": "./adservers/gumgum.json"
                 },
+                "insticator": {
+                    "$ref": "./adservers/insticator.json"
+                },
                 "ligatus": {
                     "$ref": "./adservers/ligatus.json"
                 },
@@ -100,6 +106,9 @@
                 },
                 "quantum": {
                     "$ref": "./adservers/quantum.json"
+                },
+                "pubgenius": {
+                    "$ref": "./adservers/pubgenius.json"
                 },
                 "revcontent": {
                     "$ref": "./adservers/revcontent.json"
@@ -151,6 +160,9 @@
                             "$ref": "./adservers/a9.json"
                         },
                         {
+                            "$ref": "./adservers/adincube.json"
+                        },
+                        {
                             "$ref": "./adservers/adocean.json"
                         },
                         {
@@ -181,6 +193,9 @@
                             "$ref": "./adservers/gumgum.json"
                         },
                         {
+                            "$ref": "./adservers/insticator.json"
+                        },
+                        {
                             "$ref": "./adservers/ligatus.json"
                         },
                         {
@@ -197,6 +212,9 @@
                         },
                         {
                             "$ref": "./adservers/postquare.json"
+                        },
+                        {
+                            "$ref": "./adservers/pubgenius.json"
                         },
                         {
                             "$ref": "./adservers/revcontent.json"

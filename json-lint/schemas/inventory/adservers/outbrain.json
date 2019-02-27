@@ -43,10 +43,6 @@
         "type": "string",
         "title": "Parameter for Web config"
       },
-      "customStyles": {
-        "type": "string",
-        "title": "Option to pass custom CSS, parameter for Web config"
-      },
       "width": {
         "type": ["integer","string"],
         "pattern": "^(\\$\\{.+\\})$",
@@ -59,9 +55,18 @@
         "title": "integer",
         "description": "example: 250 (not required, default in outbrain.tag(100))"
       },
-      "disableCustomStyles": {
-        "type": "boolean",
-        "title": "Option to deactivate Marfeel CSS, false by default"
+      "json": {
+        "type": "object",
+        "properties": {
+          "disableCustomStyles": {
+            "type": "boolean",
+            "description": "Option to deactivate Marfeel CSS, false by default"
+          },
+          "customStyles": {
+            "type": "string",
+            "title": "Option to pass custom CSS, parameter for Web config"
+          }
+        }
       }
     }
   }
