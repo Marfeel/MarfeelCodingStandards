@@ -104,6 +104,9 @@
                 "postquare": {
                     "$ref": "./adservers/postquare.json"
                 },
+                "quantum": {
+                    "$ref": "./adservers/quantum.json"
+                },
                 "pubgenius": {
                     "$ref": "./adservers/pubgenius.json"
                 },
@@ -127,6 +130,12 @@
                 },
                 "sortable": {
                     "$ref": "./adservers/sortable.json"
+                },
+                "sunmedia": {
+                    "$ref": "./adservers/sunmedia.json"
+                },
+                "sunmediaVideo": {
+                    "$ref": "./adservers/sunmediaVideo.json"
                 },
                 "taboola": {
                     "$ref": "./adservers/taboola.json"
@@ -199,6 +208,9 @@
                             "$ref": "./adservers/outbrain.json"
                         },
                         {
+                            "$ref": "./adservers/quantum.json"
+                        },
+                        {
                             "$ref": "./adservers/postquare.json"
                         },
                         {
@@ -224,6 +236,12 @@
                         },
                         {
                             "$ref": "./adservers/sortable.json"
+                        },
+                        {
+                            "$ref": "./adservers/sunmediaVideo.json"
+                        },
+                        {
+                            "$ref": "./adservers/sunmedia.json"
                         },
                         {
                             "$ref": "./adservers/taboola.json"

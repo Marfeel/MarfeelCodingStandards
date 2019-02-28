@@ -1,0 +1,17 @@
+{
+    "$id": "#quantum",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Quantum adserver for TOUCH only",
+    "description": "Quantum ad server for TOUCH only",
+    "additionalProperties": false,
+    "required": [],
+    "defaultSnippets": [
+        {
+            "label": "Quantum template",
+            "description": "contains required keys",
+            "body": {}
+        }
+    ],
+    "properties": {}
+}
