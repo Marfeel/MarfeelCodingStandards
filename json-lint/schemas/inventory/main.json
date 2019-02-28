@@ -125,6 +125,9 @@
                 "smartadserver": {
                     "$ref": "./adservers/smartadserver.json"
                 },
+                "smartadserverold": {
+                    "$ref": "./adservers/smartadserverold.json"
+                },
                 "smartclip": {
                     "$ref": "./adservers/smartclip.json"
                 },
@@ -230,6 +233,9 @@
                         },
                         {
                             "$ref": "./adservers/smartadserver.json"
+                        },
+                        {
+                            "$ref": "./adservers/smartadserverold.json"
                         },
                         {
                             "$ref": "./adservers/smartclip.json"
