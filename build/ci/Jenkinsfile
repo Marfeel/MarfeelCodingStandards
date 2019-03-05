@@ -40,6 +40,7 @@ pipeline {
       always {
           sh "docker-compose -f build/ci/docker-compose.yml down || true"
           sh 'echo "Job ran @ ${JENKINS_NODE_NAME}"'
+          cleanWs()
       }
     }
   options {

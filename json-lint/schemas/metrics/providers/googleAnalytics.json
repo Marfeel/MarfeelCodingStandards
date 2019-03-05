@@ -14,7 +14,7 @@
             },
             "uaCode": {
                 "description": "uaCode",
-                "pattern": "^(UA-[0-9]{6,}-[0-9]+)$",
+                "pattern": "^(UA-[0-9]{5,}-[0-9]+)$",
                 "title": "uaCode",
                 "type": "string"
             },
