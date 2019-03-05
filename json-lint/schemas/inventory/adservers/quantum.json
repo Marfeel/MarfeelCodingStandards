@@ -13,5 +13,9 @@
             "body": {}
         }
     ],
-    "properties": {}
+    "properties": {
+        "type": {
+            "const": "quantum"
+        }
+    }    
 }
