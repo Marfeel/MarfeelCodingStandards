@@ -25,10 +25,10 @@
         },
         "json": {
             "type": "object",
+            "required": ["id"],
             "properties": {
                 "id" : {
-                    "type": "string",
-                    "required": ["id"]
+                    "type": "string"
                 }
             }
         }
