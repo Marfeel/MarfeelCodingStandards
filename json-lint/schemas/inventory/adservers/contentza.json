@@ -10,7 +10,10 @@
         {
             "label": "Contentza template",
             "description": "contains required keys",
-            "body": {}
+            "body": {
+                "type": "contentza",
+                "id": "$1"
+            }
         }
     ],
     "properties": {
