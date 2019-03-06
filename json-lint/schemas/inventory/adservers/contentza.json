@@ -1,0 +1,29 @@
+{
+    "$id": "#contentza",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Contentza adserver for TOUCH only",
+    "description": "Contentza ad server for TOUCH only",
+    "additionalProperties": false,
+    "required": [],
+    "defaultSnippets": [
+        {
+            "label": "Contentza template",
+            "description": "contains required keys",
+            "body": {}
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "contentza"
+        },
+        "json": {
+            "type": "object",
+            "properties": {
+                "id" : {
+                    "type": "string"
+                }
+            }
+        }
+    }    
+}

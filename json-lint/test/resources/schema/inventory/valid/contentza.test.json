@@ -1,0 +1,15 @@
+{
+    "placements": {
+        "bottom_details_2": {
+            "adServer": "contentza"
+        }
+    },
+    "adServers": {
+        "contentza": {
+            "type": "contentza",
+            "json": {
+                "id": "8745njnjk25892384290njk2"
+            }
+        }
+    }
+}
