@@ -7,7 +7,7 @@
     "additionalProperties": false,
     "required": [
         "type",
-        "id"
+        "json"
     ],
     "defaultSnippets": [
         {
