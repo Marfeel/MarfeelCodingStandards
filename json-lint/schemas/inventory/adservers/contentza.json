@@ -5,7 +5,10 @@
     "title": "Contentza adserver for TOUCH only",
     "description": "Contentza ad server for TOUCH only",
     "additionalProperties": false,
-    "required": [],
+    "required": [
+        "type",
+        "id"
+    ],
     "defaultSnippets": [
         {
             "label": "Contentza template",
