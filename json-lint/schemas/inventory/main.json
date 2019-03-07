@@ -68,6 +68,9 @@
                 "contentad": {
                     "$ref": "./adservers/contentad.json"
                 },
+                "contentza": {
+                    "$ref": "./adservers/contentza.json"
+                },
                 "criteo": {
                     "$ref": "./adservers/criteo.json"
                 },
@@ -182,6 +185,9 @@
                         },
                         {
                             "$ref": "./adservers/contentad.json"
+                        },
+                        {
+                            "$ref": "./adservers/contentza.json"
                         },
                         {
                             "$ref": "./adservers/criteo.json"
