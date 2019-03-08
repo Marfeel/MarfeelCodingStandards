@@ -1,5 +1,8 @@
 # This file
-/CODEOWNERS @Marfeel/glutenbergteamleads
+/CODEOWNERS @Marfeel/frontend-teachleads
 
 # inventory.json schemas, main logic and tests
-/json-lint/schemas/inventory @Marfeel/glutenbergteamleads @Marfeel/alot @Marfeel/integrationsteamleads
+/json-lint/schemas/inventory/ @Marfeel/alot
+/json-lint/schemas/metrics/ @Marfeel/berg
+/json-lint/schemas/comments/ @Marfeel/ten
+/json-lint/schemas/ui/ @Marfeel/ten
