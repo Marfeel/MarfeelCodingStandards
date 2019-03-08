@@ -1,0 +1,16 @@
+{
+    "placements": {
+        "inline_1" : {
+            "adServer" : "giraff"
+        }
+    },
+    "adServers": {
+        "giraff": {
+            "type": "giraff",
+            "height": 720,
+            "width": 380,
+            "block-name": "umnajaru",
+            "widget-id": "3"
+          }
+    }
+}
