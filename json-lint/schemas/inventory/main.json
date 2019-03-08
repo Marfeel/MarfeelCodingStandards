@@ -86,6 +86,12 @@
                 "gumgum": {
                     "$ref": "./adservers/gumgum.json"
                 },
+                "iframeAD": {
+                    "$ref": "./adservers/iframe.json"
+                },
+                "iframeVideoAD": {
+                    "$ref": "./adservers/iframevideo.json"
+                },
                 "insticator": {
                     "$ref": "./adservers/insticator.json"
                 },
@@ -200,6 +206,12 @@
                         },
                         {
                             "$ref": "./adservers/gumgum.json"
+                        },
+                        {
+                            "$ref": "./adservers/iframe.json"
+                        },
+                        {
+                            "$ref": "./adservers/iframevideo.json"
                         },
                         {
                             "$ref": "./adservers/insticator.json"

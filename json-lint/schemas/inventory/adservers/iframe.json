@@ -1,0 +1,37 @@
+{
+  "$id": "#iframeAD",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "iframe AD",
+  "description": "AdServer Implemented for using iframes for touch and amp",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "src",
+    "height"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "iframeAD template",
+      "description": "contains required keys",
+      "body": {
+        "type": "iframe",
+        "src": "$1",
+        "height": "$2"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "iframe"
+    },
+    "src": {
+      "type": "string",
+      "description": "The source of the iframe"
+    },
+    "height": {
+      "type": "string",
+      "description": "The height of the iframe for example 300px"
+    }
+  }
+}
