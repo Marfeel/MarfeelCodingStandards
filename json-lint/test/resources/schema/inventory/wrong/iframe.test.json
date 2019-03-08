@@ -1,0 +1,14 @@
+{
+  "placements": {
+    "bottom_details_2": {
+      "adServer": "iframeAD"
+    }
+  },
+  "adServers": {
+    "iframeAD": {
+      "type": "marfeel",
+      "src": "https://www.sableinternational.com/forex/converter/dynamic-outcomes-mobile",
+      "height": "405px"
+    }
+  }
+}
