@@ -83,6 +83,9 @@
                 "engageya": {
                     "$ref": "./adservers/engageya.json"
                 },
+                "giraff": {
+                    "$ref": "./adservers/giraff.json"
+                },
                 "gumgum": {
                     "$ref": "./adservers/gumgum.json"
                 },
@@ -203,6 +206,9 @@
                         },
                         {
                             "$ref": "./adservers/doubleclick.json"
+                        },
+                        {
+                            "$ref": "./adservers/giraff.json"
                         },
                         {
                             "$ref": "./adservers/gumgum.json"
