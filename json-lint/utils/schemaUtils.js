@@ -11,7 +11,7 @@
  * is strictly forbidden unless prior written permission is obtained
  * from Marfeel Solutions SL.
  */
-const JSON_MERGE_COMMAND = 'mrf-json';
+const JSON_MERGE_COMMAND = process.env.MARFEELXP_HOME + '/Jinks/bin/mrf-json';
 
 const path = require('path');
 const fs = require('fs');
