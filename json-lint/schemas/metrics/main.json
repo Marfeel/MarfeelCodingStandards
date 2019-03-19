@@ -13,6 +13,9 @@
         "alexa": {
             "$ref" : "./providers/alexa.json"
         },
+        "blueKai": {
+            "$ref" : "./providers/blueKai.json"
+        },
         "chartbeat": {
             "$ref" : "./providers/chartbeat.json"
         },
