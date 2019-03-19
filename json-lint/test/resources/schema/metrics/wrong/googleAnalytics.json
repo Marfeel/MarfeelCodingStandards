@@ -11,6 +11,11 @@
         }
     },
     {
+        "name": "testOrganics",
+        "uaCode": "UA-123456-1",
+        "ignoredOrganics": "wrong"
+    },
+    {
         "name": "testDimension",
         "uaCode": "UA-123456-1",
         "dimensions": {

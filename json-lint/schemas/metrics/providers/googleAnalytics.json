@@ -30,6 +30,12 @@
                     }
                 }
             },
+            "ignoredOrganics": {
+                "description": "Custom ignored organics",
+                "type": "array",
+                "title": "ignoredOrganics",
+                "additionalProperties": false
+            },
             "platforms": {
                 "$ref" : "../properties/platforms-all.json"
             }

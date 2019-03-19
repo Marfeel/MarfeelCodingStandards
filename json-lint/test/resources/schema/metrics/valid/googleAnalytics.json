@@ -1,0 +1,7 @@
+{
+    "googleAnalytics": [{
+        "name": "testOrganics",
+        "uaCode": "UA-12345-1",
+        "ignoredOrganics": ["domain.com", "test.domain.com"]
+    }]
+}
