@@ -1,0 +1,19 @@
+{
+    "placements": {
+        "!inline_2": {
+            "adServer": "marfeel",
+            "params": {
+                "MY_CUSTOM_PARAM": "MY_VALUE"
+            }
+        }
+    },
+    "adServers": {
+        "marfeel": {
+            "json": {
+                "targeting": {
+                    "MY_CUSTOM_TARGETING": "${MY_CUSTOM_PARAM}"
+                }
+            }
+        }
+    }
+}
