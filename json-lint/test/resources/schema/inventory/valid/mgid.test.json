@@ -11,7 +11,7 @@
         "mgid2": {
             "type": "mgid",
             "json": {
-                "tenantUrl": "marfee.com",
+                "tenantUrl": "marfeel.com",
                 "clientCode": "000000",
                 "divIDCode": "M000000"
             }
@@ -19,7 +19,7 @@
         "mgid1": {
             "type": "mgid",
             "json": {
-                "tenantUrl": "marfee.com",
+                "tenantUrl": "marfeel.com",
                 "clientCode": "000001",
                 "divIDCode": "M000001",
                 "firstParam": "o",
