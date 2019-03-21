@@ -104,6 +104,9 @@
                 "medianet": {
                     "$ref": "./adservers/medianet.json"
                 },
+                "mgid": {
+                    "$ref": "./adservers/mgid.json"
+                },
                 "nativo": {
                     "$ref": "./adservers/nativo.json"
                 },
@@ -221,6 +224,9 @@
                         },
                         {
                             "$ref": "./adservers/medianet.json"
+                        },
+                        {
+                            "$ref": "./adservers/mgid.json"
                         },
                         {
                             "$ref": "./adservers/nativo.json"
