@@ -53,6 +53,9 @@
                 "adsense": {
                     "$ref": "./adservers/adsense.json"
                 },
+                "adthrive": {
+                    "$ref": "./adservers/adthrive.json"
+                },
                 "appnexus": {
                     "$ref": "./adservers/appnexus.json"
                 },
@@ -179,6 +182,9 @@
                         },
                         {
                             "$ref": "./adservers/adsense.json"
+                        },
+                        {
+                            "$ref": "./adservers/adthrive.json"
                         },
                         {
                             "$ref": "./adservers/appnexus.json"

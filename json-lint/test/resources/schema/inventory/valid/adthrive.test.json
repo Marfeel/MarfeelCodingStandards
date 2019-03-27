@@ -1,0 +1,15 @@
+{
+  "placements": {
+    "inline": {
+      "adServer": "adthrive"
+    }
+  },
+  "adServers": {
+    "adthrive": {
+      "type": "adThrive",
+			"location" : "Content",
+			"sticky" : "false",
+			"id" : "53f697fcc172f2345e00f356"
+    }
+  }
+}
