@@ -3,13 +3,11 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "title": "AdThrive adserver",
-  "description": "Ad server not supported by amp. Only Web",
+  "description": "https://github.com/ampproject/amphtml/blob/master/ads/adthrive.md",
   "additionalProperties": false,
   "required": [
     "type",
-    "id",
-    "location",
-    "sticky"
+    "site-id"
   ],
   "defaultSnippets": [
     {
@@ -17,9 +15,7 @@
       "description": "contains required keys",
       "body": {
         "type": "adThrive",
-        "id": "$1",
-        "location": "$2",
-        "sticky": "$3"
+        "site-id": "$1"
       }
     }
   ],
@@ -27,14 +23,25 @@
     "type": {
       "const": "adThrive"
     },
-    "id": {
+    "site-id": {
       "type": "string"
     },
-    "location": {
+    "ad-unit": {
       "type": "string"
     },
-    "sticky": {
+    "sizes": {
       "type": "string"
+    },
+    "json": {
+      "properties": {
+        "location": {
+          "type": "string"
+        },
+        "sticky": {
+          "type": "string"
+        }
+      },
+      "description": "Json object for touch parameters"
     }
   }
 }
