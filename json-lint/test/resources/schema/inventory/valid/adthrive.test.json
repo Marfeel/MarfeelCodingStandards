@@ -6,7 +6,7 @@
   },
   "adServers": {
     "adthrive": {
-      "type": "adThrive",
+      "type": "adthrive",
       "site-id" : "53f697fcc172f2345e00f356",
       "json" : {
         "location" : "Content",

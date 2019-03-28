@@ -14,14 +14,14 @@
       "label": "AdThrive template",
       "description": "contains required keys",
       "body": {
-        "type": "adThrive",
+        "type": "adthrive",
         "site-id": "$1"
       }
     }
   ],
   "properties": {
     "type": {
-      "const": "adThrive"
+      "const": "adthrive"
     },
     "site-id": {
       "type": "string"
