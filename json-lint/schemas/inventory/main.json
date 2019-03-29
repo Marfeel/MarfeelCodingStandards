@@ -29,10 +29,7 @@
             "title": "Placements Object",
             "description": "contain the placements with keys like: \n - sticky \n - inter \n - top \n - top_mosaic \n - top_details \n - bottom_mosaic \n - bottom_details_2 \n - inline \n - inline_5 \n ...",
             "patternProperties": {
-                "^(top|inline|bottom|sticky)(.*)*": {
-                    "$ref": "./placements/schema.json"
-                },
-                "^inter$": {
+                "^!?(top|inline|bottom|sticky|inter)(_(.*))*": {
                     "$ref": "./placements/schema.json"
                 }
             },
@@ -55,6 +52,9 @@
                 },
                 "adsense": {
                     "$ref": "./adservers/adsense.json"
+                },
+                "adthrive": {
+                    "$ref": "./adservers/adthrive.json"
                 },
                 "appnexus": {
                     "$ref": "./adservers/appnexus.json"
@@ -107,6 +107,9 @@
                 "medianet": {
                     "$ref": "./adservers/medianet.json"
                 },
+                "mgid": {
+                    "$ref": "./adservers/mgid.json"
+                },
                 "nativo": {
                     "$ref": "./adservers/nativo.json"
                 },
@@ -139,9 +142,6 @@
                 },
                 "smartadserver": {
                     "$ref": "./adservers/smartadserver.json"
-                },
-                "smartadserverold": {
-                    "$ref": "./adservers/smartadserverold.json"
                 },
                 "smartclip": {
                     "$ref": "./adservers/smartclip.json"
@@ -185,6 +185,9 @@
                         },
                         {
                             "$ref": "./adservers/adsense.json"
+                        },
+                        {
+                            "$ref": "./adservers/adthrive.json"
                         },
                         {
                             "$ref": "./adservers/appnexus.json"
@@ -234,6 +237,9 @@
                         {
                             "$ref": "./adservers/emptyad.json"
                         },
+                        }
+                            "$ref": "./adservers/mgid.json"
+                        },
                         {
                             "$ref": "./adservers/nativo.json"
                         },
@@ -263,9 +269,6 @@
                         },
                         {
                             "$ref": "./adservers/smartadserver.json"
-                        },
-                        {
-                            "$ref": "./adservers/smartadserverold.json"
                         },
                         {
                             "$ref": "./adservers/smartclip.json"
