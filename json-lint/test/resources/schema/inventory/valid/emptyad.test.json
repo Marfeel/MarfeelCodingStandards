@@ -1,0 +1,12 @@
+{
+    "placements": {
+        "inline": {
+            "adServer": "emptyAd"
+        }
+    },
+    "adServers": {
+        "emptyAd": {
+            "type": "emptyAd"
+        }
+    }
+}
