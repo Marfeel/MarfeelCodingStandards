@@ -110,6 +110,9 @@
                 "nativo": {
                     "$ref": "./adservers/nativo.json"
                 },
+                "emptyAd": {
+                    "$ref": "./adservers/emptyad.json"
+                },
                 "outbrain": {
                     "$ref": "./adservers/outbrain.json"
                 },
@@ -227,6 +230,9 @@
                         },
                         {
                             "$ref": "./adservers/medianet.json"
+                        },
+                        {
+                            "$ref": "./adservers/emptyad.json"
                         },
                         {
                             "$ref": "./adservers/nativo.json"
