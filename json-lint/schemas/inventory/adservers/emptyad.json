@@ -2,7 +2,7 @@
     "$id": "#emptyAd",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "no AD",
+    "title": "Empty Ad",
     "description": "AdServer Implemented to load empty adServer instead of custom",
     "additionalProperties": false,
     "required": [
