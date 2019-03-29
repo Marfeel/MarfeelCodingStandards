@@ -237,7 +237,7 @@
                         {
                             "$ref": "./adservers/emptyad.json"
                         },
-                        }
+                        {
                             "$ref": "./adservers/mgid.json"
                         },
                         {
