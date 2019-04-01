@@ -1,0 +1,17 @@
+{
+  "placements": {
+    "inline": {
+      "adServer": "chunked"
+    }
+  },
+  "adServers": {
+    "chunked": {
+      "type": "adsense",
+      "ad-client": "ca-pub-7484406166969543",
+      "ad-slot": 9667904487,
+      "width": 300,
+      "height": 600,
+      "chunkFilename": "Adsense3"
+    }
+  }
+}

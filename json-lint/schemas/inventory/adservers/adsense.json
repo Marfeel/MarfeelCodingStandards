@@ -70,6 +70,9 @@
         "type": ["boolean", "string"],
         "pattern": "^(\\$\\{.+\\})$"
       },
+      "chunkFilename": {
+        "$ref": "./types/chunkFilename.json"
+      },
       "ad-format": {
         "type": "string"
       }
