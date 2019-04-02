@@ -27,7 +27,8 @@
                     "type": "boolean",
                     "title": "React Header",
                     "description": "Dictates whether to render the header component using React code",
-                    "owner": "TEN"
+                    "owner": "TEN",
+                    "default": false
                 }
             }
         }
