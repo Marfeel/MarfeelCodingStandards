@@ -1,0 +1,35 @@
+{
+    "MarfeelPath": "/resources/features.json",
+    "definitions": {},
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "title": "Features JSON",
+    "description": "Configure the features that are active for a given tenant",
+    "additionalProperties": false,
+    "required": [
+        "features"
+    ],
+    "properties": {
+        "options": {
+            "type": "object",
+            "title": "Options",
+            "description": "Define key-value pair configuration for all features"
+        },
+        "features": {
+            "type": "object",
+            "title": "Features",
+            "description": "Define the state of features for a given tenant",
+            "additionalProperties": false,
+            "properties": {
+                "reactHeader": {
+                    "$id": "/properties/reactHeader",
+                    "type": "boolean",
+                    "title": "React Header",
+                    "description": "Dictates whether to render the header component using React code",
+                    "owner": "TEN"
+                }
+            }
+        }
+    }
+}

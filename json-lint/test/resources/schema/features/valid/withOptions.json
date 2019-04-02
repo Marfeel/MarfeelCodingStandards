@@ -1,0 +1,8 @@
+{
+    "options": {
+        "someOption": "someValue"
+    },
+	"features": {
+        "reactHeader": true
+    }
+}
