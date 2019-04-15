@@ -29,6 +29,14 @@
                     "description": "Dictates whether to render the header component using React code",
                     "owner": "TEN",
                     "default": false
+                },
+                "newUserJourneyEvents": {
+                    "$id": "/properties/newUserJourneyEvents",
+                    "type": "boolean",
+                    "title": "New metrics",
+                    "description": "Replace old user journey events with new user journey events",
+                    "owner": "TEN",
+                    "default": false
                 }
             }
         }

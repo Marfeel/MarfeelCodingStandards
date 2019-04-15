@@ -1,3 +1,4 @@
 {
-    "reactHeader": true
+    "reactHeader": true,
+    "newUserJourneyEvents": true
 }
