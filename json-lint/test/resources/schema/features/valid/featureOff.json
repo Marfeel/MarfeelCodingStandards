@@ -1,5 +1,6 @@
 {
 	"features": {
-        "reactHeader": false
+        "reactHeader": false,
+        "newMetrics": false
     }
 }

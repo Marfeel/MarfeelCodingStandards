@@ -29,6 +29,14 @@
                     "description": "Dictates whether to render the header component using React code",
                     "owner": "TEN",
                     "default": false
+                },
+                "newMetrics": {
+                    "$id": "/properties/newMetrics",
+                    "type": "boolean",
+                    "title": "New metrics",
+                    "description": "Enable the new metrics",
+                    "owner": "WOW, TEN",
+                    "default": false
                 }
             }
         }
