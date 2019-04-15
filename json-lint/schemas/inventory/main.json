@@ -169,6 +169,9 @@
                 },
                 "zergnet": {
                     "$ref": "./adservers/zergnet.json"
+                },
+                "scriptLoader": {
+                    "$ref": "./adservers/scriptLoader.json"
                 }
             },
             "patternProperties": {
@@ -299,6 +302,9 @@
                         },
                         {
                             "$ref": "./adservers/zergnet.json"
+                        },
+                        {
+                            "$ref": "./adservers/scriptLoader.json"
                         }
                     ]
                 }

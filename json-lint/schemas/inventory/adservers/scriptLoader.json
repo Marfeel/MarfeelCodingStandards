@@ -1,0 +1,36 @@
+{
+  "$id": "#scriptloader",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "title": "ScriptLoader adserver for TOUCH only",
+  "description": "ScriptLoader ad server for TOUCH only",
+  "additionalProperties": false,
+  "required": [
+    "type",
+    "json"
+  ],
+  "defaultSnippets": [
+    {
+      "label": "ScriptLoader template",
+      "description": "contains required keys",
+      "body": {
+        "type": "scriptLoader",
+        "id": "$1"
+      }
+    }
+  ],
+  "properties": {
+    "type": {
+      "const": "scriptLoader"
+    },
+    "json": {
+      "type": "object",
+      "required": ["url"],
+      "properties": {
+        "url" : {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
