@@ -35,7 +35,7 @@
                     "type": "boolean",
                     "title": "New metrics",
                     "description": "Replace old metrics with new metrics",
-                    "owner": "WOW, TEN",
+                    "owner": "TEN",
                     "default": false
                 }
             }
