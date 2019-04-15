@@ -1,6 +1,6 @@
 {
-	"features": {
+    "features": {
         "reactHeader": false,
-        "newMetrics": false
+        "newUserJourneyEvents": false
     }
 }

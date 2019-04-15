@@ -2,8 +2,8 @@
     "options": {
         "someOption": "someValue"
     },
-	"features": {
+    "features": {
         "reactHeader": true,
-        "newMetrics": true
+        "newUserJourneyEvents": true
     }
 }

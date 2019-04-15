@@ -30,11 +30,11 @@
                     "owner": "TEN",
                     "default": false
                 },
-                "newMetrics": {
-                    "$id": "/properties/newMetrics",
+                "newUserJourneyEvents": {
+                    "$id": "/properties/newUserJourneyEvents",
                     "type": "boolean",
                     "title": "New metrics",
-                    "description": "Replace old metrics with new metrics",
+                    "description": "Replace old user journey events with new user journey events",
                     "owner": "TEN",
                     "default": false
                 }
