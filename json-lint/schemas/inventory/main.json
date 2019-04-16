@@ -113,6 +113,9 @@
                 "nativo": {
                     "$ref": "./adservers/nativo.json"
                 },
+                "emptyAd": {
+                    "$ref": "./adservers/emptyad.json"
+                },
                 "outbrain": {
                     "$ref": "./adservers/outbrain.json"
                 },
@@ -166,6 +169,9 @@
                 },
                 "zergnet": {
                     "$ref": "./adservers/zergnet.json"
+                },
+                "scriptLoader": {
+                    "$ref": "./adservers/scriptLoader.json"
                 }
             },
             "patternProperties": {
@@ -232,6 +238,9 @@
                             "$ref": "./adservers/medianet.json"
                         },
                         {
+                            "$ref": "./adservers/emptyad.json"
+                        },
+                        {
                             "$ref": "./adservers/mgid.json"
                         },
                         {
@@ -293,6 +302,9 @@
                         },
                         {
                             "$ref": "./adservers/zergnet.json"
+                        },
+                        {
+                            "$ref": "./adservers/scriptLoader.json"
                         }
                     ]
                 }

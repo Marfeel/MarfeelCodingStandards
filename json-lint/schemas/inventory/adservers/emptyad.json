@@ -1,0 +1,25 @@
+{
+    "$id": "#emptyAd",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Empty Ad",
+    "description": "AdServer Implemented to load empty adServer instead of custom",
+    "additionalProperties": false,
+    "required": [
+        "type"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "emptyAd template",
+            "description": "contains required keys",
+            "body": {
+                "type": "emptyAd"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "emptyAd"
+        }
+    }
+}

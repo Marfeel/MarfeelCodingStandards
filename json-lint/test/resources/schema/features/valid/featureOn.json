@@ -1,0 +1,6 @@
+{
+    "features": {
+        "reactHeader": true,
+        "newUserJourneyEvents": true
+    }
+}

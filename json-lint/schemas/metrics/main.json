@@ -84,6 +84,9 @@
         },
         "yandex": {
             "$ref" : "./providers/yandex.json"
+        },
+        "tailDMP": {
+            "$ref" : "./providers/tailDMP.json"
         }
     }
 }
