@@ -2,12 +2,21 @@
     "placements": {
       "inline_1" : {
         "adServer" : "connatix"
+      },
+      "inline_3" : {
+        "adServer" : "connatix1"
       }
     },
     "adServers": {
         "connatix" : {
             "type" : "connatix",
-            "connatix" : "{data-connatix-token:2cb56208-27cc-43d6-82b8-a91a18bcddd9}"
-          }
+            "connatix" : "{data-connatix-token:2cb56208asdada-27cc-43d6-82b8-a91a18bcddd9}"
+          },
+        "connatix1" : {
+            "type" : "connatix",
+            "connatix" : "{data-connatix-token:2cb56208safaf-27cc-43d6-82b8-a91a18bcddd9}",
+            "width": 320,
+            "height": 180
+        }
     }
 }
