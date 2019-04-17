@@ -1,0 +1,22 @@
+{
+    "placements": {
+        "bottom_details_1": {
+            "adServer": "disqus"
+        }
+    },
+    "adServers": {
+        "disqus": {
+            "type": "disqus",
+            "shortName": "vintageeveryday",
+            "forum": "2661911",
+            "category": "culture",
+            "tid": "1524049309",
+            "position": "bottom",
+            "json": {
+                "experiment": "ads_integration_adx_native",
+                "safetyLevel": "30",
+                "variant": "active"
+            }
+        }
+    }
+}

@@ -77,6 +77,9 @@
                 "custom": {
                     "$ref": "./adservers/custom.json"
                 },
+                "disqus": {
+                    "$ref": "./adservers/disqus.json"
+                },
                 "doubleclick": {
                     "$ref": "./adservers/doubleclick.json"
                 },
@@ -212,6 +215,9 @@
                         },
                         {
                             "$ref": "./adservers/custom.json"
+                        },
+                        {
+                            "$ref": "./adservers/disqus.json"
                         },
                         {
                             "$ref": "./adservers/doubleclick.json"
