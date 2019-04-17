@@ -11,8 +11,7 @@
         "forum",
         "category",
         "tid",
-        "position",
-        "json"
+        "position"
     ],
     "defaultSnippets": [
         {
@@ -20,7 +19,11 @@
             "description": "contains required keys",
             "body": {
                 "type": "disqus",
-                "id": "$1"
+                "shortName": "$1",
+                "forum": "$2",
+                "category": "$3",
+                "tid": "$3",
+                "position": "$4"
             }
         }
     ],
