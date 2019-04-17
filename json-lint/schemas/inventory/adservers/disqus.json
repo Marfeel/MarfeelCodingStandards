@@ -22,8 +22,8 @@
                 "shortName": "$1",
                 "forum": "$2",
                 "category": "$3",
-                "tid": "$3",
-                "position": "$4"
+                "tid": "$4",
+                "position": "$5"
             }
         }
     ],
