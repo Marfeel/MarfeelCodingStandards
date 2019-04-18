@@ -1,9 +1,9 @@
 {
-    "$id": "#disqus",
+    "$id": "#disqusads",
     "$schema": "http://json-schema.org/draft-07/schema#",
     "type": "object",
-    "title": "Disqus adserver for TOUCH only",
-    "description": "Disqus ad server for TOUCH only",
+    "title": "Disqusads adserver for TOUCH only",
+    "description": "Disqusads ad server for TOUCH only",
     "additionalProperties": false,
     "required": [
         "type",
@@ -15,10 +15,10 @@
     ],
     "defaultSnippets": [
         {
-            "label": "Disqus template",
+            "label": "Disqusads template",
             "description": "contains required keys",
             "body": {
-                "type": "disqus",
+                "type": "disqusads",
                 "shortName": "$1",
                 "forum": "$2",
                 "category": "$3",
@@ -29,7 +29,7 @@
     ],
     "properties": {
         "type": {
-          "const": "disqus"
+            "const": "disqusads"
         },
         "shortName": {
             "type": "string",
@@ -37,7 +37,7 @@
         },
         "forum": {
             "type": "string",
-            "description": "Feed identifier. Let Disqus know which comment widget is requesting ads."
+            "description": "Feed identifier. Let Disqusads know which comment widget is requesting ads."
         },
         "category": {
             "type": "string",

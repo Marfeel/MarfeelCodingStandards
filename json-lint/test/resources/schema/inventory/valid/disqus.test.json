@@ -1,12 +1,12 @@
 {
     "placements": {
         "bottom_details_1": {
-            "adServer": "disqus"
+            "adServer": "disqusads"
         }
     },
     "adServers": {
-        "disqus": {
-            "type": "disqus",
+        "disqusads": {
+            "type": "disqusads",
             "shortName": "vintageeveryday",
             "forum": "2661911",
             "category": "culture",
