@@ -37,14 +37,6 @@
                     "description": "Replace old user journey events with new user journey events",
                     "owner": "TEN",
                     "default": false
-                },
-                "testingWebhook": {
-                    "$id": "/properties/newUserJourneyEvents",
-                    "type": "boolean",
-                    "title": "UserJourney Test Events",
-                    "description": "Testing webhook",
-                    "owner": "BERG",
-                    "default": false
                 }
             }
         }
