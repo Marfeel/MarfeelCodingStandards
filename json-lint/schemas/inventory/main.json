@@ -104,6 +104,9 @@
                 "ligatus": {
                     "$ref": "./adservers/ligatus.json"
                 },
+                "lockerdome": {
+                    "$ref": "./adservers/lockerdome.json"
+                },
                 "marfeel": {
                     "$ref": "./adservers/marfeel/schema.json"
                 },
@@ -239,6 +242,9 @@
                         },
                         {
                             "$ref": "./adservers/ligatus.json"
+                        },
+                        {
+                            "$ref": "./adservers/lockerdome.json"
                         },
                         {
                             "$ref": "./adservers/medianet.json"
