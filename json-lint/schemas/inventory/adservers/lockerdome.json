@@ -7,8 +7,7 @@
   "additionalProperties": false,
   "required": [
     "type",
-    "slot",
-    "id"
+    "slot"
   ],
   "defaultSnippets": [
     {
@@ -16,8 +15,7 @@
       "description": "contains required keys",
       "body": {
         "type": "lockerdome",
-        "slot": "$1",
-        "id": "$2"
+        "slot": "$1"
       }
     }
   ],
@@ -28,8 +26,14 @@
     "slot":{
       "type": ["string"]
     },
-    "id": {
-      "type": ["string"]
+    "json": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Lockerdome ad id"
+        }
+      }
     }
   }
 }

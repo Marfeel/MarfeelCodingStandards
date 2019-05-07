@@ -8,7 +8,9 @@
         "lockerdome": {
             "type": "lockerdome",
             "slot":"11200683613604198",
-            "id": "ld-3240-8903"
+            "json": {
+                "id": "ld-3240-8903"
+            }
         }
     }
 }
