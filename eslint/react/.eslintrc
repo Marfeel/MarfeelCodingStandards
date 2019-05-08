@@ -70,7 +70,6 @@
 		"react/no-will-update-set-state": "error",
 		"react/prefer-stateless-function": ["error", { "ignorePureComponents": true }],
 		"react/prefer-es6-class": ["error", "always"],
-		"react/require-default-props": "error",
 		"react/self-closing-comp": ["error", {
 			"component": true,
 			"html": true
