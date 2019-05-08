@@ -1,6 +1,7 @@
 {
     "features": {
         "reactHeader": false,
-        "newUserJourneyEvents": false
+        "newUserJourneyEvents": false,
+        "mediaLoaderWithIntersectionObserver": false
     }
 }
