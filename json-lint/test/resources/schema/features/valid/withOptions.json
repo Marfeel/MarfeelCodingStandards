@@ -4,6 +4,7 @@
     },
     "features": {
         "reactHeader": true,
-        "newUserJourneyEvents": true
+        "newUserJourneyEvents": true,
+        "mediaLoaderWithIntersectionObserver": true
     }
 }
