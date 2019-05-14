@@ -1,0 +1,21 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+
+    "MarfeelPath": "/twister.json",
+    "title": "Twister JSON",
+    "description": "Configuration of ads behaviour in a tenant",
+
+    "type": "object",
+    "properties": {
+        "adNetworkProfileStrategy": {
+            "title": "Ad network profile strategy",
+            "description": "Level of aggressiveness to add ads to pages",
+            "type": "string",
+            "enum": ["LOOSE", "DEFAULT", "AGGRESSIVE"]
+        }
+    },
+    "additionalProperties": false,
+    "required": [
+        "adNetworkProfileStrategy"
+    ]
+}
