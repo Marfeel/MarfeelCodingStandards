@@ -1,0 +1,35 @@
+{
+    "$id": "/properties/facebookPixel",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "description": "Define Facebook as Metrics Provider",
+    "title": "Facebook Pixel Metric Provider",
+    "type": "array",
+    "items": {
+        "additionalProperties": false,
+        "properties": {
+            "name": {
+                "description": "Name of the metrics provider",
+                "title": "Metrics Provider Name",
+                "type": "string"
+            },
+            "id": {
+                "type": "string"
+            },
+            "platforms": {
+                "$ref" : "../properties/platforms-touch.json"
+            }
+        },
+        "required": [
+            "name",
+            "id"
+        ]
+    },
+    "defaultSnippets": [
+        {
+            "body": [{
+                "name": "$1",
+                "id": "$2"
+            }]
+        }
+    ]
+}

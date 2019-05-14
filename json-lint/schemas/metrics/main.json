@@ -43,6 +43,9 @@
         "facebookMetric": {
             "$ref" : "./providers/facebookMetric.json"
         },
+        "facebookPixel": {
+            "$ref" : "./providers/facebookPixel.json"
+        },
         "getClicky": {
             "$ref" : "./providers/getClicky.json"
         },
