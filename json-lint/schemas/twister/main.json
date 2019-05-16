@@ -14,7 +14,7 @@
             "enum": ["LOOSE", "DEFAULT", "AGGRESSIVE"]
         }
     },
-    "additionalProperties": false,
+    "additionalProperties": true,
     "required": [
         "adNetworkProfileStrategy"
     ]
