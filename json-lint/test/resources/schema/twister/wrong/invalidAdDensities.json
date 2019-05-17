@@ -1,4 +1,5 @@
 {
+    "hostname": "tenant.com",
     "adNetworkProfileStrategy": "DEFAULT",
     "multisizeStrategy": "DEFAULT",
     "businessModel": "ENTERPRISE",
