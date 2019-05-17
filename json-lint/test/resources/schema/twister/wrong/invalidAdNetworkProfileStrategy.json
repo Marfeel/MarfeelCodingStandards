@@ -1,3 +1,5 @@
 {
-    "adNetworkProfileStrategy": "OTHER"
+    "adNetworkProfileStrategy": "OTHER",
+    "multisizeStrategy": "DEFAULT",
+    "businessModel": "ENTERPRISE"
 }

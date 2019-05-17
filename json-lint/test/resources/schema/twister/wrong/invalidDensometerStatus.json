@@ -1,0 +1,13 @@
+{
+    "adNetworkProfileStrategy": "DEFAULT",
+    "multisizeStrategy": "DEFAULT",
+    "businessModel": "ENTERPRISE",
+    "densometer": {
+        "enabled": "OTHER",
+        "densityFactor": 30
+    },
+    "mosaicDensometer": {
+        "enabled": "OTHER",
+        "densityFactor": 42
+    }
+}

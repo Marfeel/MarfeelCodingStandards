@@ -7,15 +7,63 @@
 
     "type": "object",
     "properties": {
+        "hostname": {
+            "title": "Host name",
+            "description": "Domain of the publisher",
+            "type": "string",
+            "minLength": 4
+        },
         "adNetworkProfileStrategy": {
             "title": "Ad network profile strategy",
             "description": "Level of aggressiveness to add ads to pages",
             "type": "string",
             "enum": ["LOOSE", "DEFAULT", "AGGRESSIVE"]
+        },
+        "multisizeStrategy": {
+            "title": "Multisize strategy",
+            "description": "Trend to request ads with big sizes",
+            "type": "string",
+            "enum": ["DISABLED", "SOFT", "DEFAULT"]
+        },
+        "businessModel": {
+            "title": "Business model",
+            "description": "Payment plan of the customer",
+            "type": "string",
+            "enum": ["ENTERPRISE", "OAP", "FIXED_FEE"]
+        },
+        "shareForCustomer": {
+            "title": "Revenue share for customer",
+            "description": "When business model is OAP, percentage of impressions that belong to the customer",
+            "type": {
+                "anyOf": [
+                    {"type": "integer"},
+                    {"type": "null"}
+                ]
+            }
+        },
+        "densometer": {
+            "allOf": [
+                {"$ref" : "./subtype/densometer.json"},
+                {"$ref" : "./subtype/densometerArticle.json"}
+            ]
+        },
+        "mosaicDensometer": {
+            "allOf": [
+                {"$ref" : "./subtype/densometer.json"},
+                {"$ref" : "./subtype/densometerMosaic.json"}
+            ]
+        },
+        "paidImpressions": {
+            "$ref": "./subtype/placement.json"
         }
     },
     "additionalProperties": true,
     "required": [
-        "adNetworkProfileStrategy"
+        "hostname",
+        "adNetworkProfileStrategy",
+        "multisizeStrategy",
+        "businessModel",
+        "densometer",
+        "mosaicDensometer"
     ]
 }
