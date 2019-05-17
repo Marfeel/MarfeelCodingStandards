@@ -77,6 +77,9 @@
                 "engageya": {
                     "$ref": "./adservers/engageya.json"
                 },
+                "freestar": {
+                    "$ref": "./adservers/freestar.json"
+                },
                 "giraff": {
                     "$ref": "./adservers/giraff.json"
                 },
@@ -215,6 +218,9 @@
                         },
                         {
                             "$ref": "./adservers/doubleclick.json"
+                        },
+                        {
+                            "$ref": "./adservers/freestar.json"
                         },
                         {
                             "$ref": "./adservers/giraff.json"
