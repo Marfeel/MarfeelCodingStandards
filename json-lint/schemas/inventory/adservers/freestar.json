@@ -3,7 +3,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "title": "Freestar adserver",
-  "description": "Freestar adserver",
+  "description": "Freestar adserver for TOUCH only",
   "additionalProperties": false,
   "required": [
     "type",
