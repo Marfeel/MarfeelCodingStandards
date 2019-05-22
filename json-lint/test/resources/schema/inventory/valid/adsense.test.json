@@ -25,7 +25,6 @@
       "height": "${HEIGHT}",
       "json": {
         "ad-format": "fluid",
-        "full-width": true,
         "usePageLevelAds": true
       }
     },

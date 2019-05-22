@@ -79,10 +79,6 @@
             "type": ["boolean", "string"],
             "pattern": "^(\\$\\{.+\\})$",
             "description": "Use page level ads setup"
-          },
-          "full-width": {
-            "type": ["boolean", "string"],
-            "pattern": "^(\\$\\{.+\\})$"
           }
         }
       }
