@@ -59,19 +59,32 @@
       "tag-origin": {
         "type": "string"
       },
-      "auto-format": { "const" : "rspv" },
+      "language": {
+        "type": "string"
+      },
       "width": {
         "$ref": "./types/dimension.json"
       },
       "height": {
         "$ref": "./types/dimension.json"
       },
-      "full-width": {
-        "type": ["boolean", "string"],
-        "pattern": "^(\\$\\{.+\\})$"
-      },
-      "ad-format": {
-        "type": "string"
+      "json": {
+        "additionalProperties": false,
+        "description": "Json object for touch parameters only",
+        "properties": {
+          "ad-format": {
+            "type": "string"
+          },
+          "usePageLevelAds": {
+            "type": ["boolean", "string"],
+            "pattern": "^(\\$\\{.+\\})$",
+            "description": "Use page level ads setup"
+          },
+          "full-width": {
+            "type": ["boolean", "string"],
+            "pattern": "^(\\$\\{.+\\})$"
+          }
+        }
       }
     }
   }

@@ -21,11 +21,13 @@
       "type": "adsense",
       "ad-client": "${CLIENT}",
       "ad-slot": "${SLOT}",
-      "auto-format": "rspv",
       "width": "${WIDTH}",
       "height": "${HEIGHT}",
-      "full-width": true,
-      "ad-format": "fluid"
+      "json": {
+        "ad-format": "fluid",
+        "full-width": true,
+        "usePageLevelAds": true
+      }
     },
     "adsense2": {
       "type": "adsense",
