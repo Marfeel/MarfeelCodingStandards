@@ -9,7 +9,7 @@
         "properties": {
             "name": {
                 "description": "Name of the metrics provider only letters and numbers",
-                "pattern": "^[a-zA-Z][a-zA-Z\\d]*$",
+                "pattern": "^[a-zA-Z\\d]*$",
                 "title": "Metrics Provider Name",
                 "type": "string"
             },
