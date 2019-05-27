@@ -1,15 +1,5 @@
 {
     "hostname": "tenant.com",
-    "adNetworkProfileStrategy": "DEFAULT",
-    "multisizeStrategy": "DEFAULT",
     "businessModel": "OAP",
-    "shareForCustomer": "high",
-    "densometer": {
-        "enabled": "INACTIVE",
-        "densityFactor": 30
-    },
-    "mosaicDensometer": {
-        "enabled": "INACTIVE",
-        "densityFactor": 42
-    }
+    "shareForCustomer": "high"
 }

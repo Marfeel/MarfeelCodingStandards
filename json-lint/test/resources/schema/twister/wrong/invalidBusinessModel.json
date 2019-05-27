@@ -1,14 +1,4 @@
 {
     "hostname": "tenant.com",
-    "adNetworkProfileStrategy": "DEFAULT",
-    "multisizeStrategy": "DEFAULT",
-    "businessModel": "OTHER",
-    "densometer": {
-        "enabled": "INACTIVE",
-        "densityFactor": 30
-    },
-    "mosaicDensometer": {
-        "enabled": "INACTIVE",
-        "densityFactor": 42
-    }
+    "businessModel": "OTHER"
 }

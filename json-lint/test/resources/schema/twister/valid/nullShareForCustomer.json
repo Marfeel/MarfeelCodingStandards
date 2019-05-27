@@ -10,6 +10,6 @@
     },
     "mosaicDensometer": {
         "enabled": "INACTIVE",
-        "densityFactor": 42
+        "densityFactor": 20
     }
 }

@@ -53,17 +53,31 @@
                 {"$ref" : "./subtype/densometerMosaic.json"}
             ]
         },
+        "adNetworks": {
+            "title": "Ad networks",
+            "description": "General purpose ad networks, like 'crispr' or 'pushNotificationsBanner'",
+            "type": "array",
+            "items": {
+                "$ref": "./subtype/adNetwork.json"
+            }
+        },
+        "extraHeaderBidders": {
+            "title": "Extra header bidders",
+            "description": "SSP to be added to the Crispr header bidders set up in the database of ad network configurations",
+            "type": "array",
+            "items": {
+                "$ref": "./subtype/adNetwork.json"
+            }
+        },
         "paidImpressions": {
+            "title": "Paid impressions",
+            "description": "Paid impressions to be added to the inventory.json configuration",
             "$ref": "./subtype/placement.json"
         }
     },
-    "additionalProperties": true,
+    "additionalProperties": false,
     "required": [
         "hostname",
-        "adNetworkProfileStrategy",
-        "multisizeStrategy",
-        "businessModel",
-        "densometer",
-        "mosaicDensometer"
+        "businessModel"
     ]
 }
