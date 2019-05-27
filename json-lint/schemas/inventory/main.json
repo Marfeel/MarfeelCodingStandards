@@ -24,7 +24,16 @@
         },
 
         "placements": {
-            "$ref": "./placements/placement.json"
+            "$id": "/properties/placements",
+            "type": "object",
+            "title": "Placements Object",
+            "description": "contain the placements with keys like: \n - sticky \n - inter \n - top \n - top_mosaic \n - top_details \n - bottom_mosaic \n - bottom_details_2 \n - inline \n - inline_5 \n ...",
+            "patternProperties": {
+                "^!?(top|inline|bottom|sticky|inter)(_(.*))*": {
+                    "$ref": "./placements/placement.json"
+                }
+            },
+            "additionalProperties": false
         },
         "adServers": {
             "$id": "/properties/adServers",
