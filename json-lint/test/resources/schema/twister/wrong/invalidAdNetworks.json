@@ -1,0 +1,10 @@
+{
+    "hostname": "tenant.com",
+    "businessModel": "ENTERPRISE",
+
+    "adNetworks": [
+        {
+            "accountId": "pushNotificationsBanner"
+        }
+    ]
+}

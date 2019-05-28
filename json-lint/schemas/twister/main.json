@@ -7,15 +7,77 @@
 
     "type": "object",
     "properties": {
+        "hostname": {
+            "title": "Host name",
+            "description": "Domain of the publisher",
+            "type": "string",
+            "minLength": 4
+        },
         "adNetworkProfileStrategy": {
             "title": "Ad network profile strategy",
             "description": "Level of aggressiveness to add ads to pages",
             "type": "string",
             "enum": ["LOOSE", "DEFAULT", "AGGRESSIVE"]
+        },
+        "multisizeStrategy": {
+            "title": "Multisize strategy",
+            "description": "Trend to request ads with big sizes",
+            "type": "string",
+            "enum": ["DISABLED", "SOFT", "DEFAULT"]
+        },
+        "businessModel": {
+            "title": "Business model",
+            "description": "Payment plan of the customer",
+            "type": "string",
+            "enum": ["ENTERPRISE", "OAP", "FIXED_FEE"]
+        },
+        "shareForCustomer": {
+            "title": "Revenue share for customer",
+            "description": "When business model is OAP, percentage of impressions that belong to the customer",
+            "type": {
+                "anyOf": [
+                    {"type": "integer"},
+                    {"type": "null"}
+                ]
+            }
+        },
+        "densometer": {
+            "allOf": [
+                {"$ref" : "./subtype/densometer.json"},
+                {"$ref" : "./subtype/densometerArticle.json"}
+            ]
+        },
+        "mosaicDensometer": {
+            "allOf": [
+                {"$ref" : "./subtype/densometer.json"},
+                {"$ref" : "./subtype/densometerMosaic.json"}
+            ]
+        },
+        "adNetworks": {
+            "title": "Ad networks",
+            "description": "General purpose ad networks, like 'crispr' or 'pushNotificationsBanner'",
+            "type": "array",
+            "items": {
+                "$ref": "./subtype/adNetwork.json"
+            }
+        },
+        "extraHeaderBidders": {
+            "title": "Extra header bidders",
+            "description": "SSP to be added to the Crispr header bidders set up in the database of ad network configurations",
+            "type": "array",
+            "items": {
+                "$ref": "./subtype/adNetwork.json"
+            }
+        },
+        "paidImpressions": {
+            "title": "Paid impressions",
+            "description": "Paid impressions to be added to the inventory.json configuration",
+            "$ref": "./subtype/placement.json"
         }
     },
-    "additionalProperties": true,
+    "additionalProperties": false,
     "required": [
-        "adNetworkProfileStrategy"
+        "hostname",
+        "businessModel"
     ]
 }
