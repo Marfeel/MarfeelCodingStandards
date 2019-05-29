@@ -22,8 +22,8 @@
                 "id": "$1",
                 "d": "$2",
                 "wid": "$3",
-                "width": "$4",
-                "height": "$5"
+                "width": "${4:required for AMP. Ignored in TOUCH}",
+                "height": "${5:required for AMP. Ignored in TOUCH}"
             }
         }
     ],
@@ -44,10 +44,14 @@
             "description": "The unique identifier for your widget."
         },
         "width": {
-            "$ref": "./types/dimension.json"
+            "type": "integer",
+            "title": "Width. Required for AMP",
+            "description": "Ignored in TOUCH. TOUCH Example: 0"
         },
         "height": {
-            "$ref": "./types/dimension.json"
+            "type": "integer",
+            "title": "Height. Required for AMP",
+            "description": "Ignored in TOUCH. TOUCH Example: 0"
         }
     }
 }
