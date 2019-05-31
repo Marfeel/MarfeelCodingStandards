@@ -15,11 +15,13 @@
             "description": "contains required keys",
             "body": {
                 "type": "mgid",
-                "tenantUrl": "$1",
-                "clientCode": "$2",
-                "divIDCode": "$3",
-                "firstParam" :"$4",
-                "secondParam" :"$5"
+                "json": {
+                    "tenantUrl": "$1",
+                    "clientCode": "$2",
+                    "divIDCode": "$3",
+                    "firstParam" :"$4",
+                    "secondParam" :"$5"
+                }
             }
         }
     ],
