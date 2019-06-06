@@ -29,7 +29,7 @@
             "title": "Business model",
             "description": "Payment plan of the customer",
             "type": "string",
-            "enum": ["ENTERPRISE", "OAP", "FIXED_FEE"]
+            "enum": ["ENTERPRISE", "OAP", "FIXED_FEE", "VARIABLE_FEE"]
         },
         "shareForCustomer": {
             "title": "Revenue share for customer",
