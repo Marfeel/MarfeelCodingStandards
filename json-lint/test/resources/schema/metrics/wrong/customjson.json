@@ -1,8 +1,0 @@
-{
-    "custom": [{
-            "type": "json",
-            "jsonContent": "{}",
-            "idAttribute": "id"
-        }
-    ]
-}
