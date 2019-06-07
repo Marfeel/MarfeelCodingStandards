@@ -4,15 +4,14 @@
     "type": "object",
     "title": "Mgid adserver for TOUCH only",
     "description": "Mgid ad server for TOUCH only",
-    "additionalProperties": false,
+    "additionalProperties": true,
     "required": [
-        "type",
-        "json"
+        "type"
     ],
     "defaultSnippets": [
         {
-            "label": "Mgid template",
-            "description": "contains required keys",
+            "label": "Mgid web template",
+            "description": "Mgid for touch",
             "body": {
                 "type": "mgid",
                 "json": {
@@ -22,6 +21,18 @@
                     "firstParam" :"$4",
                     "secondParam" :"$5"
                 }
+            }
+        },
+        {
+            "label": "Mgid amp template",
+            "description": "Mgid for AMP",
+            "body": {
+                "type": "mgid",
+                "publisher": "$1",
+                "widget": "$2",
+                "container": "$3",
+                "height": "$4",
+                "width": "$5"
             }
         }
     ],
@@ -53,6 +64,21 @@
                     "type": "string"
                 }
             }
+        },
+        "publisher": {
+            "type": "string"
+        },
+        "widget": {
+            "type": "string"
+        },
+        "container": {
+            "type": "string"
+        },
+        "height": {
+            "type": "string"
+        },
+        "width": {
+            "type": "string"
         }
     }
 }
