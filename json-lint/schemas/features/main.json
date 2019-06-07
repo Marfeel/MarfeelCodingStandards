@@ -45,6 +45,22 @@
                     "description": "Replace the classic MediaLoader with a new version that's based on the IntersectionObserver API",
                     "owner": "TEN",
                     "default": false
+                },
+                "madLoaderWithIntersectionObserver": {
+                    "$id": "/properties/madLoaderWithIntersectionObserver",
+                    "type": "boolean",
+                    "title": "Use MadLoader with IntersectionObserver",
+                    "description": "Replace the classic MadLoader with a new version that's based on the IntersectionObserver API",
+                    "owner": "ALOT",
+                    "default": false
+                },
+                "lazyRenderingForCRISPR": {
+                    "$id": "/properties/lazyRenderingForCRISPR",
+                    "type": "boolean",
+                    "title": "Enable lazy rendering for CRISPR ads",
+                    "description": "Configures DFP to lazy render the ads using enableLazyLoad() native method",
+                    "owner": "ALOT",
+                    "default": false
                 }
             }
         }
