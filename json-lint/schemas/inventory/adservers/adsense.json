@@ -8,8 +8,7 @@
 
     "required": [
       "type",
-      "ad-client",
-      "ad-slot"
+      "ad-client"
     ],
 
     "defaultSnippets": [
