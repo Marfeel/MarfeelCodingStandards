@@ -1,0 +1,33 @@
+{
+    "$id": "#sulvo",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "Sulvo AdServer",
+    "description": "Sulvo for touch",
+    "additionalProperties": true,
+    "required": [
+        "type"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "Sulvo template",
+            "description": "Sulvo for touch",
+            "body": {
+                "type": "sulvo",
+                "scriptSrc": "$1",
+                "id": "$2"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "sulvo"
+        },
+        "scriptSrc": {
+            "type": "string"
+        },
+        "id": {
+            "type": "string"
+        }
+    }
+}
