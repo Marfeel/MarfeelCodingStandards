@@ -7,8 +7,10 @@
     "adServers": {
         "sulvo": {
             "type": "sulvo",
-            "scriptSrc": "https://live.demand.supply/up.js",
-            "id":"tenant.com_sticky_mobile_bottom_mobil"
+            "json": {
+                "scriptSrc": "https://live.demand.supply/up.js",
+                "id": "tenant.com_sticky_mobile_bottom_mobil"
+            }
         }
     }
 }

@@ -14,8 +14,10 @@
             "description": "Sulvo for touch",
             "body": {
                 "type": "sulvo",
-                "scriptSrc": "$1",
-                "id": "$2"
+                "json": {
+                    "scriptSrc": "$1",
+                    "id": "$2"
+                }
             }
         }
     ],
@@ -23,11 +25,20 @@
         "type": {
             "const": "sulvo"
         },
-        "scriptSrc": {
-            "type": "string"
-        },
-        "id": {
-            "type": "string"
+        "json": {
+            "type": "object",
+            "required": [
+                "scriptSrc",
+                "id"
+            ],
+            "properties": {
+                "scriptSrc": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                }
+            }
         }
     }
 }
