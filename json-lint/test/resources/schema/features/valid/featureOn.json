@@ -2,7 +2,6 @@
     "features": {
         "reactHeader": true,
         "newUserJourneyEvents": true,
-        "mediaLoaderWithIntersectionObserver": true,
         "madLoaderWithIntersectionObserver": true,
         "lazyRenderingForCRISPR": true
     }
