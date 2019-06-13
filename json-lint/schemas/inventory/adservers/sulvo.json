@@ -4,7 +4,7 @@
     "type": "object",
     "title": "Sulvo AdServer",
     "description": "Sulvo for touch",
-    "additionalProperties": true,
+    "additionalProperties": false,
     "required": [
         "type"
     ],
