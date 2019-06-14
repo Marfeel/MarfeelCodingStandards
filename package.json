@@ -16,11 +16,11 @@
 	},
 	"homepage": "https://github.com/Marfeel/MarfeelCodingStandards#readme",
 	"dependencies": {
-		"eslint": "^5.5.0",
+		"eslint": "^5.16.0",
+		"eslint-plugin-jasmine": "^2.10.1",
 		"eslint-plugin-jest": "^22.6.4",
 		"eslint-plugin-node": "^7.0.1",
 		"eslint-plugin-react": "^7.11.1",
-		"eslint-plugin-jasmine": "^2.10.1",
 		"stylelint": "^9.9.0",
 		"stylelint-config-recommended": "^2.1.0",
 		"stylelint-config-styled-components": "^0.1.1",
