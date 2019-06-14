@@ -38,14 +38,6 @@
                     "owner": "TEN",
                     "default": false
                 },
-                "mediaLoaderWithIntersectionObserver": {
-                    "$id": "/properties/mediaLoaderWithIntersectionObserver",
-                    "type": "boolean",
-                    "title": "Use MediaLoader with IntersectionObserver",
-                    "description": "Replace the classic MediaLoader with a new version that's based on the IntersectionObserver API",
-                    "owner": "TEN",
-                    "default": false
-                },
                 "madLoaderWithIntersectionObserver": {
                     "$id": "/properties/madLoaderWithIntersectionObserver",
                     "type": "boolean",
