@@ -149,6 +149,9 @@
                 "sortable": {
                     "$ref": "./adservers/sortable.json"
                 },
+                "sulvo": {
+                    "$ref": "./adservers/sulvo.json"
+                },
                 "sunmedia": {
                     "$ref": "./adservers/sunmedia.json"
                 },
@@ -290,6 +293,9 @@
                         },
                         {
                             "$ref": "./adservers/sunmediaVideo.json"
+                        },
+                        {
+                            "$ref": "./adservers/sulvo.json"
                         },
                         {
                             "$ref": "./adservers/sunmedia.json"
