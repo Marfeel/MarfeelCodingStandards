@@ -1,0 +1,16 @@
+{
+    "placements": {
+        "sticky": {
+            "adServer": "sulvo"
+        }
+    },
+    "adServers": {
+        "sulvo": {
+            "type": "sulvo",
+            "json": {
+                "scriptSrc": "https://live.demand.supply/up.js",
+                "id": "tenant.com_sticky_mobile_bottom_mobil"
+            }
+        }
+    }
+}
