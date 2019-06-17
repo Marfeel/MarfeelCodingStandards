@@ -53,6 +53,14 @@
                     "description": "Configures DFP to lazy render the ads using enableLazyLoad() native method",
                     "owner": "ALOT",
                     "default": false
+                },
+                "disableAmazonOnTheFirstPosition": {
+                    "$id": "/properties/disableAmazonOnTheFirstPosition",
+                    "type": "boolean",
+                    "title": "Disable Amazon ads on the 1st position when using CRIPSR",
+                    "description": "Avoid adding Amazon ads on the first position for CRISPR with header bidding",
+                    "owner": "ALOT",
+                    "default": false
                 }
             }
         }
