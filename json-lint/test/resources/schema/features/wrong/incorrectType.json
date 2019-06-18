@@ -3,6 +3,7 @@
         "reactHeader": "true",
         "newUserJourneyEvents": "true",
         "madLoaderWithIntersectionObserver": "true",
-        "lazyRenderingForCRISPR": "true"
+        "lazyRenderingForCRISPR": "true",
+        "disableAmazonOnTheFirstPosition": "true"
     }
 }
