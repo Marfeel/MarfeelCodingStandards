@@ -29,6 +29,12 @@
         },
         "layout": {
             "$ref": "./types/layout.json"
+        },
+        "width": {
+            "$ref": "./types/dimension.json"
+        },
+        "height": {
+            "$ref": "./types/dimension.json"
         }
     }
 } 

@@ -1,0 +1,13 @@
+{
+    "hostname": "tenant.com",
+    "businessModel": "ENTERPRISE",
+
+    "extraHeaderBidders": [
+        {
+            "name": "rubicon",
+            "adTags": {
+                "placement": "id"
+            }
+        }
+    ]
+}

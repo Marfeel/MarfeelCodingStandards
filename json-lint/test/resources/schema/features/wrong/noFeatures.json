@@ -1,3 +1,7 @@
 {
-    "reactHeader": true
+    "reactHeader": true,
+    "newUserJourneyEvents": true,
+    "madLoaderWithIntersectionObserver": true,
+    "lazyRenderingForCRISPR": true,
+    "disableAmazonOnTheFirstPosition": true
 }

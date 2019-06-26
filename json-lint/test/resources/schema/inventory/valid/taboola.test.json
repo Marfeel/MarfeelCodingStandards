@@ -5,6 +5,9 @@
     },
     "bottom_details_1": {
       "adServer": "taboolaNoStyles"
+    },
+    "bottom_details_3": {
+      "adServer": "taboolaProperties"
     }
   },
   "adServers": {
@@ -26,6 +29,15 @@
       "json": {
         "disableMarfeelStyles": true
       }
+    },
+    "taboolaProperties": {
+      "type": "taboola",
+      "publisher": "brasil247",
+      "heights": "(min-width:1565px) 73%, (min-width:1106px) 79%, (min-width:788px) 88%, (min-width:769px) 117%, (min-width:726px) 90%, (min-width:521px) 103%, (min-width:437px) 140%, (min-width:391px) 565%, (min-width:365px) 596%, 624%",
+      "mode": "thumbnails-a",
+      "placement": "Below Article Thumbnails",
+      "homepage": "auto",
+      "url": "brasil247.com"
     }
   }
 }

@@ -24,16 +24,7 @@
         },
 
         "placements": {
-            "$id": "/properties/placements",
-            "type": "object",
-            "title": "Placements Object",
-            "description": "contain the placements with keys like: \n - sticky \n - inter \n - top \n - top_mosaic \n - top_details \n - bottom_mosaic \n - bottom_details_2 \n - inline \n - inline_5 \n ...",
-            "patternProperties": {
-                "^!?(top|inline|bottom|sticky|inter)(_(.*))*": {
-                    "$ref": "./placements/schema.json"
-                }
-            },
-            "additionalProperties": false
+            "$ref": "./placements/placement.json"
         },
         "adServers": {
             "$id": "/properties/adServers",
@@ -77,11 +68,17 @@
                 "custom": {
                     "$ref": "./adservers/custom.json"
                 },
+                "disqus": {
+                    "$ref": "./adservers/disqus.json"
+                },
                 "doubleclick": {
                     "$ref": "./adservers/doubleclick.json"
                 },
                 "engageya": {
                     "$ref": "./adservers/engageya.json"
+                },
+                "freestar": {
+                    "$ref": "./adservers/freestar.json"
                 },
                 "giraff": {
                     "$ref": "./adservers/giraff.json"
@@ -100,6 +97,9 @@
                 },
                 "ligatus": {
                     "$ref": "./adservers/ligatus.json"
+                },
+                "lockerdome": {
+                    "$ref": "./adservers/lockerdome.json"
                 },
                 "marfeel": {
                     "$ref": "./adservers/marfeel/schema.json"
@@ -149,6 +149,9 @@
                 "sortable": {
                     "$ref": "./adservers/sortable.json"
                 },
+                "sulvo": {
+                    "$ref": "./adservers/sulvo.json"
+                },
                 "sunmedia": {
                     "$ref": "./adservers/sunmedia.json"
                 },
@@ -170,8 +173,13 @@
                 "zergnet": {
                     "$ref": "./adservers/zergnet.json"
                 },
+<<<<<<< HEAD
                 "yandexHB": {
                     "$ref": "./adservers/yandexHB.json"
+=======
+                "scriptLoader": {
+                    "$ref": "./adservers/scriptLoader.json"
+>>>>>>> master
                 }
             },
             "patternProperties": {
@@ -214,7 +222,13 @@
                             "$ref": "./adservers/custom.json"
                         },
                         {
+                            "$ref": "./adservers/disqus.json"
+                        },
+                        {
                             "$ref": "./adservers/doubleclick.json"
+                        },
+                        {
+                            "$ref": "./adservers/freestar.json"
                         },
                         {
                             "$ref": "./adservers/giraff.json"
@@ -233,6 +247,9 @@
                         },
                         {
                             "$ref": "./adservers/ligatus.json"
+                        },
+                        {
+                            "$ref": "./adservers/lockerdome.json"
                         },
                         {
                             "$ref": "./adservers/medianet.json"
@@ -283,6 +300,9 @@
                             "$ref": "./adservers/sunmediaVideo.json"
                         },
                         {
+                            "$ref": "./adservers/sulvo.json"
+                        },
+                        {
                             "$ref": "./adservers/sunmedia.json"
                         },
                         {
@@ -302,6 +322,9 @@
                         },
                         {
                             "$ref": "./adservers/zergnet.json"
+                        },
+                        {
+                            "$ref": "./adservers/scriptLoader.json"
                         },
                         {
                             "$ref": "./adservers/yandexHB.json"

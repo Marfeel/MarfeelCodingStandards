@@ -1,0 +1,11 @@
+{
+    "hostname": "tenant.com",
+    "businessModel": "ENTERPRISE",
+    "paidImpressions": {
+        "outline_details_4_web": {
+            "adServer": "scriptLoaderSunMedia",
+            "params": {
+            }
+        }
+    }
+}

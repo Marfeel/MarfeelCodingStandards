@@ -1,0 +1,15 @@
+{
+  "placements": {
+    "inline_details_4_web": {
+      "adServer": "scriptLoaderSunMedia"
+    }
+  },
+  "adServers": {
+    "scriptLoaderSunMedia": {
+      "type": "scriptLoader",
+      "json": {
+        "url": "http://static.sunmedia.tv/integrations/c0af983f-e786-4124-a23b-791cd6689c99/c0af983f-e786-4124-a23b-791cd6689c99.js"
+      }
+    }
+  }
+}

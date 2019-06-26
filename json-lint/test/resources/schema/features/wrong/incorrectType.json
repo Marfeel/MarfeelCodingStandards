@@ -1,5 +1,9 @@
 {
-	"features": {
-        "reactHeader": "true"
+    "features": {
+        "reactHeader": "true",
+        "newUserJourneyEvents": "true",
+        "madLoaderWithIntersectionObserver": "true",
+        "lazyRenderingForCRISPR": "true",
+        "disableAmazonOnTheFirstPosition": "true"
     }
 }

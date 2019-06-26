@@ -5,6 +5,9 @@
         },
         "bottom_details_2_web": {
             "adServer": "mgid2"
+        },
+        "bottom_details_1_amp": {
+            "adServer": "mgidAMP"
         }
     },
     "adServers": {
@@ -25,6 +28,13 @@
                 "firstParam": "o",
                 "secondParam": "a"
             }
+        },
+        "mgidAMP": {
+            "type": "mgid",
+            "height":"1200",
+            "publisher": "amp-demo",
+            "widget": "12345",
+            "container": "demo-containerScriptRootC12345"
         }
     }
 }

@@ -1,0 +1,12 @@
+{
+    "hostname": "tenant.com",
+    "businessModel": "ENTERPRISE",
+    "densometer": {
+        "enabled": "ACTIVE",
+        "densityFactor": 20
+    },
+    "mosaicDensometer": {
+        "enabled": "ACTIVE",
+        "densityFactor": 50
+    }
+}
