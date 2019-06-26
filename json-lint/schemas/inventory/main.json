@@ -169,6 +169,9 @@
                 },
                 "zergnet": {
                     "$ref": "./adservers/zergnet.json"
+                },
+                "yandexHB": {
+                    "$ref": "./adservers/yandexHB.json"
                 }
             },
             "patternProperties": {
@@ -299,6 +302,9 @@
                         },
                         {
                             "$ref": "./adservers/zergnet.json"
+                        },
+                        {
+                            "$ref": "./adservers/yandexHB.json"
                         }
                     ]
                 }

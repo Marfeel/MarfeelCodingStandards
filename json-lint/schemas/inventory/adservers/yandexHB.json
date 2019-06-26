@@ -1,0 +1,78 @@
+{
+    "$id": "#yandexHB",
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "title": "yandexHB adserver",
+    "description": "yandexHB ad server",
+    "additionalProperties": false,
+    "required": [
+        "type",
+        "ownerId",
+        "json"
+    ],
+    "defaultSnippets": [
+        {
+            "label": "yandexHB template",
+            "description": "contains required keys",
+            "body": {
+                "type": "yandexHB",
+                "ownerId": "$1",
+                "adfoxBiddersMap": "$2",
+                "adUnits": "$3",
+                "userTimeout" :"$4"
+            }
+        }
+    ],
+    "properties": {
+        "type": {
+            "const": "yandexHB"
+        },
+        "json": {
+            "biddingSettings": {
+                "required": [
+                    "adfoxBiddersMap",
+                    "adUnits",
+                    "userTimeout"
+                ],
+                "adfoxBiddersMap": {
+                    "type": "string"
+                },
+                "adUnits": {
+                    "type": ["integer","string"],
+                    "pattern": "^(\\$\\{.+\\})$",
+                    "required": [
+                        "code",
+                        "sizes",
+                        "bids"
+                    ],
+                    "code": {
+                        "type": "string"
+                    },
+                    "sizes": {
+                        "type": ["integer"]
+                    },
+                    "bids": {
+                        "type": "string",
+                        "required": [
+                            "bidder",
+                            "params"
+                        ],
+                        "bidder": {
+                            "type": "string"
+                        },
+                        "params": {
+                            "type": "string",
+                            "required": [ "placementId" ],
+                            "placementId": {
+                                "type": "string"
+                            }
+                        }
+                    }
+                },
+                "userTimeout": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
