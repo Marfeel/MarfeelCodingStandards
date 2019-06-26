@@ -173,13 +173,11 @@
                 "zergnet": {
                     "$ref": "./adservers/zergnet.json"
                 },
-<<<<<<< HEAD
-                "yandexHB": {
-                    "$ref": "./adservers/yandexHB.json"
-=======
                 "scriptLoader": {
                     "$ref": "./adservers/scriptLoader.json"
->>>>>>> master
+                },
+                "yandexHB": {
+                    "$ref": "./adservers/yandexHB.json"
                 }
             },
             "patternProperties": {
