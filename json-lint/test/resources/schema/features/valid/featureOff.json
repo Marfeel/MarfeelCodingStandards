@@ -1,9 +1,0 @@
-{
-    "features": {
-        "reactHeader": false,
-        "newUserJourneyEvents": false,
-        "madLoaderWithIntersectionObserver": false,
-        "lazyRenderingForCRISPR": false,
-        "disableAmazonOnTheFirstPosition": false
-    }
-}

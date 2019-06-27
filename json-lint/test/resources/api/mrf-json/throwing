@@ -1,5 +1,0 @@
-#!/usr/bin/env node
-
-
-// MOCK FOR bash util mrf-json
-throw new Error("ERROR HAPPENED IN MRF-JSON");
