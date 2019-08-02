@@ -1,6 +1,5 @@
 ---
 title: Md linter
-keywords: lint md markdown
 ---
 
 # Markdown linting
@@ -27,5 +26,5 @@ Create a .markdownlint.json file in the root of the project extending the one in
 Add a task for the markdown-cli to execute on linting using our custom rule:
 
 ```json
-"lint" : "markdownlint ./ -r /node_modules/marfeel-coding-standards/md-lint/custom_linters/metadata-keywords.js -i node_modules
+"lint" : "markdownlint ./ -r /node_modules/marfeel-coding-standards/md-lint/custom_linters/ -i node_modules
 ```
