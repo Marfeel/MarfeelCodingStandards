@@ -1,2 +1,6 @@
 # This file
 /CODEOWNERS @Marfeel/frontend-teachleads
+
+#Documentation
+docs/ @Marfeel/pm
+*.md @Marfeel/pm
