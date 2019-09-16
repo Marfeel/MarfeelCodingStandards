@@ -1,8 +1,9 @@
 ---
-title: Overview
+title: Configuration
 tags: docs
 ---
-# MarfeelCodingStandards
+
+# Configuration
 
 Linting tools for marfeel.
 Monorepo, ready to contain more than one module, managed with leran.
