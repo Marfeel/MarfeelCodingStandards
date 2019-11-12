@@ -5,5 +5,9 @@
 		"../base/.eslintrc",
 		"plugin:@typescript-eslint/recommended",
 		"plugin:@typescript-eslint/recommended-requiring-type-checking"
-	]
+	],
+	"rules": {
+		"class-methods-use-this": "warning",
+		"@typescript-eslint/require-await": "off"
+	}
 }
