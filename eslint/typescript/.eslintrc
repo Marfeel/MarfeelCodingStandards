@@ -7,7 +7,7 @@
 		"plugin:@typescript-eslint/recommended-requiring-type-checking"
 	],
 	"rules": {
-		"class-methods-use-this": "warning",
+		"class-methods-use-this": "warn",
 		"@typescript-eslint/require-await": "off"
 	}
 }
