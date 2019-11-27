@@ -1,0 +1,3 @@
+{
+	"extends": ["../jest/.eslintrc", "../base/.eslintrc"]
+}
