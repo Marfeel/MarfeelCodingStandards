@@ -2,6 +2,9 @@
 	"plugins": [
 		"jest"
 	],
+	"env": {
+		"commonjs": true
+	},
 	"extends": ["plugin:jest/recommended"],
 	"rules": {
 		"jest/no-alias-methods": "error",
