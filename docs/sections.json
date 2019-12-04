@@ -1,8 +1,2 @@
-{ "links":["/",
-    "/docs/contributing",
-    "/docs/development/", 
-    "/docs/development/quickstart",
-    "/docs/development/configuration",
-    "/docs/development/references",
-    "/docs/development/guides/guide1"
+{ "links":["/product-guidelines"
     ]}
