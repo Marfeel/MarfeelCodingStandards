@@ -91,7 +91,6 @@ If after the analysis the result is that the new feature should be included, the
 Examples where we have modified the original core extension to support new functionality:
 
 * [PanMetrics vs. CXense](https://github.com/Marfeel/MarfeelXP/pull/12040/files)
-*
 
 ### Custom metric extension
 
