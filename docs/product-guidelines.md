@@ -5,9 +5,9 @@ tags: docs
 
 # Product guidelines
 
-Things that we can do in a Mediagroup repository
+Things that we can do in a Mediagroup repository.
 
-Ideally with [Marfeel's extensibilty](./../extensibility/README.md), if everything were supported out-of-the-box by `MarfeelXP`, a MediaGroup repository would contain only
+Ideally with [Marfeel's extensibilty](../extensibility/README.md), if everything were supported out-of-the-box by `MarfeelXP`, a MediaGroup repository would contain only
 1. JSON files: definition.json, inventory.json, metrics.json, ui.json, layoutDescriptor.json, ...
 2. Extraction parameters for whiteCollar, Boilerproviders, Metadataproviders
 
