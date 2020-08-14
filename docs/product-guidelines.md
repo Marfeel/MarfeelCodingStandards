@@ -52,10 +52,10 @@ Metrics.addAnalytics()
 
 Check the following articles to create custom extensions:
 
-- [Custom metric extension](./../metrics/metrics-how-to-create.md)
-- [Custom commenting systems extensions](./../comments/comments-how-to-create.md)
-- [Custom ad server extensions](./../advertisement/advertisement-how-to-create.md)
-- [Custom widgets extensions](./../widgets/widgets-how-to-create.md)
+- [Analytics provider](./../guides/create-an-analytics-provider.md)
+- [Custom commenting systems extensions](./../comments/how-to-create.md)
+- [Ad server provider](./../advertisement/guides/how-to-create-an-ad-server-provider.md)
+- [Widget provider](./../widgets/widget-providers.md)
 
 Extensions through abstract methods examples:
 
@@ -83,10 +83,10 @@ This approach could generate consequences that the original implementation was t
 
 If after the analysis the result is that the new feature should be included, then it needs to be implemented in Marfeel Core not only in the Tenant's code repository. This applies to:
 
-- [Metric extension in Core](./../metrics/metrics-how-to-create.md#core-metric-extension)
-- [Commenting system extension in Core](./../comments/comments-how-to-create.md#promote-a-custom-commenting-system-to-marfeel-core)
-- [Ad server extension in Core](./../advertisement/advertisement-how-to-create.md#core-ad-server-implementation)
-- [Widget extension in Core](./../widgets/widgets-how-to-create.md#promote-a-custom-widget-extension-to-marfeel-core)
+- [Analytics provider](./../metrics/guides/create-an-analytics-provider.md)
+- [Commenting systems extensions](./../comments/how-to-create.md)
+- [Ad server provider](./../advertisement/guides/how-to-create-an-ad-server-provider.md)
+- [Widget provider](./../widgets/widget-providers.md)
 
 Examples where we have modified the original core extension to support new functionality:
 
@@ -117,7 +117,7 @@ This implementation is not compatible with **AMP** and can create a lot of confl
 This implementation usually relies on using an `amp-iframe` of size 1x1:
 [AMP allows only one of those per page, which Marfeel already uses for its own purpose](https://amp.dev/documentation/components/amp-iframe/#tracking/analytics-iframes).
 
-Check [this article](./../metrics/metrics-how-to-create.md) to know how to properly extend Metric systems.
+Check [this article](./../metrics/guides/create-an-analytics-provider.md) to know how to properly extend Metric systems.
 
 Examples:
 
@@ -131,7 +131,7 @@ It's important to maintain in the [`whiteCollar` files](./../content-platform/wh
 
 The lines of code of the `whiteCollar` files are an important indicator when something is wrong in the implementation. If the extraction it's getting to complicated and it passes the 100 lines of code for Small or medium Tenants or 200 for Large or Extra-Large Tenants it's an indicator that a different approach to implementing this extraction is necessary.
 
-Also, the use of custom Javascript code should be minimum, instead of the methods from the [WC library](./../content-platform/wc-library.md) should be used.
+Also, the use of custom Javascript code should be minimum, instead of the methods from the [WC library](./../content-platform/sdk-reference/wc-library.md) should be used.
 
 This type of [`whiteCollar` implementation](https://github.com/Marfeel/Grupo-La-Rep-blica-Publicaciones-S-A-/blob/master/larepublica.pe/index/src/whiteCollar/home.js) should be avoided.
 
