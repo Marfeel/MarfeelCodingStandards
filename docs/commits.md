@@ -81,7 +81,7 @@ The subject contains a succinct description of the change:
 * Use the imperative, present tense: "change" not "changed" nor "changes"
 * Don't capitalize the first letter
 * No dot (.) at the end
-* Try to specify why the change was made (only if it can be exaplained in a short way)
+* Try to specify why the change was made (only if it can be explained in a short way)
 
 ### Body
 
