@@ -101,7 +101,7 @@ Github pull request squash should follow the same specification.
 
 ### Examples
 
-* feat(extraction): Add cocina section
+* feat(extraction): add cocina section
 * fix(metrics): add missing UGA param
 * refactor(extraction): use jsoup instead of whitecollar for performance
 * feat(metrics): add comscore
