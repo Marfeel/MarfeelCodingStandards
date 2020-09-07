@@ -52,7 +52,7 @@ Metrics.addAnalytics()
 
 Check the following articles to create custom extensions:
 
-- [Analytics provider](./../guides/create-an-analytics-provider.md)
+- [Analytics provider](./../metrics/guides/create-an-analytics-provider.md)
 - [Custom commenting systems extensions](./../comments/how-to-create.md)
 - [Ad server provider](./../advertisement/guides/how-to-create-an-ad-server-provider.md)
 - [Widget provider](./../widgets/widget-providers.md)
@@ -127,7 +127,7 @@ Examples:
 
 ### WhiteCollar files size
 
-It's important to maintain in the [`whiteCollar` files](./../content-platform/whitecollar.md) only the logic for extraction and leave setup of the layouts and positions of the articles in the [`layoutDescriptor` files](./../styling/layoutdescriptor-json.md).
+It's important to maintain in the [`whiteCollar` files](./../content-platform/sdk-reference/whitecollar.md) only the logic for extraction and leave setup of the layouts and positions of the articles in the [`layoutDescriptor` files](./../render-platform/sdk-reference/layoutdescriptor-json.md).
 
 The lines of code of the `whiteCollar` files are an important indicator when something is wrong in the implementation. If the extraction it's getting to complicated and it passes the 100 lines of code for Small or medium Tenants or 200 for Large or Extra-Large Tenants it's an indicator that a different approach to implementing this extraction is necessary.
 
@@ -146,11 +146,11 @@ As with the `whiteCollar`, the use of big custom SCSS files is a clear indicator
 
 The use of Core CSS should be avoided and the existing Mixins should be the first approach to customized styles in the Tenant's site. Check existing Mixins per every MarfeelUI Component:
 
-* [Global Components](./../styling/components-global.md)
-* [Sections pages Components](./../styling/components-sections-pages.md)
-* [Article pages Components](./../styling/components-article-pages.md)
+* [Global Components](./../render-platform/components-global.md)
+* [Sections pages Components](./../render-platform/components-sections-pages.md)
+* [Article pages Components](./../render-platform/components-article-pages.md)
 
-If you're adding custom styles to a class, prefer creating a new class with [CSS Mappings](../styling/components-article-pages.md#css-mappings) rather than using the core `mrf-...` classes.
+If you're adding custom styles to a class, prefer creating a new class with [CSS Mappings](../render-platform/components-article-pages.md#css-mappings) rather than using the core `mrf-...` classes.
 
 Implementations as big and custom as [this](https://github.com/Marfeel/AdAge.com/blob/master/adage.com/index/src/scss/_custom.scss), should be avoided.
 
@@ -164,7 +164,7 @@ Example usage of the loader:
 
 ### JSP overwritten
 
-All MarfeelUI Components can be [shadowed](./../styling/shadowing.md) to be customized but by doing it you **lose backward compatibility**. Because of this, Marfeel has [recommended templates for shadowing](./../styling/shadowing.md#recommended-templates-for-shadowing), that are JSPs files completely prepare to be overwritten.
+All MarfeelUI Components can be [shadowed](./../render-platform/shadowing.md) to be customized but by doing it you **lose backward compatibility**. Because of this, Marfeel has [recommended templates for shadowing](./../render-platform/shadowing.md#recommended-templates-for-shadowing), that are JSPs files completely prepare to be overwritten.
 
 Example JSPs that should not be overwritten:
 
